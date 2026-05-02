@@ -8,6 +8,7 @@ build/
 *.zip
 *.tsbuildinfo
 ssh-access.md
+jira-access.md
 .codex/playwright-output/
 .codex/playwright-profile/
 .playwright-mcp/

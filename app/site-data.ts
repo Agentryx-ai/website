@@ -306,6 +306,7 @@ export const productDetails: Record<string, {
   siteUrl?: string;
   metrics: { k: Localized; v: Localized }[];
   sections: { k: Localized; h: Localized; body: Localized }[];
+  proofs: { k: Localized; h: Localized; body: Localized }[];
   quote: Localized;
 }> = {
   agentryx: {
@@ -350,6 +351,32 @@ export const productDetails: Record<string, {
         body: {
           en: "Every change goes through deterministic scripts and a semantic review layer before it reaches human approval. Rejected work returns to the agent with the failing trace.",
           ko: "모든 변경은 사람의 승인 전에 결정론적 스크립트와 의미 기반 리뷰 레이어를 통과합니다. 반려된 작업은 실패 트레이스와 함께 에이전트에게 돌아갑니다."
+        }
+      }
+    ],
+    proofs: [
+      {
+        k: { en: "Routing evidence", ko: "라우팅 근거" },
+        h: { en: "Team Channel is the primary product surface.", ko: "Team Channel이 주 제품 표면입니다." },
+        body: {
+          en: "The current Agentryx research points to accepted Team Channel ADRs, @mention extraction, an auxiliary LLM router, target-only mailbox delivery, and Lead fallback when explicit mentions fail.",
+          ko: "현재 Agentryx 리서치는 Team Channel ADR, @mention 추출, 보조 LLM 라우터, 대상별 mailbox 전달, 명시적 멘션 실패 시 Lead fallback을 근거로 합니다."
+        }
+      },
+      {
+        k: { en: "Execution evidence", ko: "실행 근거" },
+        h: { en: "The runner is built around Codex workspaces.", ko: "러너는 Codex 워크스페이스 중심입니다." },
+        body: {
+          en: "The platform separates a Control Plane for company state, tasks, approvals, messages, artifacts, and memory from a Runner that uses Codex CLI app-server in per-agent workspaces.",
+          ko: "플랫폼은 회사 상태, 태스크, 승인, 메시지, 아티팩트, 메모리를 담는 Control Plane과 에이전트별 워크스페이스에서 Codex CLI app-server를 쓰는 Runner를 분리합니다."
+        }
+      },
+      {
+        k: { en: "Verification evidence", ko: "검증 근거" },
+        h: { en: "Verification is explicit, not implied.", ko: "검증은 암묵적이 아니라 명시적입니다." },
+        body: {
+          en: "Product docs describe deterministic scripts as Layer 1 and semantic review as Layer 2 before human approval, with rejected work returned to the agent with a failing trace.",
+          ko: "제품 문서는 사람 승인 전에 Layer 1 결정론적 스크립트와 Layer 2 의미 리뷰를 거치고, 반려된 작업은 실패 트레이스와 함께 에이전트에게 돌아간다고 설명합니다."
         }
       }
     ],
@@ -404,6 +431,32 @@ export const productDetails: Record<string, {
         }
       }
     ],
+    proofs: [
+      {
+        k: { en: "Generator evidence", ko: "생성 근거" },
+        h: { en: "Generation is staged, not one-shot.", ko: "생성은 단발 호출이 아니라 단계형입니다." },
+        body: {
+          en: "Repo research identifies Stage A skeleton streaming, Stage B parallel day-event generation, Stage C Google Places enrichment, and Stage D autofix/watchdog before publish.",
+          ko: "레포 리서치는 게시 전 Stage A 골격 스트리밍, Stage B 일자별 이벤트 병렬 생성, Stage C Google Places 보강, Stage D autofix/watchdog를 확인합니다."
+        }
+      },
+      {
+        k: { en: "Share evidence", ko: "공유 근거" },
+        h: { en: "The shared artifact is versioned.", ko: "공유 결과물은 버전으로 관리됩니다." },
+        body: {
+          en: "The implementation uses Project, Run, and Version models, a featured_version_id, publish/feature/share/import flows, public gallery behavior, and shared itinerary attribution.",
+          ko: "구현은 Project, Run, Version 모델과 featured_version_id, publish/feature/share/import 흐름, public gallery 동작, 공유 일정 attribution을 사용합니다."
+        }
+      },
+      {
+        k: { en: "Reality evidence", ko: "현실 검증 근거" },
+        h: { en: "Routes and places are part of the product surface.", ko: "장소와 동선이 제품 표면에 포함됩니다." },
+        body: {
+          en: "The product facts identify Google Places-based place enrichment and Google Routes-based route validation, with public copy limited to checks that the repo actually supports.",
+          ko: "제품 근거는 Google Places 기반 장소 보강과 Google Routes 기반 동선 검증을 확인하며, 공개 카피는 레포가 실제로 뒷받침하는 점검 범위로 제한합니다."
+        }
+      }
+    ],
     quote: {
       en: "A trip plan should be a living artifact, not a stale attachment.",
       ko: "여행 계획은 낡은 첨부 파일이 아니라 살아 움직이는 결과물이어야 합니다."
@@ -455,6 +508,32 @@ export const productDetails: Record<string, {
         }
       }
     ],
+    proofs: [
+      {
+        k: { en: "Credential evidence", ko: "자격 증명 근거" },
+        h: { en: "Credentials are isolated from subscribers.", ko: "자격 증명은 구독자와 분리됩니다." },
+        body: {
+          en: "Research confirms provider account registration, AES-256-GCM passwordCipher storage, managed account matching, and a product rule that OTT credentials are not shown to users.",
+          ko: "리서치는 공급자 계정 등록, AES-256-GCM passwordCipher 저장, 관리 계정 매칭, OTT 자격 증명을 사용자에게 노출하지 않는 제품 원칙을 확인합니다."
+        }
+      },
+      {
+        k: { en: "Operations evidence", ko: "운영 근거" },
+        h: { en: "Scarcity is modeled in queues and sessions.", ko: "희소성은 대기열과 세션으로 모델링합니다." },
+        body: {
+          en: "The PoC describes one-person sessions, provider pools, BotJob queues for verify/health/auto-login work, admin inspection, and audit logs for state changes.",
+          ko: "PoC는 1인 세션, 공급자 풀, verify/health/auto-login 작업용 BotJob 대기열, 관리자 점검, 상태 변경 감사 로그를 설명합니다."
+        }
+      },
+      {
+        k: { en: "Risk evidence", ko: "리스크 근거" },
+        h: { en: "The public posture stays deliberately conservative.", ko: "공개 포지션은 의도적으로 보수적입니다." },
+        body: {
+          en: "The research flags legal, tax, payment, copyright, platform ToS, and partnership-misread risks, so the page presents ModuBoza as an internal PoC rather than a launched service.",
+          ko: "리서치는 법무, 세무, 결제, 저작권, 플랫폼 약관, 제휴 오인 리스크를 표시하므로 이 페이지는 모두보자를 출시 서비스가 아니라 내부 PoC로 다룹니다."
+        }
+      }
+    ],
     quote: {
       en: "A solo streaming subscription should be built for one viewer, not priced like a household.",
       ko: "혼자 보는 OTT 구독은 가구 단위 가격이 아니라, 한 사람에게 맞춘 선택지여야 합니다."
@@ -502,6 +581,32 @@ export const productDetails: Record<string, {
         body: {
           en: "The first-run flow reports recoverable profiles, rooms, messages, dates, and media before unlock. If nothing is recoverable, the app says so.",
           ko: "첫 실행 흐름은 잠금 해제 전에 복원 가능한 프로필, 방, 메시지, 날짜, 미디어 수를 보여줍니다. 복원 가능한 것이 없다면 그렇게 말합니다."
+        }
+      }
+    ],
+    proofs: [
+      {
+        k: { en: "Local evidence", ko: "로컬 근거" },
+        h: { en: "Personal content stays on-device by default.", ko: "개인 콘텐츠는 기본적으로 기기에 남습니다." },
+        body: {
+          en: "The product direction limits server responsibility to account, payment, license, update checks, and non-personal telemetry, while message bodies and local paths stay off the service server.",
+          ko: "제품 방향은 서버 역할을 계정, 결제, 라이선스, 업데이트 확인, 비개인 텔레메트리로 제한하고 메시지 본문과 로컬 경로는 서비스 서버에 저장하지 않는다고 정합니다."
+        }
+      },
+      {
+        k: { en: "Workflow evidence", ko: "워크플로 근거" },
+        h: { en: "The first-run flow proves recoverability before unlock.", ko: "첫 실행에서 unlock 전 복원 가능성을 보여줍니다." },
+        body: {
+          en: "Research identifies local discovery, legal authority confirmation, profile selection, controlled preview, paid unlock, local search, and export/reporting as the Phase 1 workflow.",
+          ko: "리서치는 로컬 탐지, 법적 권한 확인, 프로필 선택, 제한된 미리 보기, 유료 unlock, 로컬 검색, 내보내기/리포팅을 Phase 1 흐름으로 확인합니다."
+        }
+      },
+      {
+        k: { en: "Scope evidence", ko: "범위 근거" },
+        h: { en: "The product avoids unsupported recovery claims.", ko: "지원되지 않는 복구 보장은 피합니다." },
+        body: {
+          en: "The public copy avoids spyware, third-party monitoring, official affiliation, AI analysis, and guaranteed deleted-message recovery because the product facts explicitly warn against those claims.",
+          ko: "제품 근거가 경고하는 스파이웨어, 제3자 모니터링, 공식 제휴, AI 분석, 삭제 메시지 복구 보장 표현을 공개 카피에서 배제합니다."
         }
       }
     ],

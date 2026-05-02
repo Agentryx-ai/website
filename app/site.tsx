@@ -109,10 +109,24 @@ function BrandMark() {
 function LangToggle({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }) {
   return (
     <div className="lang-toggle" role="group" aria-label="Language">
-      <button type="button" aria-pressed={lang === "en"} onClick={() => setLang("en")}>
+      <button
+        type="button"
+        aria-pressed={lang === "en"}
+        data-analytics-event="language_toggled"
+        data-analytics-current-locale={lang}
+        data-analytics-to-locale="en"
+        onClick={() => setLang("en")}
+      >
         EN
       </button>
-      <button type="button" aria-pressed={lang === "ko"} onClick={() => setLang("ko")}>
+      <button
+        type="button"
+        aria-pressed={lang === "ko"}
+        data-analytics-event="language_toggled"
+        data-analytics-current-locale={lang}
+        data-analytics-to-locale="ko"
+        onClick={() => setLang("ko")}
+      >
         KO
       </button>
     </div>
@@ -187,7 +201,15 @@ function Footer({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         <div>
           <h4>{t.navContact}</h4>
           <ul>
-            <li><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></li>
+            <li>
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                data-analytics-event="contact_clicked"
+                data-analytics-contact-type="email"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -253,12 +275,27 @@ function ProductCards({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
             <div className="card-name">{text(product.name, lang)}</div>
             <p className="card-deck">{text(product.deck, lang)}</p>
             <div className="card-bottom">
-              <Link className="card-action" href={`/products/${product.id}`}>
+              <Link
+                className="card-action"
+                href={`/products/${product.id}`}
+                data-analytics-event="product_card_opened"
+                data-analytics-product-slug={product.id}
+                data-analytics-product-status={product.status}
+                data-analytics-open-type="detail_route"
+              >
                 <span>{t.open}</span>
                 <span className="open">→</span>
               </Link>
               {"siteUrl" in product && product.siteUrl ? (
-                <a className="card-action" href={product.siteUrl} target="_blank" rel="noreferrer">
+                <a
+                  className="card-action"
+                  href={product.siteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-analytics-event="external_site_visited"
+                  data-analytics-destination-type="product_site"
+                  data-analytics-product-slug={product.id}
+                >
                   <span>{t.visitSite}</span>
                   <span className="open">↗</span>
                 </a>
@@ -317,7 +354,12 @@ function Home({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
             <span className="eyebrow"><span className="dot" /> {t.ctaEyebrow}</span>
             <h2>{t.ctaHeading}</h2>
             <div className="actions">
-              <Link className="btn invert primary" href="/press#contact">
+              <Link
+                className="btn invert primary"
+                href="/press#contact"
+                data-analytics-event="contact_clicked"
+                data-analytics-contact-type="email"
+              >
                 {t.contact} <span className="arrow">→</span>
               </Link>
               <Link className="btn invert" href="/thesis">{t.readThesis}</Link>
@@ -459,7 +501,12 @@ function ContactBlock({ lang, t, title }: { lang: Lang; t: typeof i18n.en; title
           <h2>{title}</h2>
         </div>
         <div className="contact-list">
-          <a className="row" href={`mailto:${CONTACT_EMAIL}`}>
+          <a
+            className="row"
+            href={`mailto:${CONTACT_EMAIL}`}
+            data-analytics-event="contact_clicked"
+            data-analytics-contact-type="email"
+          >
             <span className="label">{lang === "ko" ? "이메일" : "Email"}</span>
             <span className="value">{CONTACT_EMAIL}</span>
             <span className="arrow">→</span>
@@ -540,13 +587,37 @@ export function ProductDetailPage({ slug, initialLang }: { slug: string; initial
             <p className="lede">{text(detail.lede, lang)}</p>
             <div className="actions">
               {detail.siteUrl ? (
-                <a className="btn primary" href={detail.siteUrl} target="_blank" rel="noreferrer">
+                <a
+                  className="btn primary"
+                  href={detail.siteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-analytics-event="external_site_visited"
+                  data-analytics-destination-type="product_site"
+                  data-analytics-product-slug={slug}
+                >
                   {t.visitSite} <span className="arrow">↗</span>
                 </a>
               ) : (
-                <Link className="btn primary" href="/press#contact">{t.contact} <span className="arrow">→</span></Link>
+                <Link
+                  className="btn primary"
+                  href="/press#contact"
+                  data-analytics-event="contact_clicked"
+                  data-analytics-contact-type="email"
+                >
+                  {t.contact} <span className="arrow">→</span>
+                </Link>
               )}
-              {detail.siteUrl ? <Link className="btn" href="/press#contact">{t.contact}</Link> : null}
+              {detail.siteUrl ? (
+                <Link
+                  className="btn"
+                  href="/press#contact"
+                  data-analytics-event="contact_clicked"
+                  data-analytics-contact-type="email"
+                >
+                  {t.contact}
+                </Link>
+              ) : null}
               <Link className="btn" href="/thesis">{t.readThesis}</Link>
               <span className="pill" data-status={detail.status}>{statusLabel(detail.status, lang)}</span>
             </div>
@@ -572,6 +643,28 @@ export function ProductDetailPage({ slug, initialLang }: { slug: string; initial
               </div>
             </div>
           ))}
+        </section>
+        <section className="shell proof-section">
+          <div className="section-head">
+            <div>
+              <div className="num">{lang === "ko" ? "제품 근거" : "Product proof"}</div>
+              <h2>{lang === "ko" ? "이미 확인된 사실만 전면에 둡니다." : "Concrete evidence before broad claims."}</h2>
+            </div>
+            <p className="meta">
+              {lang === "ko"
+                ? "각 블록은 내부 리서치와 제품 구현 사실에 근거합니다. 공개 페이지에서는 출시 상태, 법무 리스크, 구현 범위를 과장하지 않습니다."
+                : "Each block is grounded in internal research and product implementation facts. Public copy does not overstate launch status, legal posture, or implementation scope."}
+            </p>
+          </div>
+          <div className="proof-grid">
+            {detail.proofs.map((proof) => (
+              <article className="proof-card" key={text(proof.k, "en")}>
+                <div className="k">{text(proof.k, lang)}</div>
+                <h3>{text(proof.h, lang)}</h3>
+                <p>{text(proof.body, lang)}</p>
+              </article>
+            ))}
+          </div>
         </section>
         <section className="detail-quote">
           <div className="shell">

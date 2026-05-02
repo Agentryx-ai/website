@@ -1,8 +1,25 @@
+import type { Metadata } from "next";
 import { getInitialLang } from "../lang";
 import { SitePage } from "../site";
 
-export const metadata = {
-  title: "Operating Thesis"
+const description =
+  "The operating thesis behind Agentryx AI: operator-led work, Codex-first execution, verification before velocity, and small real surfaces.";
+
+export const metadata: Metadata = {
+  title: "Operating Thesis",
+  description,
+  alternates: {
+    canonical: "/thesis"
+  },
+  openGraph: {
+    title: "Operating Thesis | Agentryx AI",
+    description,
+    url: "/thesis"
+  },
+  twitter: {
+    title: "Operating Thesis | Agentryx AI",
+    description
+  }
 };
 
 export default async function ThesisPage() {

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Agentryx AI</title>
+  <desc id="desc">Open Graph image for Agentryx AI, an operator-led AI product studio.</desc>
+  <rect width="1200" height="630" fill="#f4efe7"/>
+  <rect x="46" y="46" width="1108" height="538" rx="28" fill="#101820"/>
+  <path d="M120 138h420v12H120z" fill="#d35d3f"/>
+  <path d="M120 480h960v2H120z" fill="#f4efe7" opacity=".22"/>
+  <g fill="#f4efe7">
+    <text x="120" y="260" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="0">Agentryx AI</text>
+    <text x="120" y="332" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="400" letter-spacing="0">Operator-led AI product studio</text>
+    <text x="120" y="526" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="0">Agentryx · Itineva · ModuBoza · ReTalk</text>
+  </g>
+  <g transform="translate(880 154)">
+    <rect x="0" y="0" width="200" height="200" rx="24" fill="#d35d3f"/>
+    <rect x="32" y="40" width="136" height="16" fill="#101820"/>
+    <rect x="32" y="82" width="92" height="16" fill="#101820"/>
+    <rect x="32" y="124" width="136" height="16" fill="#101820"/>
+  </g>
+</svg>
