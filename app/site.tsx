@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { LANG_COOKIE, LANG_SOURCE_COOKIE, MANUAL_LANG_SOURCE } from "./lang-constants";
 import {
   Lang,
   PRODUCT_ORDER,
@@ -16,29 +17,50 @@ import {
 } from "./site-data";
 
 type Page = "home" | "about" | "thesis" | "press";
-const LANG_STORAGE_KEY = "ax_lang";
 const CONTACT_EMAIL = "merozemory@gmail.com";
 
 function isLang(value: string | null | undefined): value is Lang {
   return value === "ko" || value === "en";
 }
 
-function readCookieLang(): Lang | null {
+function readCookieValue(name: string) {
   if (typeof document === "undefined") return null;
-  const match = document.cookie.match(/(?:^|;\s*)ax_lang=(en|ko)(?:;|$)/);
-  return isLang(match?.[1]) ? match[1] : null;
+  const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = document.cookie.match(new RegExp(`(?:^|;\\s*)${escapedName}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+function readManualLangPreference(): Lang | null {
+  if (typeof window === "undefined") return null;
+
+  const storedSource = window.localStorage.getItem(LANG_SOURCE_COOKIE);
+  const storedLang = window.localStorage.getItem(LANG_COOKIE);
+  if (storedSource === MANUAL_LANG_SOURCE && isLang(storedLang)) return storedLang;
+
+  const cookieSource = readCookieValue(LANG_SOURCE_COOKIE);
+  const cookieLang = readCookieValue(LANG_COOKIE);
+  return cookieSource === MANUAL_LANG_SOURCE && isLang(cookieLang) ? cookieLang : null;
+}
+
+function detectBrowserLang(): Lang {
+  if (typeof navigator === "undefined") return "en";
+  const languages = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const primary = languages[0]?.toLowerCase().split("-")[0];
+  return primary === "ko" ? "ko" : "en";
 }
 
 function readInitialLang(fallback: Lang): Lang {
   if (typeof window === "undefined") return fallback;
-  const stored = window.localStorage.getItem(LANG_STORAGE_KEY);
-  return isLang(stored) ? stored : readCookieLang() ?? fallback;
+  const browserLang = detectBrowserLang();
+  return readManualLangPreference() ?? (fallback === "ko" || browserLang === "ko" ? "ko" : "en");
 }
 
 function persistLang(lang: Lang) {
   if (typeof document === "undefined") return;
-  window.localStorage.setItem(LANG_STORAGE_KEY, lang);
-  document.cookie = `${LANG_STORAGE_KEY}=${lang}; path=/; max-age=31536000; samesite=lax`;
+  window.localStorage.setItem(LANG_COOKIE, lang);
+  window.localStorage.setItem(LANG_SOURCE_COOKIE, MANUAL_LANG_SOURCE);
+  document.cookie = `${LANG_COOKIE}=${lang}; path=/; max-age=31536000; samesite=lax`;
+  document.cookie = `${LANG_SOURCE_COOKIE}=${MANUAL_LANG_SOURCE}; path=/; max-age=31536000; samesite=lax`;
 }
 
 function useLang(initialLang: Lang) {
@@ -51,7 +73,6 @@ function useLang(initialLang: Lang) {
   useEffect(() => {
     document.body.dataset.lang = lang;
     document.documentElement.lang = lang;
-    persistLang(lang);
   }, [lang]);
 
   const setLang = useCallback((nextLang: Lang) => {
@@ -202,7 +223,7 @@ function Hero({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
           </div>
         </div>
         <div className="hero-aside" aria-label="Studio facts">
-          <div className="stat-row"><span>Founded</span><span>2025</span></div>
+          <div className="stat-row"><span>Founded</span><span>2026</span></div>
           <div className="stat-row"><span>Team</span><span>{lang === "ko" ? "운영자 1인 + 에이전트" : "1 operator + agents"}</span></div>
           <div className="stat-row"><span>HQ</span><span>{lang === "ko" ? "서울" : "Seoul, KR"}</span></div>
           <div className="stat-row"><span>Stack</span><span>Codex · Agentryx</span></div>
