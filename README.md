@@ -1,6 +1,7 @@
 # Agentryx AI Website
 
-Static first draft for `Agentryx-ai.com`.
+Next.js implementation for `Agentryx-ai.com`, based on the Claude Design mockup
+from `Agentryx-ai.zip`.
 
 ## Product Scope
 
@@ -14,6 +15,11 @@ The public product set is intentionally limited to:
 Do not add the other research projects to the public company website without a
 separate product-scope decision.
 
-## Preview
+## Development
 
-Open `index.html` in a browser.
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
