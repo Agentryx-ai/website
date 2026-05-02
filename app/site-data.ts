@@ -456,8 +456,8 @@ export const productDetails: Record<string, {
       }
     ],
     quote: {
-      en: "If a system cannot explain who is signed in right now, it should not handle subscriptions.",
-      ko: "지금 누가 로그인되어 있는지 설명하지 못하는 시스템이라면 구독을 다뤄서는 안 됩니다."
+      en: "A solo streaming subscription should be built for one viewer, not priced like a household.",
+      ko: "혼자 보는 OTT 구독은 가구 단위 가격이 아니라, 한 사람에게 맞춘 선택지여야 합니다."
     }
   },
   retalk: {
