@@ -14,6 +14,10 @@ README는 Itineva를 "AI 기반 여행 일정 웹사이트 자동 생성 플랫�
 
 코드 기준으로는 프로젝트/런/버전 저장, Google Places 기반 장소 보강, Google Routes 기반 동선 검증, 공유 페이지, 갤러리, 결제/초대, 피드백 채팅, 섹션 재생성 등 제품 기능이 상당히 들어 있다.
 
+초기 current 문서는 Run 단일 모델을 지향하지만, 현재 코드에는 `Version` 모델이 도입되어 있다. `Project`는 `featured_version_id`를 갖고, `Run`은 `version_id`에 연결되며, publish/feature/share/import 흐름은 Version을 기준으로 동작한다.
+
+Share/Gallery 구현은 legacy `mode: public|secret|oauth`보다 `visibility: unlisted|public` 중심으로 진행되어 있다. public gallery, published version dropdown, imported itinerary attribution, view/import count, `/s/:slug` SSR, OG short/full image endpoint가 확인된다.
+
 ## 3. 대상 사용자
 
 문서상 세그먼트:
@@ -35,7 +39,7 @@ README는 Itineva를 "AI 기반 여행 일정 웹사이트 자동 생성 플랫�
 - 회원가입, 비밀번호 인증, Google OAuth
 - 다단계 여행 입력
 - 초안 질문 SSE streaming
-- 단일 호출 또는 3단계 일정 생성
+- Stage A skeleton partial commit, Stage B day-event parallel generation, Stage C enrichment, Stage D autofix/watchdog
 - LLM Gateway와 다중 provider adapter
 - Google Places 기반 장소 보강
 - Google Routes 기반 동선 검증
@@ -43,11 +47,13 @@ README는 Itineva를 "AI 기반 여행 일정 웹사이트 자동 생성 플랫�
 - 게시, 공유, 비공개화
 - 공개 갤러리
 - 공유 일정 가져오기
+- imported itinerary attribution, view/import count, published version dropdown
 - 피드백 채팅
 - 이벤트 대안 교체
 - 섹션 재생성
 - Stripe Pro 결제
 - 초대 티켓
+- signup magic link, password login/reset, Google OAuth, nickname update
 - 관리자/베타 피드백 라우터
 
 ## 5. 기술 스택/구현 자산
@@ -91,8 +97,12 @@ README는 Itineva를 "AI 기반 여행 일정 웹사이트 자동 생성 플랫�
 
 - 데이터 계약 문서는 "Run만 있고 Version은 없다"고 쓰지만 코드에는 `Version` 모델과 `Run.version_id`가 있다.
 - Vision/가격 계획 문서는 결제/초대를 후순위 또는 제한 범위로 설명하지만 코드에는 Stripe와 invite 흐름이 이미 들어 있다.
+- Auth/Billing/Invite가 구현되어 있지만 이것이 실제 결제 출시 또는 법적 운영 상태를 의미하지는 않는다.
 - BYOK는 문서/스키마상 개념은 있으나 완성된 사용자 키 관리 흐름은 확인되지 않았다.
-- 공유 모드 중 `secret`/`oauth`는 TODO로 보인다.
+- 공유 모드 중 `secret`/`oauth`는 TODO/legacy로 보인다. 공개 설명에서는 구현 완료로 쓰지 않는다.
+- roadmap의 OSM/web-search verification worker, full alternatives UX, BYOK/org/seat 모델, real Prometheus metrics는 아직 부분 구현 또는 미구현으로 봐야 한다.
+- architecture 문서는 provider adapter를 OpenAI/Anthropic/Azure로 쓰지만 현재 config는 OpenAI/Anthropic/Gemini다.
+- staged generation plan은 Stage B day failure를 부분 실패/재시도 가능처럼 설계하지만, 현재 source는 day event exception에서 run 전체를 failed 처리한다.
 - `/metrics`는 placeholder 성격이다.
 - Makefile의 backend mypy는 실패해도 통과하는 설정이 보인다.
 - 외부 API 키가 없으면 LLM/Resend/Google/Stripe 기능이 제한된다.
@@ -107,4 +117,10 @@ README는 Itineva를 "AI 기반 여행 일정 웹사이트 자동 생성 플랫�
 - `itineva/web/package.json`
 - `itineva/app/llm/gateway.py`
 - `itineva/app/routers/projects.py`
+- `itineva/app/routers/share.py`
+- `itineva/app/routers/gallery.py`
+- `itineva/app/routers/billing.py`
+- `itineva/app/routers/invites.py`
+- `itineva/app/db/models/version.py`
+- `itineva/app/db/models/run.py`
 - `itineva/web/src/routes/MarketingPage.tsx`

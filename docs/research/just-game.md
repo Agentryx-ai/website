@@ -36,6 +36,8 @@ README는 "멸망이 확정된 세계에서 환생을 반복하는 생존 디펜
 - headless Python console prototype
 - Godot 4 C# prototype
 - xUnit/seed sweep/AI QA 설계
+- 최신 SSOT 기준으로는 Python 1D simulator가 RL/training의 단일 기준이 아니다. decision log는 `JustGame.Core` .NET 8 headless simulator를 기준으로 삼는 방향을 기록한다.
+- Python sim, genetic algorithm, Optuna, SB3 등은 보조 실험과 QA tooling으로 존재한다. 제품/기술 설명에서는 "simulation-first"를 유지하되 기준 runtime을 문서별로 구분해야 한다.
 - ScenarioGen, PlayerBot, BalanceAI, FuzzBot, RegressBot 개념
 
 ## 5. 기술 스택/구현 자산
@@ -47,6 +49,8 @@ README는 "멸망이 확정된 세계에서 환생을 반복하는 생존 디펜
 - 일부 Unreal Engine 5.5 prototype
 - deterministic simulation first
 - CSS-first UI 방향
+- `JustGame.Core` .NET 8 headless simulator와 Godot presentation layer를 분리하는 방향
+- Python 기반 RL/optimizer tooling과 Unreal prototype은 보조/실험 트랙
 
 대표 자산:
 
@@ -74,6 +78,9 @@ README는 "멸망이 확정된 세계에서 환생을 반복하는 생존 디펜
 - README의 GodSelectScene 흐름은 최신 체크리스트에서 제거된 것으로 보인다.
 - Console/Godot은 상당 부분 구현된 것으로 보이나 Unreal은 부분 구현 상태로 보인다.
 - 공개 사이트에 올릴 경우 "출시 게임"인지 "개발 중 게임/R&D"인지 분명히 해야 한다.
+- 최신 SSOT 기준 BM은 "P2W 금지/무과금 완주 가능"을 유지하면서도 신규 캐릭터 획득을 gacha-only로 전환한 상태다. 단, MVP 범위는 StoreScene gacha tab shell 수준이고 실제 gacha logic, pickup detail, season/ranking monetization은 post-MVP 또는 TBD로 분리되어 있다.
+- README와 오래된 Godot verification의 TitleScene/GodSelectScene 흐름은 stale로 봐야 한다. PRD와 MVP checklist 기준으로는 HomeScene hub가 기준이며 GodSelectScene은 제거되었고, god은 사전 선택이 아니라 플레이 행동 기반으로 등장한다.
+- 오래된 audit/verification 수치가 있더라도 공개 사이트에서는 최신 SSOT checklist를 우선해야 한다. 완성/출시가 아니라 prototype verification 상태로 표현하는 것이 안전하다.
 
 ## 8. 대표 근거
 
@@ -81,6 +88,10 @@ README는 "멸망이 확정된 세계에서 환생을 반복하는 생존 디펜
 - `just-game/docs/.ssot/PRD.md`
 - `just-game/docs/.ssot/architecture.md`
 - `just-game/docs/.ssot/contracts/game-domain-contract-v2.md`
+- `just-game/docs/.ssot/decisions/decision-log.md`
 - `just-game/docs/.ssot/MVP-FEATURE-CHECKLIST.md`
+- `just-game/docs/phases/1-mvp/CHECKLIST.md`
 - `just-game/prototypes/console-python-v2/README.md`
 - `just-game/prototypes/godot/JustGame/VERIFICATION.md`
+- `just-game/sim/rl/justgame_env.py`
+- `just-game/sim/agents/placement_optuna.py`

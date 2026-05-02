@@ -34,6 +34,9 @@ Eagle Eye Clone은 원격 센서가 본 사람의 3D 골격을 shared world 좌�
 - MacBook 또는 향후 Quest 화면에 skeleton overlay
 - Option C: iPhone USB를 MacBook이 받아 ZMQ로 서버에 relay
 - Record3D, ARKit, metric depth 관련 실험
+- 2026-04-15 기준 redesign 승인과 refactor 완료 기록이 있으나, GPU/camera/iPhone/Quest hardware smoke는 수동 검증이 필요하다고 문서화되어 있다.
+- Option C iPhone network relay와 anchoring path는 구현/테스트/배포 흔적이 있지만, Record3D USB, iPhone path, end-to-end hardware validation은 완료 주장 대신 조건부 상태로 둬야 한다.
+- 최신 plan 기준 messaging은 MQTT 확정이 아니라 ZMQ PUB/SUB 기본, MQTT 선택지다. Quest2/Unity path는 iPhone anchoring과 publisher integration 이후 단계로 제한된다.
 
 ## 5. 기술 스택/구현 자산
 
@@ -84,6 +87,9 @@ Eagle Eye Clone은 원격 센서가 본 사람의 3D 골격을 shared world 좌�
 - USB 케이블/실동작 검증 대기 상태가 문서에 남아 있다.
 - 최신 코드 주석과 일부 문서의 MASt3R 중심 설명이 동기화되지 않은 것으로 보인다.
 - dual-use와 프라이버시 메시징 리스크가 크다.
+- `docs/final.md`는 MQTT/Quest 흐름을 목표 아키텍처처럼 설명하지만 최신 Plan 06/07은 ZMQ 기본, MQTT 선택, Quest는 이후 단계라고 제한한다.
+- accuracy 관련 표현은 보수적으로 써야 한다. anchor pipeline은 대형 좌표 오류를 줄인 기록이 있지만, DAv2 near-field depth bias와 iPhone LiDAR shoulder Z asymmetry가 남아 있다.
+- `docs/anduril` 쪽은 군사용 clone/DIY 재현 표현이 강하다. 공개 웹사이트에는 그대로 옮기지 말고 "multi-sensor AR alignment/prototyping research"로 추상화해야 한다.
 
 ## 8. 대표 근거
 
@@ -91,6 +97,9 @@ Eagle Eye Clone은 원격 센서가 본 사람의 3D 골격을 shared world 좌�
 - `eagle-eye-clone/docs/status.md`
 - `eagle-eye-clone/docs/final.md`
 - `eagle-eye-clone/docs/plans/redesign-2026-04-15.md`
+- `eagle-eye-clone/docs/plans/06-mqtt-networking.md`
+- `eagle-eye-clone/docs/plans/07-quest2-ar-rendering.md`
 - `eagle-eye-clone/src/compute_node/server.py`
 - `eagle-eye-clone/src/sensing_node/client.py`
 - `eagle-eye-clone/src/compute_node/anchoring.py`
+- `eagle-eye-clone/src/compute_node/network_iphone_receiver.py`

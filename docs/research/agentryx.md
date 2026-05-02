@@ -2,17 +2,19 @@
 
 - 저장소: `agentryx`
 - 사이트 반영 레벨: Primary
-- 상태 판단: 핵심 회사 플랫폼. 다만 문서상 "MVP 설계 확정", "PoC 통과", "vertical slice MVP" 표현이 섞여 있어 공개 전 성숙도 표현 정리가 필요하다.
+- 상태 판단: 핵심 회사 플랫폼. 최신 PRD/SRS/ADR 기준은 Lead DM보다 단일 Team Channel 중심이며, 구현은 일부 MVP slice가 들어갔지만 end-to-end gap이 남아 있다.
 
 ## 1. 한 줄 정의
 
-Agentryx는 사용자가 Lead/CEO 에이전트에게 메시지를 보내면, Lead가 팀원 에이전트를 구성하고 작업을 분해해 병렬 실행, 검증, 승인, PR 흐름까지 관리하는 Codex-first Agent Company 플랫폼이다.
+Agentryx는 사용자가 단일 Team Channel에 메시지를 올리면 보조 라우터가 Lead/Teammate 수신자를 결정하고, idle 수신자는 wakeup, active 수신자는 cycle-boundary inbox로 처리하는 Codex-first Agent Company 플랫폼이다.
 
 ## 2. 확인된 제품/서비스
 
-저장소는 Agentryx를 "Agent Teams and Agent Companies as a platform"으로 정의한다. 핵심 모델은 사용자의 단일 메시지를 Lead가 해석하고, Teammate를 provisioning하며, Task DAG와 acceptance criteria를 기반으로 작업을 나누는 구조다. Control Plane은 회사 상태, 태스크, 승인, 메시지, 아티팩트, 메모리를 보유하고, Runner는 Codex CLI `app-server`를 실행하는 방식이다.
+저장소는 Agentryx를 "Agent Teams and Agent Companies as a platform"으로 정의한다. 최신 PRD/SRS/ADR의 canonical UX는 `TEAM_CHAT` 단일 feed, @mention extraction, auxiliary LLM router, target-only mailbox delivery다. Teammate도 Team Channel에서 사용자에게 응답할 수 있지만, task assignment/decomposition 권한은 Lead-only로 제한된다.
 
-README의 대표 흐름은 다음과 같다.
+Control Plane은 회사 상태, 태스크, 승인, 메시지, 아티팩트, 메모리를 보유하고, Runner는 Codex CLI `app-server`를 실행하는 방식이다.
+
+README에는 Lead DM 중심 흐름과 "PoC 대기" 표현이 남아 있으나, 이는 최신 Team Channel ADR과 일부 충돌한다. stale 가능성이 있는 대표 흐름은 다음과 같다.
 
 - 사용자 DM 수신
 - Lead가 Tier를 제안하고 서버 rule이 재검증
@@ -32,7 +34,10 @@ README의 대표 흐름은 다음과 같다.
 
 ## 4. 핵심 기능/워크플로
 
-- DM 기반 Lead 지시와 cycle-boundary inbox injection
+- Team Channel 기반 사용자 지시와 cycle-boundary inbox injection
+- @mention/LLM router 기반 수신자 결정, explicit mention 실패 시 Lead fallback
+- idle agent `wake_agent`, active agent cycle-boundary inbox 처리
+- Teammate의 Team Channel 응답 허용, 단 task assignment/decomposition은 Lead-only
 - Lead의 teammate provisioning
 - Task DAG, dependency, scope, tier, complexity, acceptance criteria
 - 2-layer verification: deterministic script + LLM semantic review
@@ -41,6 +46,7 @@ README의 대표 흐름은 다음과 같다.
 - topology template: tree, hub-and-spoke, fanout, committee, triage, pair-loop, temporary pod
 - per-agent workspace와 Git/PR 기반 협업
 - multitenancy: `CompanyScopedContext`, Prisma middleware, company-scoped row
+- TeamChannelDigest schema/read path. 다만 writer/compactor는 아직 확인이 필요하다.
 
 ## 5. 기술 스택/구현 자산
 
@@ -83,6 +89,11 @@ README의 대표 흐름은 다음과 같다.
 ## 7. 오픈 질문/리스크
 
 - README 앞부분의 "MVP 설계 확정, PoC 대기"와 뒤쪽의 "PoC 4종 통과, vertical slice MVP 도달"이 충돌한다.
+- README의 Lead DM 중심 설명은 최신 PRD/SRS/ADR 0016-0018의 Team Channel primary 방향과 맞지 않는다.
+- Implementation matrix 기준 team-channel Phase 5는 구현 및 unit/API e2e 커버가 있으나, 전체 architecture 01-03 end-to-end는 미완료다.
+- 주요 gap은 checkpoint cadence/restore proof, topology e2e, GitHub PR collaboration, OTel export, storage/S3 retention, MessageReceipt cutover, production security hardening, TeamChannelDigest writer/compactor다.
+- `docs/superpowers` team-channel spec은 Draft/future ADR 상태와 router model 표기 혼선이 있고, 실제 ADR 0016-0018은 Accepted다.
+- legacy DM endpoint 410 전환은 문서상 계획이나 코드에는 `DM_AGENT` path가 남아 있다.
 - 일부 package README는 scaffold 상태를 말하지만 실제 코드가 있는 영역도 있다.
 - Codex CLI `app-server` 의존성이 큰 핵심 리스크다.
 - self-host Runner 운영 부담이 사용성 장벽이 될 수 있다.
@@ -94,6 +105,12 @@ README의 대표 흐름은 다음과 같다.
 - `agentryx/docs/PRD.md`
 - `agentryx/docs/SRS.md`
 - `agentryx/docs/GLOSSARY.md`
+- `agentryx/docs/architecture/IMPLEMENTATION_MATRIX.md`
+- `agentryx/docs/decisions/0016-team-channel-as-primary.md`
+- `agentryx/docs/decisions/0017-auxiliary-routing-llm.md`
+- `agentryx/docs/decisions/0018-teammate-team-channel-bidirectional.md`
+- `agentryx/packages/messaging/src/router.ts`
+- `agentryx/apps/web/src/lib/team-channel-dispatch.ts`
 - `agentryx/apps/runner/src/daemon.ts`
 - `agentryx/packages/codex-adapter/src/adapter.ts`
 - `agentryx/packages/db/prisma/schema.prisma`
