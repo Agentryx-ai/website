@@ -17,7 +17,7 @@ import {
 } from "./site-data";
 
 type Page = "home" | "about" | "thesis" | "press";
-const CONTACT_EMAIL = "merozemory@gmail.com";
+const CONTACT_EMAIL = "support@agentryx-ai.com";
 
 function isLang(value: string | null | undefined): value is Lang {
   return value === "ko" || value === "en";

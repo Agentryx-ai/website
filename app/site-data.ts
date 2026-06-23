@@ -30,7 +30,7 @@ export const i18n = {
     homeH1B: "Four products.",
     homeH1C: "The work runs on agents.",
     homeLede:
-      "Agentryx AI is a one-person studio in Seoul. Two of the four — Itineva and ReTalk — are live right now, no signup. Agents do the building, reviewing, shipping, and operating; one operator decides what ships.",
+      "Agentryx AI is a one-person studio in Seoul. Two of the four — Itineva and ReTalk — are live right now. Agents do the building, reviewing, shipping, and operating; one operator decides what ships.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
@@ -43,7 +43,7 @@ export const i18n = {
     ctaEyebrow: "See for yourself",
     ctaHeading: "Don't take our word for it — use the products.",
     ctaBody:
-      "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a KakaoTalk chat restorer in beta. Go open one — there's nothing to sign up for. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
+      "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a KakaoTalk chat restorer in beta. Go open one. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
     aboutLabel: "About · The studio",
     aboutH1A: "A small studio,",
     aboutH1B: "running like an AI company should.",
@@ -83,7 +83,7 @@ export const i18n = {
     homeH1B: "네 개의 제품.",
     homeH1C: "일은 에이전트가 합니다.",
     homeLede:
-      "Agentryx AI는 서울의 1인 스튜디오입니다. 네 제품 중 Itineva와 리톡은 지금 바로 쓸 수 있고, 가입도 필요 없습니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 하고, 무엇을 낼지는 운영자 한 사람이 정합니다.",
+      "Agentryx AI는 서울의 1인 스튜디오입니다. 네 제품 중 Itineva와 리톡은 지금 바로 쓸 수 있습니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 하고, 무엇을 낼지는 운영자 한 사람이 정합니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
@@ -95,7 +95,7 @@ export const i18n = {
     notesHeading: "우리가 딛고 서 있는 세 가지 관찰.",
     ctaEyebrow: "직접 확인하세요",
     ctaHeading: "말로 믿지 말고, 직접 써 보세요.",
-    ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 가입도 필요 없습니다. 써 보고 쓸 만했거나 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
+    ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 써 보고 쓸 만했거나 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
     aboutLabel: "회사 · 스튜디오",
     aboutH1A: "작은 스튜디오,",
     aboutH1B: "AI 회사답게 운영합니다.",
@@ -174,8 +174,8 @@ export const principles = [
       ko: "운영자가 우선순위를 쥐고, 에이전트는 잘 정의된 좁은 범위에서 일을 처리합니다."
     },
     long: {
-      en: "We do not believe in committees of agents arguing through a chat log until something ships. One operator owns the roadmap, the design, and the merge button; agents execute against a small surface where work can be verified before it is trusted.",
-      ko: "여러 에이전트가 채팅 로그에서 합의에 이를 때까지 갑론을박하는 방식은 신뢰하지 않습니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 검증할 수 있는 좁은 범위에서 일을 처리합니다."
+      en: "When agents just debate in a chat log until they agree, the evidence says most of the gain comes from the vote, not the debate — and a confident, wrong consensus is a real failure mode. So we bet the other way: one operator owns the roadmap, the design, and the merge button; agents work in parallel against a small, well-specified surface; and nothing ships because everyone agreed — only because it was verified.",
+      ko: "에이전트들을 채팅 로그에서 합의할 때까지 토론하게 두면, 이득은 대개 토론이 아니라 다수결에서 나온다는 게 지금까지의 근거입니다. 게다가 자신만만하게 틀린 합의로 수렴하기도 합니다. 그래서 우리는 반대로 겁니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 잘 정의된 좁은 범위에서 병렬로 일하며, 합의했기 때문이 아니라 검증을 통과했기 때문에 출시합니다."
     }
   },
   {
@@ -258,10 +258,10 @@ export const aboutStories = [
     }
   },
   {
-    h: { en: "Korean-first, English-fluent.", ko: "한국어 우선, 영어 능통." },
+    h: { en: "Plan to MVP in a month.", ko: "기획부터 MVP까지, 한 달." },
     p: {
-      en: "Two products are built for Korean users and platforms. Specs, support, and design copy are written in both languages from day one.",
-      ko: "두 제품은 한국 사용자와 한국 플랫폼을 겨냥해 만듭니다. 스펙·지원·디자인 카피는 처음부터 두 언어로 씁니다."
+      en: "Each product is scoped to go from plan to a shipped MVP in about a month — design, build, test, launch. ReTalk ran about 31 days end to end, ads and the payment-gateway application included.",
+      ko: "각 제품은 기획부터 MVP 출시까지, 설계·구현·테스트·런칭을 한 달 안에 끝내도록 잡습니다. 리톡은 광고 집행과 결제대행(PG) 신청까지 포함해 처음부터 끝까지 약 31일이 걸렸습니다."
     }
   },
   {
