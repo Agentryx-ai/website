@@ -173,6 +173,21 @@ export const principles = [
       en: "One operator owns priorities; agents execute against a small, well-specified surface.",
       ko: "운영자가 우선순위를 쥐고, 에이전트는 잘 정의된 좁은 범위에서 일을 처리합니다."
     },
+    // Principle I's "bet on verification, not consensus" claim (the `long` text
+    // below) is grounded in the multi-agent-debate evidence; last reviewed
+    // 2026-06-23 — re-check and update the copy if the research shifts. Sources:
+    //   • Multi-LLM-Agents Debate, ICLR 2025 blogpost — MAD doesn't reliably beat
+    //     a single agent; most gains come from majority voting, not the debate.
+    //     https://d2jud02ci9yv69.cloudfront.net/2025-04-28-mad-159/blog/mad/
+    //   • "Voting or Consensus?" arXiv 2502.19130 — majority pressure can yield a
+    //     confident, wrong consensus and suppress independent correction.
+    //     https://arxiv.org/pdf/2502.19130
+    //   • Cognition "Don't Build Multi-Agents" vs Anthropic "How we built our
+    //     multi-agent research system" (orchestrator-workers, +90.2% on research
+    //     evals) — multi-agent pays off for breadth/orchestration + verification,
+    //     not for agents debating to consensus (which is what Agentryx avoids:
+    //     a Lead plus workers plus verification, not a consensus vote).
+    //     https://www.anthropic.com/engineering/built-multi-agent-research-system
     long: {
       en: "When agents just debate in a chat log until they agree, the evidence says most of the gain comes from the vote, not the debate — and a confident, wrong consensus is a real failure mode. So we bet the other way: one operator owns the roadmap, the design, and the merge button; agents work in parallel against a small, well-specified surface; and nothing ships because everyone agreed — only because it was verified.",
       ko: "에이전트들을 채팅 로그에서 합의할 때까지 토론하게 두면, 이득은 대개 토론이 아니라 다수결에서 나온다는 게 지금까지의 근거입니다. 게다가 자신만만하게 틀린 합의로 수렴하기도 합니다. 그래서 우리는 반대로 겁니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 잘 정의된 좁은 범위에서 병렬로 일하며, 합의했기 때문이 아니라 검증을 통과했기 때문에 출시합니다."
