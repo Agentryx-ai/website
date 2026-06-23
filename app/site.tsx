@@ -354,15 +354,17 @@ function Home({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
             <span className="eyebrow"><span className="dot" /> {t.ctaEyebrow}</span>
             <h2>{t.ctaHeading}</h2>
             <div className="actions">
+              <Link className="btn invert primary" href="/#products">
+                {t.seeProducts} <span className="arrow">→</span>
+              </Link>
               <Link
-                className="btn invert primary"
+                className="btn invert"
                 href="/press#contact"
                 data-analytics-event="contact_clicked"
                 data-analytics-contact-type="email"
               >
-                {t.contact} <span className="arrow">→</span>
+                {t.contact}
               </Link>
-              <Link className="btn invert" href="/thesis">{t.readThesis}</Link>
             </div>
           </div>
           <p>{t.ctaBody}</p>
@@ -389,7 +391,7 @@ function AboutPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         </div>
       </section>
       <StoryList lang={lang} stories={aboutStories} />
-      <ContactBlock lang={lang} t={t} title={lang === "ko" ? "분기마다 소수의 파트너만 받습니다." : "We take a small number of partners each quarter."} />
+      <ContactBlock lang={lang} t={t} title={lang === "ko" ? "질문은 운영자에게 직접." : "Questions go straight to the operator."} />
     </main>
   );
 }

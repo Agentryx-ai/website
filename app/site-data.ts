@@ -26,11 +26,11 @@ export const i18n = {
     statusPoc: "Internal PoC",
     statusDirection: "Direction",
     homeLabel: "Operator-led · Agent-first · Seoul, 2026",
-    homeH1A: "We automate almost every workflow",
-    homeH1B: "with AI",
-    homeH1C: "to build and run AI products.",
+    homeH1A: "Nearly the whole company",
+    homeH1B: "runs on agents.",
+    homeH1C: "One person still chooses.",
     homeLede:
-      "Agentryx AI is a small operator-led studio. Almost every workflow — building, reviewing, shipping, operating — runs on AI agents, and we lean on AI to design those workflows too. Agentryx is the environment we built to run the studio this way.",
+      "Agentryx AI is a one-person studio in Seoul. The building, reviewing, shipping, and operations run on AI agents — and we use AI to design those workflows in the first place. Agentryx is the tooling we built so a single operator can run a whole company, not just prompt a model.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
@@ -40,10 +40,10 @@ export const i18n = {
     thesisMeta: "Four operating principles that shape every product, every PR, every standup.",
     notesNum: "03 — Why now",
     notesHeading: "Three observations we are building against.",
-    ctaEyebrow: "Working with us",
-    ctaHeading: "We take on a small number of partners each quarter.",
+    ctaEyebrow: "See for yourself",
+    ctaHeading: "Don't take our word for it — use the products.",
     ctaBody:
-      "If you operate a real business and want a studio that ships against your KPIs, not a deck, we should talk.",
+      "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a Kakao-chat restorer in beta. Go open one — there's nothing to sign up for. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
     aboutLabel: "About · The studio",
     aboutH1A: "A small studio,",
     aboutH1B: "running like an AI company should.",
@@ -53,7 +53,7 @@ export const i18n = {
     thesisH1A: "Four principles.",
     thesisH1B: "Every product, every PR, every standup.",
     thesisLede:
-      "These are the rules we run the studio by. They are public so partners and customers can hold us to them.",
+      "These are the rules we run the studio by — public, so anyone who uses our products can hold us to them.",
     pressLabel: "Press · Contact",
     pressH1: "Press, contact, and the things we will and won't say.",
     pressLede:
@@ -79,11 +79,11 @@ export const i18n = {
     statusPoc: "내부 PoC",
     statusDirection: "방향성",
     homeLabel: "운영자 주도 · 에이전트 우선 · 서울, 2026",
-    homeH1A: "거의 모든 워크플로를",
-    homeH1B: "AI로 자동화해",
-    homeH1C: "AI 제품을 만들고 운영합니다.",
+    homeH1A: "회사의 거의 모든 일은",
+    homeH1B: "AI 에이전트가 합니다.",
+    homeH1C: "고르는 건 여전히 사람 한 명입니다.",
     homeLede:
-      "Agentryx AI는 운영자가 이끄는 작은 스튜디오입니다. 만들고, 리뷰하고, 출시하고, 운영하는 거의 모든 워크플로를 AI 에이전트로 돌리며, 그 워크플로를 설계하는 일에도 AI를 적극 활용합니다. Agentryx는 스튜디오를 이렇게 운영하려고 우리가 만든 환경입니다.",
+      "Agentryx AI는 서울의 1인 스튜디오입니다. 만들고, 리뷰하고, 출시하고, 매일 운영하는 일을 AI 에이전트가 맡습니다. 그 워크플로를 설계하는 일부터 AI와 함께합니다. Agentryx는 운영자 한 사람이 프롬프트만 던지는 데 그치지 않고 회사 하나를 통째로 굴리도록, 우리가 직접 만든 도구입니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
@@ -93,9 +93,9 @@ export const i18n = {
     thesisMeta: "모든 제품, 모든 PR, 모든 스탠드업을 관통하는 네 가지 원칙입니다.",
     notesNum: "03 — 왜 지금인가",
     notesHeading: "우리가 베팅하는 세 가지 관찰.",
-    ctaEyebrow: "함께하기",
-    ctaHeading: "분기마다 소수의 파트너만 받습니다.",
-    ctaBody: "데크가 아니라 KPI에 대고 출시할 스튜디오가 필요하다면 이야기 나눠 봅시다.",
+    ctaEyebrow: "직접 확인하세요",
+    ctaHeading: "말로 믿지 말고, 직접 써 보세요.",
+    ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 가입도 필요 없습니다. 써 보고 괜찮거나, 에이전트로 회사를 굴리는 이야기가 궁금하면, 메일은 운영자가 직접 읽습니다.",
     aboutLabel: "회사 · 스튜디오",
     aboutH1A: "작은 스튜디오,",
     aboutH1B: "AI 회사답게 운영합니다.",
@@ -105,7 +105,7 @@ export const i18n = {
     thesisH1A: "네 가지 원칙.",
     thesisH1B: "모든 제품, 모든 PR, 모든 스탠드업.",
     thesisLede:
-      "스튜디오를 굴리는 규칙입니다. 파트너와 고객이 우리에게 책임을 물을 수 있도록 공개합니다.",
+      "스튜디오를 굴리는 규칙입니다. 제품을 쓰는 사람이라면 누구나 우리에게 책임을 물을 수 있도록 공개합니다.",
     pressLabel: "프레스 · 연락",
     pressH1: "프레스, 연락, 우리가 답할 것과 답하지 않을 것.",
     pressLede:
@@ -265,10 +265,10 @@ export const aboutStories = [
     }
   },
   {
-    h: { en: "Partnerships before customers.", ko: "고객보다 파트너 먼저." },
+    h: { en: "Proof, not promises.", ko: "약속 말고, 결과로." },
     p: {
-      en: "Each quarter we take on a small number of design and platform partners who want to ship serious AI products.",
-      ko: "분기마다 진지한 AI 제품을 출시하려는 소수의 디자인·플랫폼 파트너만 받습니다."
+      en: "The thesis is public and the products are real. We'd rather be measured by what ships than by what we promise.",
+      ko: "제품은 이미 나와 있고, 가설도 공개합니다. 약속이 아니라 출시한 결과로 평가받는 편이 낫습니다."
     }
   }
 ];
