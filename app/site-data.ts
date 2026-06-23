@@ -155,12 +155,13 @@ export const products = [
     id: "retalk",
     num: "04",
     accent: "moss",
-    status: "direction",
+    status: "candidate",
     name: { en: "ReTalk", ko: "리톡" },
     deck: {
-      en: "A local-first desktop app that finds, previews, unlocks, searches, and exports conversation records on your PC.",
-      ko: "PC 안의 대화 기록을 찾고, 미리 보고, 잠금을 풀고, 검색하고, 내보내는 로컬 우선 데스크탑 앱."
-    }
+      en: "A local-first desktop app that restores the KakaoTalk conversations already on your PC — read, search, and export — and backs up expiring photos for free. Now in beta.",
+      ko: "PC에 이미 남아 있는 카카오톡 대화를 복원해 열람·검색·내보내고, 사라질 사진은 무료로 자동 보관하는 로컬 우선 데스크탑 앱. 베타 운영 중."
+    },
+    siteUrl: "https://retalk.agentryx-ai.com/"
   }
 ];
 
@@ -541,46 +542,47 @@ export const productDetails: Record<string, {
   },
   retalk: {
     accent: "moss",
-    status: "direction",
+    status: "candidate",
     num: "04",
     name: { en: "ReTalk", ko: "리톡" },
+    siteUrl: "https://retalk.agentryx-ai.com/",
     tagline: {
       en: "Restore the conversations already on your PC.",
       ko: "내 PC에 이미 있는 대화를 되살립니다."
     },
     lede: {
-      en: "ReTalk is a local-first desktop app that finds, previews, unlocks, searches, and exports conversation records already sitting on the user's computer. Personal content stays on-device by default.",
-      ko: "리톡은 사용자의 PC에 이미 존재하는 대화 기록을 찾아내고, 미리 보고, 잠금을 풀고, 검색하고, 내보내는 로컬 우선 데스크탑 앱입니다. 개인 콘텐츠는 기본적으로 기기 안에 머뭅니다."
+      en: "ReTalk is a local-first desktop app that restores the KakaoTalk conversations already on your PC: find and preview what is recoverable, read and search the full history, export a clean archive, and auto-save expiring photos and videos for free. Chat content stays on the device by default.",
+      ko: "리톡은 PC에 이미 남아 있는 카카오톡 대화를 복원하는 로컬 우선 데스크탑 앱입니다. 복원 가능한 분량을 찾아 미리 보고, 전체 기록을 열람·검색하고, 깔끔한 아카이브로 내보내며, 사라질 사진·동영상은 무료로 자동 보관합니다. 대화 내용은 기본적으로 기기 안에 머뭅니다."
     },
     metrics: [
       { k: { en: "Posture", ko: "포지셔닝" }, v: { en: "Local-first by design", ko: "설계부터 로컬 우선" } },
-      { k: { en: "Network", ko: "네트워크" }, v: { en: "License/update only", ko: "라이선스·업데이트만" } },
-      { k: { en: "Phase 1", ko: "Phase 1" }, v: { en: "Korean general user", ko: "한국 일반 사용자" } },
-      { k: { en: "Stage", ko: "단계" }, v: { en: "Direction · in build", ko: "방향성 · 개발 중" } }
+      { k: { en: "Network", ko: "네트워크" }, v: { en: "Account · license · updates", ko: "계정·라이선스·업데이트" } },
+      { k: { en: "Platform", ko: "플랫폼" }, v: { en: "Windows (beta) · macOS soon", ko: "Windows(베타) · macOS 예정" } },
+      { k: { en: "Stage", ko: "단계" }, v: { en: "Beta · live", ko: "베타 · 운영 중" } }
     ],
     sections: [
       {
         k: { en: "01 — A restoration tool, not an analyzer", ko: "01 — 분석 도구가 아니라 복원 도구" },
-        h: { en: "Five verbs. No AI summary.", ko: "다섯 개의 동사. AI 요약은 없습니다." },
+        h: { en: "Restore, read, search, export.", ko: "복원하고, 읽고, 검색하고, 내보냅니다." },
         body: {
-          en: "ReTalk's surface is five verbs: find local data, preview safely, unlock what is yours, search what is unlocked, and export a clean archive.",
-          ko: "리톡의 표면은 다섯 개의 동사입니다. 로컬 데이터 찾기, 안전한 미리 보기, 본인 권한 안에서 잠금 해제, 검색, 깔끔한 아카이브로 내보내기."
+          en: "ReTalk reads the KakaoTalk data already on the PC and rebuilds it into rooms you can read again, a history you can search across rooms, and an archive you can export as CSV, HTML, JSON, ZIP, or PDF. No AI summary, no cloud sync.",
+          ko: "리톡은 PC에 이미 있는 카카오톡 데이터를 읽어, 다시 읽을 수 있는 방별 대화와 여러 방을 가로지르는 검색, 그리고 CSV·HTML·JSON·ZIP·PDF로 내보낼 수 있는 아카이브로 되살립니다. AI 요약도, 클라우드 동기화도 없습니다."
         }
       },
       {
-        k: { en: "02 — Local-first on purpose", ko: "02 — 의도된 로컬 우선" },
-        h: { en: "Personal content does not leave your machine.", ko: "개인 콘텐츠는 기기를 떠나지 않습니다." },
+        k: { en: "02 — Free media backup before it expires", ko: "02 — 만료 전 무료 미디어 자동 보관" },
+        h: { en: "Save the photos before they disappear.", ko: "사진이 사라지기 전에 지켜냅니다." },
         body: {
-          en: "Indexing, restore, search, and export happen on-device. The server handles account, license, payment, update checks, and non-personal telemetry.",
-          ko: "인덱싱, 복원, 검색, 내보내기는 기기 안에서 일어납니다. 서버는 계정, 라이선스, 결제, 업데이트 확인, 비개인 텔레메트리만 다룹니다."
+          en: "KakaoTalk keeps shared photos and videos only briefly. ReTalk quietly backs up still-available media to the PC before that window closes — free, with no paid cloud subscription. It prevents loss; it does not recover media that has already expired.",
+          ko: "카카오톡은 주고받은 사진·동영상을 잠깐만 보관합니다. 리톡은 그 기간이 지나기 전에 아직 남아 있는 미디어를 조용히 내 PC에 보관합니다 — 무료로, 유료 클라우드 구독 없이. 사라지기 전에 지켜내는 것이며, 이미 만료된 미디어를 되살리지는 않습니다."
         }
       },
       {
         k: { en: "03 — Preview before paywall", ko: "03 — 결제 전 미리 보기" },
-        h: { en: "See what is recoverable before you decide.", ko: "결제 전에 무엇이 복원 가능한지 확인합니다." },
+        h: { en: "See what is recoverable before you pay.", ko: "결제 전에 무엇이 복원되는지 봅니다." },
         body: {
-          en: "The first-run flow reports recoverable profiles, rooms, messages, dates, and media before unlock. If nothing is recoverable, the app says so.",
-          ko: "첫 실행 흐름은 잠금 해제 전에 복원 가능한 프로필, 방, 메시지, 날짜, 미디어 수를 보여줍니다. 복원 가능한 것이 없다면 그렇게 말합니다."
+          en: "Download, preview counts, latest-message preview, and free media auto-backup need no payment. A one-time, 31-day, per-profile pass unlocks full reading, cross-room search, and export. Chat content, names, and media never leave the device.",
+          ko: "다운로드, 복원 가능 분량 확인, 최신 대화 미리보기, 무료 미디어 자동 보관은 결제가 필요 없습니다. 한 번 결제하는 프로필 1개·31일 이용권이 전체 열람·통합 검색·내보내기를 엽니다. 대화 내용·이름·미디어는 기기를 떠나지 않습니다."
         }
       }
     ],
@@ -589,24 +591,24 @@ export const productDetails: Record<string, {
         k: { en: "Local evidence", ko: "로컬 근거" },
         h: { en: "Personal content stays on-device by default.", ko: "개인 콘텐츠는 기본적으로 기기에 남습니다." },
         body: {
-          en: "The product direction limits server responsibility to account, payment, license, update checks, and non-personal telemetry, while message bodies and local paths stay off the service server.",
-          ko: "제품 방향은 서버 역할을 계정, 결제, 라이선스, 업데이트 확인, 비개인 텔레메트리로 제한하고 메시지 본문과 로컬 경로는 서비스 서버에 저장하지 않는다고 정합니다."
+          en: "Restore, read, search, and export all run on the user's PC. The service server is limited to account, payment and license, update checks, and non-personal stats; chat bodies, room names, contacts, and media stay off it. The one stored personal field is the user's own profile name, kept to bind a license to a profile.",
+          ko: "복원·열람·검색·내보내기는 모두 사용자 PC에서 실행됩니다. 서비스 서버는 계정, 결제·라이선스, 업데이트 확인, 비개인 통계로 역할이 제한되며 대화 본문·방 이름·연락처·미디어는 저장하지 않습니다. 저장하는 유일한 개인 정보는 라이선스를 프로필에 연결하기 위한 본인 프로필 이름입니다."
         }
       },
       {
         k: { en: "Workflow evidence", ko: "워크플로 근거" },
-        h: { en: "The first-run flow proves recoverability before unlock.", ko: "첫 실행에서 unlock 전 복원 가능성을 보여줍니다." },
+        h: { en: "The first run proves recoverability before unlock.", ko: "첫 실행에서 unlock 전 복원 가능성을 보여줍니다." },
         body: {
-          en: "Research identifies local discovery, legal authority confirmation, profile selection, controlled preview, paid unlock, local search, and export/reporting as the Phase 1 workflow.",
-          ko: "리서치는 로컬 탐지, 법적 권한 확인, 프로필 선택, 제한된 미리 보기, 유료 unlock, 로컬 검색, 내보내기/리포팅을 Phase 1 흐름으로 확인합니다."
+          en: "On first run ReTalk reports recoverable rooms, messages, dates, and media counts and shows a most-recent preview — before any payment. Segments the PC never received are marked as an unviewable gap rather than hidden.",
+          ko: "첫 실행에서 리톡은 결제 전에 복원 가능한 방·메시지·기간·미디어 수를 보여주고 최신 대화를 미리 보여줍니다. PC가 받지 못한 구간은 숨기지 않고 ‘표시할 수 없는 구간’으로 구분합니다."
         }
       },
       {
         k: { en: "Scope evidence", ko: "범위 근거" },
-        h: { en: "The product avoids unsupported recovery claims.", ko: "지원되지 않는 복구 보장은 피합니다." },
+        h: { en: "The product avoids unsupported claims.", ko: "지원되지 않는 보장은 피합니다." },
         body: {
-          en: "The public copy avoids spyware, third-party monitoring, official affiliation, AI analysis, and guaranteed deleted-message recovery because the product facts explicitly warn against those claims.",
-          ko: "제품 근거가 경고하는 스파이웨어, 제3자 모니터링, 공식 제휴, AI 분석, 삭제 메시지 복구 보장 표현을 공개 카피에서 배제합니다."
+          en: "ReTalk requires the target KakaoTalk account to be logged in on the same PC, restores only the segments the PC holds, and does not guarantee recovery of deleted or expired content. It is an independent tool, not affiliated with KakaoTalk.",
+          ko: "리톡은 대상 카카오톡 계정이 같은 PC에 로그인돼 있어야 동작하고, PC에 남아 있는 구간만 복원하며, 삭제·만료된 내용의 복구를 보장하지 않습니다. 카카오와 제휴하지 않은 독립 도구입니다."
         }
       }
     ],
