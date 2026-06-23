@@ -3,7 +3,7 @@ import { getInitialLang } from "../lang";
 import { SitePage } from "../site";
 
 const description =
-  "The operating thesis behind Agentryx AI: operator-led work, Codex-first execution, verification before velocity, and small real surfaces.";
+  "The operating thesis behind Agentryx AI: operator-led work, agent-first execution, verification before velocity, and small real surfaces.";
 
 export const metadata: Metadata = {
   title: "Operating Thesis",

@@ -248,7 +248,7 @@ function Hero({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
           <div className="stat-row"><span>Founded</span><span>2026</span></div>
           <div className="stat-row"><span>Team</span><span>{lang === "ko" ? "운영자 1인 + 에이전트" : "1 operator + agents"}</span></div>
           <div className="stat-row"><span>HQ</span><span>{lang === "ko" ? "서울" : "Seoul, KR"}</span></div>
-          <div className="stat-row"><span>Stack</span><span>Codex · Agentryx</span></div>
+          <div className="stat-row"><span>Stack</span><span>Claude · Agentryx</span></div>
         </div>
       </div>
     </section>

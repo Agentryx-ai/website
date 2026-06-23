@@ -25,12 +25,12 @@ export const i18n = {
     statusCandidate: "Core candidate",
     statusPoc: "Internal PoC",
     statusDirection: "Direction",
-    homeLabel: "Operator-led · Codex-first · Seoul, 2026",
-    homeH1A: "We run",
-    homeH1B: "AI products",
-    homeH1C: "the way an AI company should run itself.",
+    homeLabel: "Operator-led · Agent-first · Seoul, 2026",
+    homeH1A: "We automate almost every workflow",
+    homeH1B: "with AI",
+    homeH1C: "to build and run AI products.",
     homeLede:
-      "Agentryx AI is a small operator-led studio. We built our own development environment, Agentryx, so an AI operator can ship products with agents instead of merely prompting them.",
+      "Agentryx AI is a small operator-led studio. Almost every workflow — building, reviewing, shipping, operating — runs on AI agents, and we lean on AI to design those workflows too. Agentryx is the environment we built to run the studio this way.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
@@ -78,12 +78,12 @@ export const i18n = {
     statusCandidate: "코어 후보",
     statusPoc: "내부 PoC",
     statusDirection: "방향성",
-    homeLabel: "운영자 주도 · Codex 우선 · 서울, 2026",
-    homeH1A: "AI 제품을",
-    homeH1B: "AI 회사답게",
-    homeH1C: "직접 운영합니다.",
+    homeLabel: "운영자 주도 · 에이전트 우선 · 서울, 2026",
+    homeH1A: "거의 모든 워크플로를",
+    homeH1B: "AI로 자동화해",
+    homeH1C: "AI 제품을 만들고 운영합니다.",
     homeLede:
-      "Agentryx AI는 운영자가 직접 이끄는 작은 스튜디오입니다. AI 오퍼레이터가 프롬프트만 던지는 데 그치지 않고 실제 제품을 출시할 수 있도록 자체 개발 환경 Agentryx를 만들어 씁니다.",
+      "Agentryx AI는 운영자가 이끄는 작은 스튜디오입니다. 만들고, 리뷰하고, 출시하고, 운영하는 거의 모든 워크플로를 AI 에이전트로 돌리며, 그 워크플로를 설계하는 일에도 AI를 적극 활용합니다. Agentryx는 스튜디오를 이렇게 운영하려고 우리가 만든 환경입니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
@@ -179,15 +179,15 @@ export const principles = [
     }
   },
   {
-    key: { en: "II — Codex-first", ko: "II — Codex 우선" },
-    h: { en: "Codex is our default coworker.", ko: "Codex는 기본 동료입니다." },
+    key: { en: "II — Agent-first", ko: "II — 에이전트 우선" },
+    h: { en: "AI agents are our default coworkers.", ko: "AI 에이전트가 기본 동료입니다." },
     p: {
-      en: "We design specs, repos, reviews, and daily operations around Codex as the highest-leverage tool in the studio.",
-      ko: "스펙, 레포, 리뷰, 일일 운영을 Codex가 가장 높은 레버리지로 작동하도록 설계합니다."
+      en: "We design specs, repos, reviews, and daily operations around AI agents as the highest-leverage tool in the studio.",
+      ko: "스펙, 레포, 리뷰, 일일 운영을 AI 에이전트가 가장 높은 레버리지로 작동하도록 설계합니다."
     },
     long: {
-      en: "Codex is the highest-leverage tool we have, and we treat it that way. Specs are written so Codex can act on them; repos are structured so it can navigate them; reviews are scheduled so agent work is never the long pole.",
-      ko: "Codex는 우리가 가진 가장 레버리지 높은 도구이고, 그렇게 다룹니다. 스펙은 Codex가 작업할 수 있도록 쓰고, 레포는 탐색 가능하게 구조화하며, 리뷰는 에이전트 작업이 병목이 되지 않게 운영합니다."
+      en: "AI agents are the highest-leverage tool we have, and we treat them that way. Specs are written so an agent can act on them; repos are structured so agents can navigate them; reviews are scheduled so agent work is never the long pole.",
+      ko: "AI 에이전트는 우리가 가진 가장 레버리지 높은 도구이고, 그렇게 다룹니다. 스펙은 에이전트가 바로 작업할 수 있도록 쓰고, 레포는 에이전트가 탐색하기 좋게 구조화하며, 리뷰는 에이전트 작업이 병목이 되지 않게 운영합니다."
     }
   },
   {
