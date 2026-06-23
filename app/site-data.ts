@@ -123,8 +123,8 @@ export const products = [
     status: "core",
     name: { en: "Agentryx", ko: "Agentryx" },
     deck: {
-      en: "An agent-company platform: a single Team Channel, a Lead that routes work, and two-layer verification before anything ships.",
-      ko: "에이전트로 회사를 굴리는 플랫폼. 단일 팀 채널, 일을 분배하는 Lead, 출시 전 2단계 검증."
+      en: "A program that turns a goal into finished work on its own — splitting it into a sub-task DAG, running it, and replanning from the error when a step fails.",
+      ko: "목표 하나를 스스로 완성된 결과로 바꾸는 프로그램. 하위 작업 DAG로 쪼개 실행하고, 한 단계가 실패하면 에러를 읽고 다시 계획합니다."
     }
   },
   {
@@ -316,68 +316,68 @@ export const productDetails: Record<string, {
     num: "01",
     name: { en: "Agentryx", ko: "Agentryx" },
     tagline: {
-      en: "Run an AI company from a single Team Channel.",
-      ko: "단 하나의 팀 채널에서 AI 회사를 운영합니다."
+      en: "Turn a goal into finished work, on its own.",
+      ko: "목표를 스스로 완성된 결과로."
     },
     lede: {
-      en: "Agentryx is the platform we built so a single operator can run an Agent Company: one Team Channel, an auxiliary router, a Lead that decomposes work, and a Codex runner that builds in per-agent workspaces.",
-      ko: "Agentryx는 한 명의 운영자가 에이전트로 회사를 운영할 수 있도록 만든 플랫폼입니다. 단일 팀 채널, 보조 라우터, 일을 분해하는 Lead, 에이전트별 워크스페이스에서 동작하는 Codex 러너로 이뤄집니다."
+      en: "Agentryx turns a goal into finished work on its own. Give it a goal; it decides whether to run the task directly or split it into a sub-task DAG, runs each piece in its own git worktree, and synthesizes the result — replanning with the actual error in hand when a step fails. It drives the Claude or Codex CLI, and it is built one small, verifiable stage at a time.",
+      ko: "Agentryx는 목표 하나를 스스로 완성된 결과로 바꿉니다. 목표를 주면 그 일을 바로 할지 하위 작업 DAG로 쪼갤지 직접 정하고, 각 조각을 별도 git worktree에서 실행한 뒤 결과를 합칩니다. 한 단계가 실패하면 실제 에러를 손에 쥐고 다시 계획합니다. Claude나 Codex CLI를 구동하며, 작고 검증 가능한 단계로 하나씩 만들어 갑니다."
     },
     metrics: [
-      { k: { en: "Surface", ko: "제품 영역" }, v: { en: "1 Team Channel", ko: "단일 팀 채널" } },
-      { k: { en: "Runner", ko: "러너" }, v: "Codex CLI app-server" },
-      { k: { en: "Verification", ko: "검증" }, v: { en: "2-layer", ko: "2단계" } },
-      { k: { en: "Stage", ko: "단계" }, v: { en: "Core · MVP slice", ko: "코어 · MVP 슬라이스" } }
+      { k: { en: "Pattern", ko: "패턴" }, v: { en: "Recursive orchestrator-workers", ko: "재귀적 오케스트레이터-워커" } },
+      { k: { en: "Runner", ko: "러너" }, v: "Claude · Codex CLI" },
+      { k: { en: "Isolation", ko: "격리" }, v: { en: "Per-task git worktree", ko: "태스크별 git worktree" } },
+      { k: { en: "Stage", ko: "단계" }, v: { en: "Stages 00–02 · in build", ko: "Stage 00–02 · 개발 중" } }
     ],
     sections: [
       {
-        k: { en: "01 — One channel, many agents", ko: "01 — 하나의 채널, 여러 에이전트" },
-        h: { en: "The whole company lives in one feed.", ko: "회사 전체가 하나의 피드에서 살아갑니다." },
+        k: { en: "01 — One shape for every task", ko: "01 — 모든 태스크가 한 형태" },
+        h: { en: "Run it, or split it — the same rule at every level.", ko: "바로 실행하거나 쪼개거나, 모든 레벨에서 같은 규칙." },
         body: {
-          en: "Every message lands in the same Team Channel. An auxiliary router extracts mentions and routes each message: idle agents are woken up, active agents receive their inbox at the next cycle boundary.",
-          ko: "모든 메시지는 같은 팀 채널에 도착합니다. 보조 라우터가 멘션을 뽑아 메시지를 알맞은 에이전트로 보냅니다. 멈춰 있던 에이전트는 깨우고, 동작 중인 에이전트는 다음 주기 경계에서 자기 앞으로 온 메시지를 받습니다."
+          en: "A task either runs directly or splits into a sub-task DAG, by the same recursive rule at every level. Single-agent execution isn't a special path; it's the base case of that rule.",
+          ko: "태스크는 바로 실행되거나 하위 작업 DAG로 갈라집니다. 모든 레벨에 같은 재귀 규칙이 적용되고, 단일 에이전트 실행은 특별한 경로가 아니라 그 규칙의 기본 사례일 뿐입니다."
         }
       },
       {
-        k: { en: "02 — Lead decomposes, Teammates execute", ko: "02 — Lead가 분해하고 Teammate가 실행합니다" },
-        h: { en: "One Lead owns task assignment.", ko: "작업 할당은 Lead가 책임집니다." },
+        k: { en: "02 — Replan with understanding", ko: "02 — 이해하고 다시 계획" },
+        h: { en: "It reads the error, then replans — not a blind retry.", ko: "에러를 읽고 다시 계획합니다. 맹목적 재시도가 아니라." },
         body: {
-          en: "Lead reads the operator's intent, breaks it into a DAG of subtasks with acceptance criteria, and dispatches it. Teammates can answer in the channel, but they do not reassign work to each other.",
-          ko: "Lead는 운영자의 의도를 읽어, 완료 기준이 붙은 하위 작업 DAG로 나누고 전달합니다. Teammate는 채널에서 답할 수 있지만, 서로에게 작업을 재할당하지는 않습니다."
+          en: "When a sub-task fails, its parent replans with the error and partial results in hand. If it still can't recover, the failure propagates up and a higher level replans with broader context. The nearest prior method re-splits without ever seeing the error.",
+          ko: "하위 작업이 실패하면 부모가 에러와 부분 결과를 손에 쥐고 다시 계획합니다. 그래도 못 풀면 실패가 위로 전파되고, 더 위 레벨이 넓은 맥락으로 다시 계획합니다. 가장 가까운 기존 방법은 에러를 보지도 않고 다시 쪼갭니다."
         }
       },
       {
-        k: { en: "03 — Two-layer verification", ko: "03 — 두 단계 검증" },
-        h: { en: "Deterministic checks first. Judgment second.", ko: "먼저 결정론적 검증, 그 다음 판단." },
+        k: { en: "03 — Built in small stages", ko: "03 — 작은 단계로 구현" },
+        h: { en: "A recursive generalization of orchestrator-workers.", ko: "오케스트레이터-워커의 재귀적 일반화." },
         body: {
-          en: "Every change goes through deterministic scripts and a semantic review layer before it reaches human approval. Rejected work returns to the agent with the failing trace.",
-          ko: "모든 변경은 사람의 승인 전에 결정론적 스크립트와 의미 기반 리뷰 레이어를 통과합니다. 반려된 작업은 실패 트레이스와 함께 에이전트에게 돌아갑니다."
+          en: "The closest validated peer is Anthropic's orchestrator-workers; Agentryx is its recursive generalization. It is built one stage at a time — Stages 00–02 are done (single agent, web frontend, task decomposition); agent-to-agent delegation, automatic verification, and parallel execution come later.",
+          ko: "가장 가까운 검증된 선례는 Anthropic의 오케스트레이터-워커이고, Agentryx는 그것의 재귀적 일반화입니다. 한 번에 한 단계씩 만듭니다. Stage 00–02 완료(단일 에이전트, 웹 프런트엔드, 태스크 분해)이고, 에이전트 간 위임·자동 검증·병렬 실행은 다음 단계입니다."
         }
       }
     ],
     proofs: [
       {
-        k: { en: "Routing evidence", ko: "라우팅 근거" },
-        h: { en: "Team Channel is the primary product surface.", ko: "팀 채널이 핵심 제품 영역입니다." },
+        k: { en: "Implementation evidence", ko: "구현 근거" },
+        h: { en: "The task model is built, not promised.", ko: "태스크 모델은 약속이 아니라 구현입니다." },
         body: {
-          en: "The current Agentryx research points to accepted Team Channel ADRs, @mention extraction, an auxiliary LLM router, target-only mailbox delivery, and Lead fallback when explicit mentions fail.",
-          ko: "현재 Agentryx 리서치는 팀 채널 ADR, @멘션 추출, 보조 LLM 라우터, 대상별 메일박스 전달, 명시적 멘션이 실패할 때의 Lead 폴백을 근거로 합니다."
+          en: "The README states it plainly: \"Stages 00–02 are built — the task model is implemented as of Stage 02.\" Stage 00 is a single agent finishing one task; Stage 02 decomposes a task into a sub-task DAG, runs it, and synthesizes the result.",
+          ko: "README가 그대로 적습니다. 'Stage 00–02 구현 완료 — 태스크 모델은 Stage 02 기준으로 구현됨.' Stage 00은 단일 에이전트가 한 태스크를 끝내고, Stage 02는 태스크를 하위 작업 DAG로 쪼개 실행하고 합성합니다."
         }
       },
       {
-        k: { en: "Execution evidence", ko: "실행 근거" },
-        h: { en: "The runner is built around Codex workspaces.", ko: "러너는 Codex 워크스페이스 중심입니다." },
+        k: { en: "Runner evidence", ko: "러너 근거" },
+        h: { en: "Claude or Codex, in isolated worktrees.", ko: "Claude나 Codex, 격리된 worktree에서." },
         body: {
-          en: "The platform separates a Control Plane for company state, tasks, approvals, messages, artifacts, and memory from a Runner that uses Codex CLI app-server in per-agent workspaces.",
-          ko: "플랫폼은 회사 상태·태스크·승인·메시지·아티팩트·메모리를 담는 Control Plane과, 에이전트별 워크스페이스에서 Codex CLI app-server를 쓰는 러너를 분리합니다."
+          en: "Agentryx drives the Claude or Codex CLI as interchangeable adapters, and each task runs in its own git worktree under a scratch repo — so an agent's work is isolated and can be inspected after the run.",
+          ko: "Agentryx는 Claude 또는 Codex CLI를 교체 가능한 어댑터로 구동하고, 각 태스크는 스크래치 레포 아래 자기 git worktree에서 실행됩니다. 그래서 작업이 격리되고 실행 뒤 그대로 점검할 수 있습니다."
         }
       },
       {
-        k: { en: "Verification evidence", ko: "검증 근거" },
-        h: { en: "Verification is explicit, not implied.", ko: "검증은 암묵적이 아니라 명시적입니다." },
+        k: { en: "Scope evidence", ko: "범위 근거" },
+        h: { en: "What it can't do yet is stated out loud.", ko: "아직 못 하는 것은 분명히 밝혀 둡니다." },
         body: {
-          en: "Product docs describe deterministic scripts as Layer 1 and semantic review as Layer 2 before human approval, with rejected work returned to the agent with a failing trace.",
-          ko: "제품 문서는 사람 승인 전에 Layer 1 결정론적 스크립트와 Layer 2 의미 리뷰를 거치고, 반려된 작업은 실패 트레이스와 함께 에이전트에게 돌아간다고 설명합니다."
+          en: "The README is explicit about scope: at these stages there is no agent-to-agent delegation, no automatic verification, no parallel execution, and no multi-tenancy — those are later stages, and the public copy doesn't claim them.",
+          ko: "README는 범위를 분명히 합니다. 지금 단계에는 에이전트 간 위임, 자동 검증, 병렬 실행, 멀티테넌시가 없습니다. 다음 단계의 일이고, 공개 카피도 그것을 주장하지 않습니다."
         }
       }
     ],
