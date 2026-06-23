@@ -385,7 +385,7 @@ function AboutPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
           <div className="aside">
             <div className="row"><span>Role</span><span>{lang === "ko" ? "운영자 + 디자이너 + 리뷰어" : "Operator + designer + reviewer"}</span></div>
             <div className="row"><span>Based</span><span>{lang === "ko" ? "서울" : "Seoul, Korea"}</span></div>
-            <div className="row"><span>Languages</span><span>{lang === "ko" ? "한국어 · English" : "English, Korean"}</span></div>
+            <div className="row"><span>Languages</span><span>{lang === "ko" ? "한국어 · 영어" : "English, Korean"}</span></div>
             <div className="row"><span>Contact</span><span>{CONTACT_EMAIL}</span></div>
           </div>
         </div>
@@ -453,7 +453,7 @@ function PressPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         <div className="section-head">
           <div>
             <div className="num">{lang === "ko" ? "프레스 문의" : "Press inquiries"}</div>
-            <h2>{lang === "ko" ? "기록에 남길 수 있는 이야기." : "What we will talk about, on record."}</h2>
+            <h2>{lang === "ko" ? "공개적으로 말할 수 있는 것." : "What we will talk about, on record."}</h2>
           </div>
         </div>
         <div className="thesis-list">
@@ -466,7 +466,7 @@ function PressPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
           ))}
         </div>
       </section>
-      <ContactBlock lang={lang} t={t} title={lang === "ko" ? "직접 닿는 채널." : "Direct lines."} />
+      <ContactBlock lang={lang} t={t} title={lang === "ko" ? "바로 닿는 연락처." : "Direct lines."} />
     </main>
   );
 }
@@ -477,7 +477,7 @@ function StoryList({ lang, stories }: { lang: Lang; stories: typeof aboutStories
       <div className="section-head">
         <div>
           <div className="num">{lang === "ko" ? "운영 방식" : "How we work"}</div>
-          <h2>{lang === "ko" ? "지금의 도구에 맞춘 크기의 스튜디오." : "A studio sized for the tools we have."}</h2>
+          <h2>{lang === "ko" ? "지금 가진 도구에 맞춰 몸집을 정한 스튜디오." : "A studio sized for the tools we have."}</h2>
         </div>
         <p className="meta">{lang === "ko" ? "운영을 떠받치는 세 가지 약속." : "Three commitments behind the operation."}</p>
       </div>

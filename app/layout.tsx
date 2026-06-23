@@ -5,7 +5,7 @@ import "./globals.css";
 
 const siteUrl = "https://agentryx-ai.com";
 const siteDescription =
-  "Agentryx AI is an operator-led studio building Agentryx, Itineva, ModuBoza, and ReTalk.";
+  "Agentryx AI is a one-person, operator-led studio in Seoul building AI products — Agentryx, Itineva, ModuBoza, and ReTalk — by running almost every workflow on agents.";
 const ogImage = "/og-image.svg";
 
 export const metadata: Metadata = {

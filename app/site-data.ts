@@ -30,7 +30,7 @@ export const i18n = {
     homeH1B: "runs on agents.",
     homeH1C: "One person still chooses.",
     homeLede:
-      "Agentryx AI is a one-person studio in Seoul. The building, reviewing, shipping, and operations run on AI agents — and we use AI to design those workflows in the first place. Agentryx is the tooling we built so a single operator can run a whole company, not just prompt a model.",
+      "Agentryx AI is a one-person studio in Seoul. The building, reviewing, shipping, and operations run on AI agents — and we use AI to design those workflows in the first place. Agentryx is the platform we built so a single operator can run a whole company, not just prompt a model.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
@@ -43,7 +43,7 @@ export const i18n = {
     ctaEyebrow: "See for yourself",
     ctaHeading: "Don't take our word for it — use the products.",
     ctaBody:
-      "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a Kakao-chat restorer in beta. Go open one — there's nothing to sign up for. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
+      "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a KakaoTalk chat restorer in beta. Go open one — there's nothing to sign up for. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
     aboutLabel: "About · The studio",
     aboutH1A: "A small studio,",
     aboutH1B: "running like an AI company should.",
@@ -83,35 +83,35 @@ export const i18n = {
     homeH1B: "AI 에이전트가 합니다.",
     homeH1C: "고르는 건 여전히 사람 한 명입니다.",
     homeLede:
-      "Agentryx AI는 서울의 1인 스튜디오입니다. 만들고, 리뷰하고, 출시하고, 매일 운영하는 일을 AI 에이전트가 맡습니다. 그 워크플로를 설계하는 일부터 AI와 함께합니다. Agentryx는 운영자 한 사람이 프롬프트만 던지는 데 그치지 않고 회사 하나를 통째로 굴리도록, 우리가 직접 만든 도구입니다.",
+      "Agentryx AI는 서울의 1인 스튜디오입니다. 만들고, 리뷰하고, 출시하고, 매일 운영하는 일을 AI 에이전트가 맡습니다. 그 워크플로를 설계하는 일부터 AI와 함께합니다. Agentryx는 운영자 한 사람이 프롬프트만 던지는 데 그치지 않고 회사 하나를 통째로 굴릴 수 있도록 우리가 직접 만든 플랫폼입니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
-      "각 제품은 우리가 출시할 만큼 강하게 믿는 가설입니다. Agentryx는 스튜디오를 굴리는 개발 환경이고, 나머지 세 제품은 그 운영 규율로 만든 결과물입니다.",
+      "각 제품은 출시할 만큼 확신이 선 가설입니다. Agentryx는 스튜디오를 굴리는 개발 환경이고, 나머지 세 제품은 그 운영 규율 위에서 만든 결과물입니다.",
     thesisNum: "02 — 운영 원칙",
     thesisHeading: "작은 스튜디오가 여러 제품을 운영하는 방식.",
     thesisMeta: "모든 제품, 모든 PR, 모든 스탠드업을 관통하는 네 가지 원칙입니다.",
     notesNum: "03 — 왜 지금인가",
-    notesHeading: "우리가 베팅하는 세 가지 관찰.",
+    notesHeading: "우리가 딛고 서 있는 세 가지 관찰.",
     ctaEyebrow: "직접 확인하세요",
     ctaHeading: "말로 믿지 말고, 직접 써 보세요.",
-    ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 가입도 필요 없습니다. 써 보고 괜찮거나, 에이전트로 회사를 굴리는 이야기가 궁금하면, 메일은 운영자가 직접 읽습니다.",
+    ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 가입도 필요 없습니다. 써 보고 쓸 만했거나 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
     aboutLabel: "회사 · 스튜디오",
     aboutH1A: "작은 스튜디오,",
     aboutH1B: "AI 회사답게 운영합니다.",
     aboutLede:
-      "Agentryx AI는 서울에 있는 운영자 주도 스튜디오입니다. 한 사람이 우선순위를 정하고, 에이전트는 잘 정의된 좁은 표면에서 일을 처리합니다. 제품에게 요구하는 그대로의 원칙으로 스튜디오를 설계합니다.",
+      "Agentryx AI는 서울에 있는 운영자 주도 스튜디오입니다. 한 사람이 우선순위를 정하고, 에이전트는 잘 정의된 좁은 작업 범위에서 일을 처리합니다. 제품에 요구하는 것과 똑같은 원칙으로 스튜디오를 설계합니다.",
     thesisLabel: "운영 원칙",
     thesisH1A: "네 가지 원칙.",
     thesisH1B: "모든 제품, 모든 PR, 모든 스탠드업.",
     thesisLede:
       "스튜디오를 굴리는 규칙입니다. 제품을 쓰는 사람이라면 누구나 우리에게 책임을 물을 수 있도록 공개합니다.",
     pressLabel: "프레스 · 연락",
-    pressH1: "프레스, 연락, 우리가 답할 것과 답하지 않을 것.",
+    pressH1: "프레스와 연락, 그리고 우리가 말할 것과 말하지 않을 것.",
     pressLede:
-      "Agentryx AI는 작고 운영자가 직접 운영합니다. 프레스 팀이 따로 없으며 운영자가 직접 답합니다.",
+      "Agentryx AI는 작은 회사이고, 운영자가 직접 운영합니다. 프레스 팀은 따로 없으며 문의에는 운영자가 직접 답합니다.",
     next: "다음",
-    whereNext: "여기서 어디로."
+    whereNext: "여기서 어디로 갈까요."
   }
 };
 
@@ -124,7 +124,7 @@ export const products = [
     name: { en: "Agentryx", ko: "Agentryx" },
     deck: {
       en: "An agent-company platform: a single Team Channel, a Lead that routes work, and two-layer verification before anything ships.",
-      ko: "에이전트-컴퍼니 플랫폼. 단일 팀 채널, 라우팅을 맡는 Lead, 출시 전 두 단계 검증."
+      ko: "에이전트로 회사를 굴리는 플랫폼. 단일 팀 채널, 일을 분배하는 Lead, 출시 전 2단계 검증."
     }
   },
   {
@@ -135,7 +135,7 @@ export const products = [
     name: { en: "Itineva", ko: "Itineva" },
     deck: {
       en: "A travel planner that turns destination, dates, travelers, and taste into a shareable trip page with versions, gallery, and route checks.",
-      ko: "여행지·일정·동행·취향을 입력하면 버전 관리, 갤러리, 동선 점검까지 갖춘 여행 페이지가 만들어지는 기획기."
+      ko: "여행지·일정·동행·취향만 입력하면 버전 관리·갤러리·동선 점검까지 되는 여행 페이지가 만들어집니다."
     },
     siteUrl: "https://itineva.com/"
   },
@@ -147,7 +147,7 @@ export const products = [
     name: { en: "ModuBoza", ko: "모두보자" },
     deck: {
       en: "A private operations PoC for shared OTT subscriptions: pooled providers, isolated credentials, one-person sessions.",
-      ko: "공유 OTT 구독을 위한 사내 운영 PoC. 풀링된 공급자, 격리된 자격 증명, 1인 세션."
+      ko: "공유 OTT 구독을 위한 사내 운영 PoC. 공급자 풀, 격리된 자격 증명, 1인 세션."
     },
     siteUrl: "https://moduboza.com/"
   },
@@ -159,7 +159,7 @@ export const products = [
     name: { en: "ReTalk", ko: "리톡" },
     deck: {
       en: "A local-first desktop app that restores the KakaoTalk conversations already on your PC — read, search, and export — and backs up expiring photos for free. Now in beta.",
-      ko: "PC에 이미 남아 있는 카카오톡 대화를 복원해 열람·검색·내보내고, 사라질 사진은 무료로 자동 보관하는 로컬 우선 데스크탑 앱. 베타 운영 중."
+      ko: "PC에 이미 남아 있는 카카오톡 대화를 복원해 열람·검색·내보내고, 사라질 사진은 무료로 자동 보관하는 로컬 우선 데스크톱 앱. 베타 운영 중."
     },
     siteUrl: "https://retalk.agentryx-ai.com/"
   }
@@ -171,11 +171,11 @@ export const principles = [
     h: { en: "An operator should run the company.", ko: "회사는 운영자가 운영해야 합니다." },
     p: {
       en: "One operator owns priorities; agents execute against a small, well-specified surface.",
-      ko: "운영자가 우선순위를 쥐고, 에이전트는 잘 정의된 표면에서 일을 처리합니다."
+      ko: "운영자가 우선순위를 쥐고, 에이전트는 잘 정의된 좁은 범위에서 일을 처리합니다."
     },
     long: {
       en: "We do not believe in committees of agents arguing through a chat log until something ships. One operator owns the roadmap, the design, and the merge button; agents execute against a small surface where work can be verified before it is trusted.",
-      ko: "에이전트들이 채팅 로그에서 합의에 이를 때까지 다투는 방식은 신뢰하지 않습니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 검증 가능한 좁은 표면에서 일을 처리합니다."
+      ko: "여러 에이전트가 채팅 로그에서 합의에 이를 때까지 갑론을박하는 방식은 신뢰하지 않습니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 검증할 수 있는 좁은 범위에서 일을 처리합니다."
     }
   },
   {
@@ -183,11 +183,11 @@ export const principles = [
     h: { en: "AI agents are our default coworkers.", ko: "AI 에이전트가 기본 동료입니다." },
     p: {
       en: "We design specs, repos, reviews, and daily operations around AI agents as the highest-leverage tool in the studio.",
-      ko: "스펙, 레포, 리뷰, 일일 운영을 AI 에이전트가 가장 높은 레버리지로 작동하도록 설계합니다."
+      ko: "AI 에이전트가 스튜디오에서 가장 큰 레버리지를 내도록 스펙·레포·리뷰·일일 운영을 설계합니다."
     },
     long: {
       en: "AI agents are the highest-leverage tool we have, and we treat them that way. Specs are written so an agent can act on them; repos are structured so agents can navigate them; reviews are scheduled so agent work is never the long pole.",
-      ko: "AI 에이전트는 우리가 가진 가장 레버리지 높은 도구이고, 그렇게 다룹니다. 스펙은 에이전트가 바로 작업할 수 있도록 쓰고, 레포는 에이전트가 탐색하기 좋게 구조화하며, 리뷰는 에이전트 작업이 병목이 되지 않게 운영합니다."
+      ko: "AI 에이전트는 우리가 가진 가장 레버리지 높은 도구이고, 실제로 그렇게 대우합니다. 스펙은 에이전트가 바로 작업할 수 있게 쓰고, 레포는 에이전트가 탐색하기 좋게 구조화하며, 리뷰는 에이전트 작업이 병목이 되지 않도록 운영합니다."
     }
   },
   {
@@ -203,7 +203,7 @@ export const principles = [
     }
   },
   {
-    key: { en: "IV — Small, real surfaces", ko: "IV — 작고 실제적인 표면" },
+    key: { en: "IV — Small, real surfaces", ko: "IV — 작고 진짜인 범위" },
     h: { en: "Ship the smallest verifiable thing.", ko: "검증 가능한 가장 작은 단위로 출시합니다." },
     p: {
       en: "We prefer narrow products that work end-to-end over broad products that mostly work.",
@@ -211,7 +211,7 @@ export const principles = [
     },
     long: {
       en: "Each product fits on a single screen of pitch and does one thing fully. When we are tempted to expand a surface, we ask whether the new surface will be as verifiable as the old one. If not, we do not ship it.",
-      ko: "각 제품은 한 화면 분량의 피치에 들어맞고 한 가지 일을 끝까지 합니다. 표면을 늘리고 싶을 때마다 새 표면이 기존만큼 검증 가능한지 묻고, 아니라면 출시하지 않습니다."
+      ko: "각 제품은 한 화면짜리 소개에 담기고, 한 가지 일을 끝까지 합니다. 기능 범위를 넓히고 싶을 때마다 새 범위가 기존만큼 검증 가능한지 묻고, 아니라면 출시하지 않습니다."
     }
   }
 ];
@@ -225,7 +225,7 @@ export const notes = [
     },
     p: {
       en: "The interesting question is whether a small operator inside a purpose-built development environment can run an entire company.",
-      ko: "흥미로운 질문은 작은 운영자가 목적성 있게 만들어진 개발 환경 안에서 회사 하나를 굴릴 수 있느냐입니다."
+      ko: "흥미로운 질문은, 한 명의 운영자가 목적에 맞게 만든 개발 환경 안에서 회사 하나를 통째로 굴릴 수 있느냐입니다."
     }
   },
   {
@@ -233,14 +233,14 @@ export const notes = [
     h: { en: "Verification is the moat, not the model.", ko: "해자는 모델이 아니라 검증입니다." },
     p: {
       en: "Models commodify quickly. Review, evals, regression checks, and operations are where durable advantage lives.",
-      ko: "모델은 빠르게 일반재가 됩니다. 리뷰·평가·회귀 테스트·운영 규율이 지속 가능한 우위입니다."
+      ko: "모델은 빠르게 흔해집니다. 리뷰·평가·회귀 테스트·운영 규율이 오래가는 우위입니다."
     }
   },
   {
     k: { en: "Observation 03", ko: "관찰 03" },
     h: {
       en: "The first AI-operator-run companies will eat the rest.",
-      ko: "AI 오퍼레이터가 운영하는 회사가 다음 세대를 먹어 치웁니다."
+      ko: "AI 운영자가 굴리는 회사가 나머지를 먹어 치웁니다."
     },
     p: {
       en: "A studio that builds and uses its own development environment outpaces studios that stitch together generic tools.",
@@ -261,7 +261,7 @@ export const aboutStories = [
     h: { en: "Korean-first, English-fluent.", ko: "한국어 우선, 영어 능통." },
     p: {
       en: "Two products are built for Korean users and platforms. Specs, support, and design copy are written in both languages from day one.",
-      ko: "두 제품은 한국 사용자와 한국 플랫폼을 위해 만들어집니다. 스펙·지원·디자인 카피를 처음부터 두 언어로 씁니다."
+      ko: "두 제품은 한국 사용자와 한국 플랫폼을 겨냥해 만듭니다. 스펙·지원·디자인 카피는 처음부터 두 언어로 씁니다."
     }
   },
   {
@@ -285,7 +285,7 @@ export const pressRows = [
     k: { en: "We won't talk about", ko: "이야기하지 않을 것" },
     v: {
       en: "Speculative model capabilities, unreleased product details, or customer KPIs without consent.",
-      ko: "추정성 모델 능력, 미공개 제품 세부 사항, 고객 동의 없는 개별 KPI."
+      ko: "근거 없는 모델 성능 추정, 미공개 제품 세부 사항, 고객 동의 없는 개별 KPI."
     }
   },
   {
@@ -321,10 +321,10 @@ export const productDetails: Record<string, {
     },
     lede: {
       en: "Agentryx is the platform we built so a single operator can run an Agent Company: one Team Channel, an auxiliary router, a Lead that decomposes work, and a Codex runner that builds in per-agent workspaces.",
-      ko: "Agentryx는 한 명의 운영자가 Agent Company를 운영할 수 있도록 만든 플랫폼입니다. 단일 팀 채널, 보조 라우터, 일을 분해하는 Lead, 에이전트별 워크스페이스에서 동작하는 Codex 러너를 갖습니다."
+      ko: "Agentryx는 한 명의 운영자가 에이전트로 회사를 운영할 수 있도록 만든 플랫폼입니다. 단일 팀 채널, 보조 라우터, 일을 분해하는 Lead, 에이전트별 워크스페이스에서 동작하는 Codex 러너로 이뤄집니다."
     },
     metrics: [
-      { k: { en: "Surface", ko: "표면" }, v: { en: "1 Team Channel", ko: "단일 팀 채널" } },
+      { k: { en: "Surface", ko: "제품 영역" }, v: { en: "1 Team Channel", ko: "단일 팀 채널" } },
       { k: { en: "Runner", ko: "러너" }, v: "Codex CLI app-server" },
       { k: { en: "Verification", ko: "검증" }, v: { en: "2-layer", ko: "2단계" } },
       { k: { en: "Stage", ko: "단계" }, v: { en: "Core · MVP slice", ko: "코어 · MVP 슬라이스" } }
@@ -335,15 +335,15 @@ export const productDetails: Record<string, {
         h: { en: "The whole company lives in one feed.", ko: "회사 전체가 하나의 피드에서 살아갑니다." },
         body: {
           en: "Every message lands in the same Team Channel. An auxiliary router extracts mentions and routes each message: idle agents are woken up, active agents receive their inbox at the next cycle boundary.",
-          ko: "모든 메시지는 같은 팀 채널에 도착합니다. 보조 라우터가 멘션을 추출하고 메시지를 라우팅합니다. idle 에이전트는 깨우고, 동작 중인 에이전트는 다음 cycle 경계에서 인박스를 받습니다."
+          ko: "모든 메시지는 같은 팀 채널에 도착합니다. 보조 라우터가 멘션을 뽑아 메시지를 알맞은 에이전트로 보냅니다. 멈춰 있던 에이전트는 깨우고, 동작 중인 에이전트는 다음 주기 경계에서 자기 앞으로 온 메시지를 받습니다."
         }
       },
       {
         k: { en: "02 — Lead decomposes, Teammates execute", ko: "02 — Lead가 분해하고 Teammate가 실행합니다" },
-        h: { en: "One Lead owns task assignment.", ko: "Task 할당은 Lead가 책임집니다." },
+        h: { en: "One Lead owns task assignment.", ko: "작업 할당은 Lead가 책임집니다." },
         body: {
           en: "Lead reads the operator's intent, breaks it into a DAG of subtasks with acceptance criteria, and dispatches it. Teammates can answer in the channel, but they do not reassign work to each other.",
-          ko: "Lead는 운영자의 의도를 읽어 받아들임 기준이 있는 subtask DAG로 나누고 전달합니다. Teammate는 채널에서 답할 수 있지만 서로에게 작업을 재할당하지 않습니다."
+          ko: "Lead는 운영자의 의도를 읽어, 완료 기준이 붙은 하위 작업 DAG로 나누고 전달합니다. Teammate는 채널에서 답할 수 있지만, 서로에게 작업을 재할당하지는 않습니다."
         }
       },
       {
@@ -358,10 +358,10 @@ export const productDetails: Record<string, {
     proofs: [
       {
         k: { en: "Routing evidence", ko: "라우팅 근거" },
-        h: { en: "Team Channel is the primary product surface.", ko: "Team Channel이 주 제품 표면입니다." },
+        h: { en: "Team Channel is the primary product surface.", ko: "팀 채널이 핵심 제품 영역입니다." },
         body: {
           en: "The current Agentryx research points to accepted Team Channel ADRs, @mention extraction, an auxiliary LLM router, target-only mailbox delivery, and Lead fallback when explicit mentions fail.",
-          ko: "현재 Agentryx 리서치는 Team Channel ADR, @mention 추출, 보조 LLM 라우터, 대상별 mailbox 전달, 명시적 멘션 실패 시 Lead fallback을 근거로 합니다."
+          ko: "현재 Agentryx 리서치는 팀 채널 ADR, @멘션 추출, 보조 LLM 라우터, 대상별 메일박스 전달, 명시적 멘션이 실패할 때의 Lead 폴백을 근거로 합니다."
         }
       },
       {
@@ -369,7 +369,7 @@ export const productDetails: Record<string, {
         h: { en: "The runner is built around Codex workspaces.", ko: "러너는 Codex 워크스페이스 중심입니다." },
         body: {
           en: "The platform separates a Control Plane for company state, tasks, approvals, messages, artifacts, and memory from a Runner that uses Codex CLI app-server in per-agent workspaces.",
-          ko: "플랫폼은 회사 상태, 태스크, 승인, 메시지, 아티팩트, 메모리를 담는 Control Plane과 에이전트별 워크스페이스에서 Codex CLI app-server를 쓰는 Runner를 분리합니다."
+          ko: "플랫폼은 회사 상태·태스크·승인·메시지·아티팩트·메모리를 담는 Control Plane과, 에이전트별 워크스페이스에서 Codex CLI app-server를 쓰는 러너를 분리합니다."
         }
       },
       {
@@ -383,7 +383,7 @@ export const productDetails: Record<string, {
     ],
     quote: {
       en: "An AI company should be a small operator and a lot of leverage.",
-      ko: "AI 회사는 작은 운영자와 큰 레버리지여야 합니다."
+      ko: "AI 회사는 작은 운영자 한 명과 큰 레버리지로 굴러가야 합니다."
     }
   },
   itineva: {
@@ -394,7 +394,7 @@ export const productDetails: Record<string, {
     siteUrl: "https://itineva.com/",
     tagline: {
       en: "Travel plans built like websites: versioned, shared, alive.",
-      ko: "웹사이트처럼 만드는 여행 계획: 버전 관리, 공유, 살아 있는."
+      ko: "웹사이트처럼 만드는 여행 계획. 버전이 관리되고, 공유되고, 계속 살아 있습니다."
     },
     lede: {
       en: "Itineva turns destination, dates, travelers, and taste into a shareable trip page. A staged generator drafts a skeleton, fills day-by-day events, enriches places, and checks routes before publish.",
@@ -412,15 +412,15 @@ export const productDetails: Record<string, {
         h: { en: "Plans change. Pages change with them.", ko: "계획은 바뀝니다. 페이지도 함께 바뀝니다." },
         body: {
           en: "A trip page with versioning keeps every traveler on the same plan. Each version has a stable share link, and the featured version is what the group sees by default.",
-          ko: "버전이 관리되는 여행 페이지는 동행 모두가 같은 계획을 보게 합니다. 각 버전은 안정된 공유 링크를 갖고, featured 버전이 기본으로 노출됩니다."
+          ko: "버전이 관리되는 여행 페이지에서는 동행 모두가 같은 계획을 봅니다. 버전마다 변하지 않는 공유 링크가 있고, 대표로 지정한 버전이 기본으로 보입니다."
         }
       },
       {
         k: { en: "02 — A four-stage generator", ko: "02 — 4단계 생성기" },
-        h: { en: "Skeleton, day-events, enrichment, autofix.", ko: "골격, 일자 이벤트, 보강, autofix." },
+        h: { en: "Skeleton, day plans, enrichment, autofix.", ko: "골격, 일자별 일정, 보강, 자동 보정." },
         body: {
           en: "The generator streams a skeleton, creates day plans in parallel, enriches places with real-world data, and runs an autofix pass before publish.",
-          ko: "생성기는 골격을 스트리밍하고, 일자별 계획을 병렬로 만들고, 실제 장소 데이터로 보강한 뒤 게시 전 autofix를 실행합니다."
+          ko: "생성기는 골격을 스트리밍하고, 일자별 계획을 병렬로 만들고, 실제 장소 데이터로 보강한 뒤, 게시 전에 자동 보정을 한 번 돌립니다."
         }
       },
       {
@@ -438,7 +438,7 @@ export const productDetails: Record<string, {
         h: { en: "Generation is staged, not one-shot.", ko: "생성은 단발 호출이 아니라 단계형입니다." },
         body: {
           en: "Repo research identifies Stage A skeleton streaming, Stage B parallel day-event generation, Stage C Google Places enrichment, and Stage D autofix/watchdog before publish.",
-          ko: "레포 리서치는 게시 전 Stage A 골격 스트리밍, Stage B 일자별 이벤트 병렬 생성, Stage C Google Places 보강, Stage D autofix/watchdog를 확인합니다."
+          ko: "레포 리서치는 게시 전 Stage A 골격 스트리밍, Stage B 일자별 일정 병렬 생성, Stage C Google Places 보강, Stage D 자동 보정·watchdog를 확인합니다."
         }
       },
       {
@@ -451,7 +451,7 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "Reality evidence", ko: "현실 검증 근거" },
-        h: { en: "Routes and places are part of the product surface.", ko: "장소와 동선이 제품 표면에 포함됩니다." },
+        h: { en: "Routes and places are part of the product surface.", ko: "장소와 동선 검증도 제품의 일부입니다." },
         body: {
           en: "The product facts identify Google Places-based place enrichment and Google Routes-based route validation, with public copy limited to checks that the repo actually supports.",
           ko: "제품 근거는 Google Places 기반 장소 보강과 Google Routes 기반 동선 검증을 확인하며, 공개 카피는 레포가 실제로 뒷받침하는 점검 범위로 제한합니다."
@@ -475,13 +475,13 @@ export const productDetails: Record<string, {
     },
     lede: {
       en: "ModuBoza is a private proof-of-concept exploring subscription pooling at the operations layer: provider pools, isolated credentials, queueing, session rules, and an audit-oriented operator surface.",
-      ko: "모두보자는 구독 풀링을 운영 계층에서 탐구하는 비공개 PoC입니다. 공급자 풀, 격리된 자격 증명, 대기열, 세션 규칙, 감사 중심 운영자 표면을 다룹니다."
+      ko: "모두보자는 구독 풀링을 운영 계층에서 실험하는 비공개 PoC입니다. 공급자 풀, 분리된 자격 증명, 대기열, 세션 규칙, 그리고 감사 중심의 운영자 화면을 다룹니다."
     },
     metrics: [
       { k: { en: "Mode", ko: "모드" }, v: { en: "Internal PoC", ko: "내부 PoC" } },
       { k: { en: "Phase 1", ko: "Phase 1" }, v: { en: "Single provider · single region", ko: "단일 공급자 · 단일 지역" } },
       { k: { en: "Sessions", ko: "세션" }, v: { en: "1 per pool, enforced", ko: "풀당 1, 강제" } },
-      { k: { en: "Posture", ko: "상태" }, v: { en: "Legal review required", ko: "법무 검토 필요" } }
+      { k: { en: "Status", ko: "상태" }, v: { en: "Legal review required", ko: "법무 검토 필요" } }
     ],
     sections: [
       {
@@ -497,7 +497,7 @@ export const productDetails: Record<string, {
         h: { en: "Every state change leaves a trace.", ko: "모든 상태 변경이 흔적을 남깁니다." },
         body: {
           en: "Verification, health checks, and auto-login are modeled as queued BotJobs. Operators can inspect what ran, when it ran, and how it failed.",
-          ko: "검증, 헬스체크, 자동 로그인은 대기열 BotJob으로 모델링됩니다. 운영자는 무엇이 언제 실행됐고 어떻게 실패했는지 확인할 수 있습니다."
+          ko: "검증, 헬스체크, 자동 로그인은 대기열에 쌓이는 BotJob으로 처리합니다. 운영자는 무엇이 언제 실행됐고 어떻게 실패했는지 확인할 수 있습니다."
         }
       },
       {
@@ -523,7 +523,7 @@ export const productDetails: Record<string, {
         h: { en: "Scarcity is modeled in queues and sessions.", ko: "희소성은 대기열과 세션으로 모델링합니다." },
         body: {
           en: "The PoC describes one-person sessions, provider pools, BotJob queues for verify/health/auto-login work, admin inspection, and audit logs for state changes.",
-          ko: "PoC는 1인 세션, 공급자 풀, verify/health/auto-login 작업용 BotJob 대기열, 관리자 점검, 상태 변경 감사 로그를 설명합니다."
+          ko: "PoC는 1인 세션, 공급자 풀, 검증·헬스체크·자동 로그인 작업용 BotJob 대기열, 관리자 점검, 상태 변경 감사 로그를 설명합니다."
         }
       },
       {
@@ -531,7 +531,7 @@ export const productDetails: Record<string, {
         h: { en: "The public posture stays deliberately conservative.", ko: "공개 포지션은 의도적으로 보수적입니다." },
         body: {
           en: "The research flags legal, tax, payment, copyright, platform ToS, and partnership-misread risks, so the page presents ModuBoza as an internal PoC rather than a launched service.",
-          ko: "리서치는 법무, 세무, 결제, 저작권, 플랫폼 약관, 제휴 오인 리스크를 표시하므로 이 페이지는 모두보자를 출시 서비스가 아니라 내부 PoC로 다룹니다."
+          ko: "리서치는 법무·세무·결제·저작권·플랫폼 약관·제휴 오인 리스크를 짚어내므로, 이 페이지는 모두보자를 출시된 서비스가 아니라 내부 PoC로 다룹니다."
         }
       }
     ],
@@ -552,10 +552,10 @@ export const productDetails: Record<string, {
     },
     lede: {
       en: "ReTalk is a local-first desktop app that restores the KakaoTalk conversations already on your PC: find and preview what is recoverable, read and search the full history, export a clean archive, and auto-save expiring photos and videos for free. Chat content stays on the device by default.",
-      ko: "리톡은 PC에 이미 남아 있는 카카오톡 대화를 복원하는 로컬 우선 데스크탑 앱입니다. 복원 가능한 분량을 찾아 미리 보고, 전체 기록을 열람·검색하고, 깔끔한 아카이브로 내보내며, 사라질 사진·동영상은 무료로 자동 보관합니다. 대화 내용은 기본적으로 기기 안에 머뭅니다."
+      ko: "리톡은 PC에 이미 남아 있는 카카오톡 대화를 복원하는 로컬 우선 데스크톱 앱입니다. 복원 가능한 분량을 찾아 미리 보고, 전체 기록을 열람·검색하고, 깔끔한 아카이브로 내보내며, 사라질 사진·동영상은 무료로 자동 보관합니다. 대화 내용은 기본적으로 기기 안에 머뭅니다."
     },
     metrics: [
-      { k: { en: "Posture", ko: "포지셔닝" }, v: { en: "Local-first by design", ko: "설계부터 로컬 우선" } },
+      { k: { en: "Stance", ko: "포지셔닝" }, v: { en: "Local-first by design", ko: "설계부터 로컬 우선" } },
       { k: { en: "Network", ko: "네트워크" }, v: { en: "Account · license · updates", ko: "계정·라이선스·업데이트" } },
       { k: { en: "Platform", ko: "플랫폼" }, v: { en: "Windows (beta) · macOS soon", ko: "Windows(베타) · macOS 예정" } },
       { k: { en: "Stage", ko: "단계" }, v: { en: "Beta · live", ko: "베타 · 운영 중" } }
@@ -574,7 +574,7 @@ export const productDetails: Record<string, {
         h: { en: "Save the photos before they disappear.", ko: "사진이 사라지기 전에 지켜냅니다." },
         body: {
           en: "KakaoTalk keeps shared photos and videos only briefly. ReTalk quietly backs up still-available media to the PC before that window closes — free, with no paid cloud subscription. It prevents loss; it does not recover media that has already expired.",
-          ko: "카카오톡은 주고받은 사진·동영상을 잠깐만 보관합니다. 리톡은 그 기간이 지나기 전에 아직 남아 있는 미디어를 조용히 내 PC에 보관합니다 — 무료로, 유료 클라우드 구독 없이. 사라지기 전에 지켜내는 것이며, 이미 만료된 미디어를 되살리지는 않습니다."
+          ko: "카카오톡은 주고받은 사진·동영상을 잠깐만 보관합니다. 리톡은 그 기간이 지나기 전에 아직 남아 있는 미디어를 조용히 내 PC에 보관합니다. 무료이며, 유료 클라우드 구독도 필요 없습니다. 사라지기 전에 지켜내는 것이지, 이미 만료된 미디어를 되살리지는 않습니다."
         }
       },
       {
@@ -582,7 +582,7 @@ export const productDetails: Record<string, {
         h: { en: "See what is recoverable before you pay.", ko: "결제 전에 무엇이 복원되는지 봅니다." },
         body: {
           en: "Download, preview counts, latest-message preview, and free media auto-backup need no payment. A one-time, 31-day, per-profile pass unlocks full reading, cross-room search, and export. Chat content, names, and media never leave the device.",
-          ko: "다운로드, 복원 가능 분량 확인, 최신 대화 미리보기, 무료 미디어 자동 보관은 결제가 필요 없습니다. 한 번 결제하는 프로필 1개·31일 이용권이 전체 열람·통합 검색·내보내기를 엽니다. 대화 내용·이름·미디어는 기기를 떠나지 않습니다."
+          ko: "다운로드, 복원 가능 분량 확인, 최신 대화 미리보기, 무료 미디어 자동 보관은 결제가 필요 없습니다. 프로필 1개·31일짜리 1회 결제 이용권으로 전체 열람·통합 검색·내보내기가 열립니다. 대화 내용·이름·미디어는 기기를 떠나지 않습니다."
         }
       }
     ],
@@ -592,12 +592,12 @@ export const productDetails: Record<string, {
         h: { en: "Personal content stays on-device by default.", ko: "개인 콘텐츠는 기본적으로 기기에 남습니다." },
         body: {
           en: "Restore, read, search, and export all run on the user's PC. The service server is limited to account, payment and license, update checks, and non-personal stats; chat bodies, room names, contacts, and media stay off it. The one stored personal field is the user's own profile name, kept to bind a license to a profile.",
-          ko: "복원·열람·검색·내보내기는 모두 사용자 PC에서 실행됩니다. 서비스 서버는 계정, 결제·라이선스, 업데이트 확인, 비개인 통계로 역할이 제한되며 대화 본문·방 이름·연락처·미디어는 저장하지 않습니다. 저장하는 유일한 개인 정보는 라이선스를 프로필에 연결하기 위한 본인 프로필 이름입니다."
+          ko: "복원·열람·검색·내보내기는 모두 사용자 PC에서 실행됩니다. 서비스 서버는 계정, 결제·라이선스, 업데이트 확인, 개인정보가 아닌 통계로 역할이 제한되며, 대화 본문·방 이름·연락처·미디어는 저장하지 않습니다. 저장하는 유일한 개인정보는 라이선스를 프로필에 연결하기 위한 본인 프로필 이름입니다."
         }
       },
       {
         k: { en: "Workflow evidence", ko: "워크플로 근거" },
-        h: { en: "The first run proves recoverability before unlock.", ko: "첫 실행에서 unlock 전 복원 가능성을 보여줍니다." },
+        h: { en: "The first run proves recoverability before unlock.", ko: "첫 실행에서, 결제 전에 복원 가능성을 보여줍니다." },
         body: {
           en: "On first run ReTalk reports recoverable rooms, messages, dates, and media counts and shows a most-recent preview — before any payment. Segments the PC never received are marked as an unviewable gap rather than hidden.",
           ko: "첫 실행에서 리톡은 결제 전에 복원 가능한 방·메시지·기간·미디어 수를 보여주고 최신 대화를 미리 보여줍니다. PC가 받지 못한 구간은 숨기지 않고 ‘표시할 수 없는 구간’으로 구분합니다."
@@ -605,7 +605,7 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "Scope evidence", ko: "범위 근거" },
-        h: { en: "The product avoids unsupported claims.", ko: "지원되지 않는 보장은 피합니다." },
+        h: { en: "The product avoids unsupported claims.", ko: "근거 없는 보장은 하지 않습니다." },
         body: {
           en: "ReTalk requires the target KakaoTalk account to be logged in on the same PC, restores only the segments the PC holds, and does not guarantee recovery of deleted or expired content. It is an independent tool, not affiliated with KakaoTalk.",
           ko: "리톡은 대상 카카오톡 계정이 같은 PC에 로그인돼 있어야 동작하고, PC에 남아 있는 구간만 복원하며, 삭제·만료된 내용의 복구를 보장하지 않습니다. 카카오와 제휴하지 않은 독립 도구입니다."
@@ -614,7 +614,7 @@ export const productDetails: Record<string, {
     ],
     quote: {
       en: "A conversation history is part of who you are. It should live close to you.",
-      ko: "대화 기록은 자신의 일부입니다. 사용자 가까이에 있어야 합니다."
+      ko: "대화 기록도 당신의 일부입니다. 당신 가까이에 있어야 합니다."
     }
   }
 };
