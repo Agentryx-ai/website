@@ -19,7 +19,7 @@ export const i18n = {
     contact: "Get in touch",
     visitSite: "Visit site",
     open: "Open",
-    footerTagline: "Built in Seoul · Operating worldwide",
+    footerTagline: "Built in Seoul · Run from anywhere",
     footerRights: "Agentryx AI. A small operator-led studio.",
     statusCore: "Core product",
     statusCandidate: "Core candidate",
@@ -46,9 +46,9 @@ export const i18n = {
       "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a KakaoTalk chat restorer in beta. Go open one. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
     aboutLabel: "About · The studio",
     aboutH1A: "A small studio,",
-    aboutH1B: "running like an AI company should.",
+    aboutH1B: "proving an AI company can run on agents.",
     aboutLede:
-      "Agentryx AI is an operator-led studio in Seoul. One person sets priorities; agents execute against narrow, well-specified surfaces. We design the studio with the same discipline we ask of the products inside it.",
+      "Agentryx AI is an operator-led studio in Seoul. One person sets priorities; agents execute against narrow, well-specified surfaces. We design the studio with the same discipline we ask of the products inside it. We're not claiming we've cracked it — the shipped products are how we test the idea in the open.",
     thesisLabel: "Operating thesis",
     thesisH1A: "Four principles.",
     thesisH1B: "Every product, every PR, every standup.",
@@ -72,7 +72,7 @@ export const i18n = {
     contact: "문의하기",
     visitSite: "사이트 방문",
     open: "열기",
-    footerTagline: "서울에서 만들고, 어디서나 운영합니다",
+    footerTagline: "서울에서 만들고, 어디서나 일합니다",
     footerRights: "Agentryx AI. 운영자가 직접 운영하는 작은 스튜디오.",
     statusCore: "코어 제품",
     statusCandidate: "코어 후보",
@@ -98,9 +98,9 @@ export const i18n = {
     ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 써 보고 쓸 만했거나 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
     aboutLabel: "회사 · 스튜디오",
     aboutH1A: "작은 스튜디오,",
-    aboutH1B: "AI 회사답게 운영합니다.",
+    aboutH1B: "AI 회사가 에이전트로 굴러갈 수 있는지 증명하는 중.",
     aboutLede:
-      "Agentryx AI는 서울에 있는 운영자 주도 스튜디오입니다. 한 사람이 우선순위를 정하고, 에이전트는 잘 정의된 좁은 작업 범위에서 일을 처리합니다. 제품에 요구하는 것과 똑같은 원칙으로 스튜디오를 설계합니다.",
+      "Agentryx AI는 서울에 있는 운영자 주도 스튜디오입니다. 한 사람이 우선순위를 정하고, 에이전트는 잘 정의된 좁은 작업 범위에서 일을 처리합니다. 제품에 요구하는 것과 똑같은 원칙으로 스튜디오를 설계합니다. 다 됐다고 말하지 않습니다. 출시한 제품이 이 생각을 공개적으로 시험하는 방식입니다.",
     thesisLabel: "운영 원칙",
     thesisH1A: "네 가지 원칙.",
     thesisH1B: "모든 제품, 모든 PR, 모든 스탠드업.",
@@ -254,8 +254,8 @@ export const notes = [
   {
     k: { en: "Observation 03", ko: "관찰 03" },
     h: {
-      en: "The first AI-operator-run companies will eat the rest.",
-      ko: "AI 운영자가 굴리는 회사가 나머지를 먹어 치웁니다."
+      en: "The studios that build their own tools pull ahead.",
+      ko: "자기 도구를 만드는 스튜디오가 앞서 나갑니다."
     },
     p: {
       en: "A studio that builds and uses its own development environment outpaces studios that stitch together generic tools.",
