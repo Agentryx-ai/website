@@ -383,7 +383,7 @@ function AboutPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         <div className="about-grid">
           <p className="lede">{t.aboutLede}</p>
           <div className="aside">
-            <div className="row"><span>Role</span><span>{lang === "ko" ? "운영자 + 디자이너 + 리뷰어" : "Operator + designer + reviewer"}</span></div>
+            <div className="row"><span>Role</span><span>{lang === "ko" ? "운영·개발·디자인·마케팅·리뷰" : "Operating, dev, design, marketing, review"}</span></div>
             <div className="row"><span>Based</span><span>{lang === "ko" ? "서울" : "Seoul, Korea"}</span></div>
             <div className="row"><span>Languages</span><span>{lang === "ko" ? "한국어 · 영어" : "English, Korean"}</span></div>
             <div className="row"><span>Contact</span><span>{CONTACT_EMAIL}</span></div>
