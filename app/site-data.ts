@@ -26,11 +26,11 @@ export const i18n = {
     statusPoc: "Internal PoC",
     statusDirection: "Direction",
     homeLabel: "Operator-led · Agent-first · Seoul, 2026",
-    homeH1A: "Nearly the whole company",
-    homeH1B: "runs on agents.",
-    homeH1C: "One person still chooses.",
+    homeH1A: "One person.",
+    homeH1B: "Four products.",
+    homeH1C: "The work runs on agents.",
     homeLede:
-      "Agentryx AI is a one-person studio in Seoul. The building, reviewing, shipping, and operations run on AI agents — and we use AI to design those workflows in the first place. Agentryx is the platform we built so a single operator can run a whole company, not just prompt a model.",
+      "Agentryx AI is a one-person studio in Seoul. Two of the four — Itineva and ReTalk — are live right now, no signup. Agents do the building, reviewing, shipping, and operating; one operator decides what ships.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
@@ -79,11 +79,11 @@ export const i18n = {
     statusPoc: "내부 PoC",
     statusDirection: "방향성",
     homeLabel: "운영자 주도 · 에이전트 우선 · 서울, 2026",
-    homeH1A: "회사의 거의 모든 일은",
-    homeH1B: "AI 에이전트가 합니다.",
-    homeH1C: "고르는 건 여전히 사람 한 명입니다.",
+    homeH1A: "한 사람.",
+    homeH1B: "네 개의 제품.",
+    homeH1C: "일은 에이전트가 합니다.",
     homeLede:
-      "Agentryx AI는 서울의 1인 스튜디오입니다. 만들고, 리뷰하고, 출시하고, 매일 운영하는 일을 AI 에이전트가 맡습니다. 그 워크플로를 설계하는 일부터 AI와 함께합니다. Agentryx는 운영자 한 사람이 프롬프트만 던지는 데 그치지 않고 회사 하나를 통째로 굴릴 수 있도록 우리가 직접 만든 플랫폼입니다.",
+      "Agentryx AI는 서울의 1인 스튜디오입니다. 네 제품 중 Itineva와 리톡은 지금 바로 쓸 수 있고, 가입도 필요 없습니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 하고, 무엇을 낼지는 운영자 한 사람이 정합니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
