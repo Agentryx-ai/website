@@ -405,7 +405,7 @@ function ThesisPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         <div className="about-grid">
           <p className="lede">{t.thesisLede}</p>
           <div className="aside">
-            <div className="row"><span>Audience</span><span>{lang === "ko" ? "파트너 · 고객 · 채용" : "Partners, customers, hires"}</span></div>
+            <div className="row"><span>Audience</span><span>{lang === "ko" ? "고객 · 동료 · 궁금한 사람" : "Customers, peers, the curious"}</span></div>
             <div className="row"><span>Cadence</span><span>{lang === "ko" ? "분기마다 검토" : "Reviewed quarterly"}</span></div>
             <div className="row"><span>Last review</span><span>2026.05</span></div>
           </div>
