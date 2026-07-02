@@ -12,10 +12,21 @@ const publicRoutes = [
   "/products/retalk"
 ] as const;
 
+function koRoute(route: string) {
+  return route === "/" ? "/ko" : `/ko${route}`;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return publicRoutes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : route.startsWith("/products/") ? 0.8 : 0.7
-  }));
+  return publicRoutes.flatMap((route) => {
+    const enUrl = `${baseUrl}${route}`;
+    const koUrl = `${baseUrl}${koRoute(route)}`;
+    const changeFrequency = route === "/" ? "weekly" : "monthly";
+    const priority = route === "/" ? 1 : route.startsWith("/products/") ? 0.8 : 0.7;
+    const alternates = { languages: { en: enUrl, ko: koUrl, "x-default": enUrl } };
+
+    return [
+      { url: enUrl, changeFrequency, priority, alternates },
+      { url: koUrl, changeFrequency, priority, alternates }
+    ];
+  });
 }

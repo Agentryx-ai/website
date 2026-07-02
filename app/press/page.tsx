@@ -3,13 +3,18 @@ import { getInitialLang } from "../lang";
 import { SitePage } from "../site";
 
 const description =
-  "Press and contact information for Agentryx AI, an operator-led studio building AI products from Seoul.";
+  "Press and contact for Agentryx AI, an operator-led AI studio building products with agents.";
 
 export const metadata: Metadata = {
   title: "Press",
   description,
   alternates: {
-    canonical: "/press"
+    canonical: "/press",
+    languages: {
+      en: "/press",
+      ko: "/ko/press",
+      "x-default": "/press"
+    }
   },
   openGraph: {
     title: "Press | Agentryx AI",

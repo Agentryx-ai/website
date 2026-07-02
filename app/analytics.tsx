@@ -16,17 +16,24 @@ function pathOnly() {
   return window.location.pathname || "/";
 }
 
+function stripLocalePrefix(route: string) {
+  if (route === "/ko") return "/";
+  if (route.startsWith("/ko/")) return route.slice("/ko".length);
+  return route;
+}
+
 function routeGroup(route: string) {
-  if (route === "/") return "home";
-  if (route.startsWith("/products/")) return "product";
-  if (route === "/thesis") return "thesis";
-  if (route === "/about") return "about";
-  if (route === "/press") return "press";
+  const path = stripLocalePrefix(route);
+  if (path === "/") return "home";
+  if (path.startsWith("/products/")) return "product";
+  if (path === "/thesis") return "thesis";
+  if (path === "/about") return "about";
+  if (path === "/press") return "press";
   return "other";
 }
 
 function productSlug(route: string) {
-  const match = route.match(/^\/products\/([^/]+)$/);
+  const match = stripLocalePrefix(route).match(/^\/products\/([^/]+)$/);
   return match ? match[1] : null;
 }
 
@@ -163,7 +170,7 @@ export function Analytics() {
   }, []);
 
   useEffect(() => {
-    if (pathname !== "/thesis") return;
+    if (pathname !== "/thesis" && pathname !== "/ko/thesis") return;
 
     function emitThesisRead(readSignal: "scroll_50" | "active_30s") {
       if (thesisReadSent.current) return;

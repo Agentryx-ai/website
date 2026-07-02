@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getInitialLang } from "../../lang";
-import { PRODUCT_ORDER, productDetails } from "../../site-data";
-import { ProductDetailPage } from "../../site";
+import { PRODUCT_ORDER, productDetails } from "../../../site-data";
+import { ProductDetailPage } from "../../../site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -26,26 +25,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!isPublicProductSlug(slug)) return {};
   const product = productDetails[slug];
   if (!product) return {};
-  const title = product.name.en;
-  const description = product.tagline.en;
-  const canonical = `/products/${slug}`;
+  const title = product.name.ko;
+  const description = product.tagline.ko;
+  const canonical = `/ko/products/${slug}`;
+  const enCanonical = `/products/${slug}`;
 
   return {
-    title,
+    title: {
+      absolute: `${title} | 에이전트릭스 에이아이`
+    },
     description,
     alternates: {
       canonical,
       languages: {
-        en: canonical,
-        ko: `/ko${canonical}`,
-        "x-default": canonical
+        en: enCanonical,
+        ko: canonical,
+        "x-default": enCanonical
       }
     },
     openGraph: {
-      title: `${title} | Agentryx AI`,
+      title: `${title} | 에이전트릭스 에이아이`,
       description,
       url: canonical,
       type: "website",
+      locale: "ko_KR",
       images: [
         {
           url: OG_IMAGE,
@@ -57,15 +60,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | Agentryx AI`,
+      title: `${title} | 에이전트릭스 에이아이`,
       description,
       images: [OG_IMAGE]
     }
   };
 }
 
-export default async function ProductPage({ params }: Props) {
+export default async function KoProductPage({ params }: Props) {
   const { slug } = await params;
   if (!isPublicProductSlug(slug) || !productDetails[slug]) notFound();
-  return <ProductDetailPage slug={slug} initialLang={await getInitialLang()} />;
+  return (
+    <ProductDetailPage
+      slug={slug}
+      initialLang="ko"
+      locked
+      langLinks={{ en: `/products/${slug}`, ko: `/ko/products/${slug}` }}
+    />
+  );
 }

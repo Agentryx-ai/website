@@ -3,13 +3,18 @@ import { getInitialLang } from "../lang";
 import { SitePage } from "../site";
 
 const description =
-  "The operating thesis behind Agentryx AI: operator-led work, agent-first execution, verification before velocity, and small real surfaces.";
+  "The operating thesis behind Agentryx AI: operator-led work, agent-first execution, verification over velocity, and small real surfaces.";
 
 export const metadata: Metadata = {
   title: "Operating Thesis",
   description,
   alternates: {
-    canonical: "/thesis"
+    canonical: "/thesis",
+    languages: {
+      en: "/thesis",
+      ko: "/ko/thesis",
+      "x-default": "/thesis"
+    }
   },
   openGraph: {
     title: "Operating Thesis | Agentryx AI",

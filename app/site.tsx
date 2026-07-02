@@ -63,12 +63,16 @@ function persistLang(lang: Lang) {
   document.cookie = `${LANG_SOURCE_COOKIE}=${MANUAL_LANG_SOURCE}; path=/; max-age=31536000; samesite=lax`;
 }
 
-function useLang(initialLang: Lang) {
-  const [lang, setLangState] = useState<Lang>(() => readInitialLang(initialLang));
+function useLang(initialLang: Lang, locked?: boolean) {
+  const [lang, setLangState] = useState<Lang>(() => (locked ? initialLang : readInitialLang(initialLang)));
 
   useEffect(() => {
+    if (locked) {
+      setLangState(initialLang);
+      return;
+    }
     setLangState(readInitialLang(initialLang));
-  }, [initialLang]);
+  }, [initialLang, locked]);
 
   useEffect(() => {
     document.body.dataset.lang = lang;
@@ -76,9 +80,10 @@ function useLang(initialLang: Lang) {
   }, [lang]);
 
   const setLang = useCallback((nextLang: Lang) => {
+    if (locked) return;
     persistLang(nextLang);
     setLangState(nextLang);
-  }, []);
+  }, [locked]);
 
   return {
     lang,
@@ -86,6 +91,8 @@ function useLang(initialLang: Lang) {
     t: i18n[lang]
   };
 }
+
+type LangLinks = { en: string; ko: string };
 
 function statusLabel(status: string, lang: Lang) {
   const labels = {
@@ -106,7 +113,40 @@ function BrandMark() {
   );
 }
 
-function LangToggle({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }) {
+function LangToggle({
+  lang,
+  setLang,
+  langLinks
+}: {
+  lang: Lang;
+  setLang: (lang: Lang) => void;
+  langLinks?: LangLinks;
+}) {
+  if (langLinks) {
+    return (
+      <div className="lang-toggle" role="group" aria-label="Language">
+        <Link
+          href={langLinks.en}
+          aria-current={lang === "en" ? "true" : undefined}
+          data-analytics-event="language_toggled"
+          data-analytics-current-locale={lang}
+          data-analytics-to-locale="en"
+        >
+          EN
+        </Link>
+        <Link
+          href={langLinks.ko}
+          aria-current={lang === "ko" ? "true" : undefined}
+          data-analytics-event="language_toggled"
+          data-analytics-current-locale={lang}
+          data-analytics-to-locale="ko"
+        >
+          KO
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="lang-toggle" role="group" aria-label="Language">
       <button
@@ -137,12 +177,14 @@ function Topbar({
   active,
   lang,
   setLang,
-  t
+  t,
+  langLinks
 }: {
   active: Page | "products";
   lang: Lang;
   setLang: (lang: Lang) => void;
   t: typeof i18n.en;
+  langLinks?: LangLinks;
 }) {
   const items = [
     { key: "products", href: "/#products", label: t.navProducts },
@@ -162,7 +204,7 @@ function Topbar({
           ))}
         </nav>
         <div className="nav-end">
-          <LangToggle lang={lang} setLang={setLang} />
+          <LangToggle lang={lang} setLang={setLang} langLinks={langLinks} />
         </div>
       </div>
     </header>
@@ -179,6 +221,7 @@ function Footer({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
             <span>Agentryx AI</span>
           </div>
           <p className="foot-tagline">{t.footerTagline}</p>
+          <p className="foot-altname">에이전트릭스 에이아이 (Agentryx AI) · Seoul</p>
         </div>
         <div>
           <h4>Studio</h4>
@@ -246,8 +289,8 @@ function Hero({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         </div>
         <div className="hero-aside" aria-label="Studio facts">
           <div className="stat-row"><span>Products</span><span>4</span></div>
-          <div className="stat-row"><span>Live now</span><span>{lang === "ko" ? "2 · Itineva, 리톡" : "2 · Itineva, ReTalk"}</span></div>
-          <div className="stat-row"><span>Run by</span><span>{lang === "ko" ? "운영자 1인 + 에이전트" : "1 operator + agents"}</span></div>
+          <div className="stat-row"><span>{lang === "ko" ? "방식" : "Model"}</span><span>{lang === "ko" ? "운영자 주도 · 에이전트 우선" : "Operator-led · agent-first"}</span></div>
+          <div className="stat-row"><span>{lang === "ko" ? "상태" : "Status"}</span><span>{lang === "ko" ? "개발 중 · 순차 출시" : "In development"}</span></div>
           <div className="stat-row"><span>Stack</span><span>Claude · Agentryx</span></div>
         </div>
       </div>
@@ -383,8 +426,8 @@ function AboutPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
         <div className="about-grid">
           <p className="lede">{t.aboutLede}</p>
           <div className="aside">
-            <div className="row"><span>Role</span><span>{lang === "ko" ? "운영·개발·디자인·마케팅·리뷰" : "Operating, dev, design, marketing, review"}</span></div>
-            <div className="row"><span>Based</span><span>{lang === "ko" ? "서울" : "Seoul, Korea"}</span></div>
+            <div className="row"><span>{lang === "ko" ? "방식" : "Model"}</span><span>{lang === "ko" ? "운영자 주도 · 에이전트 우선" : "Operator-led · agent-first"}</span></div>
+            <div className="row"><span>{lang === "ko" ? "제품" : "Products"}</span><span>{lang === "ko" ? "4개" : "Four"}</span></div>
             <div className="row"><span>Languages</span><span>{lang === "ko" ? "한국어 · 영어" : "English, Korean"}</span></div>
             <div className="row"><span>Contact</span><span>{CONTACT_EMAIL}</span></div>
           </div>
@@ -407,7 +450,7 @@ function ThesisPageView({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
           <div className="aside">
             <div className="row"><span>Audience</span><span>{lang === "ko" ? "고객 · 동료 · 궁금한 사람" : "Customers, peers, the curious"}</span></div>
             <div className="row"><span>Cadence</span><span>{lang === "ko" ? "분기마다 검토" : "Reviewed quarterly"}</span></div>
-            <div className="row"><span>Last review</span><span>2026.05</span></div>
+            <div className="row"><span>Last review</span><span>2026.07</span></div>
           </div>
         </div>
       </section>
@@ -537,8 +580,18 @@ function NextBlock({ t }: { t: typeof i18n.en }) {
   );
 }
 
-export function SitePage({ page, initialLang }: { page: Page; initialLang: Lang }) {
-  const { lang, setLang, t } = useLang(initialLang);
+export function SitePage({
+  page,
+  initialLang,
+  locked,
+  langLinks
+}: {
+  page: Page;
+  initialLang: Lang;
+  locked?: boolean;
+  langLinks?: LangLinks;
+}) {
+  const { lang, setLang, t } = useLang(initialLang, locked);
   const content = useMemo(() => {
     if (page === "about") return <AboutPageView lang={lang} t={t} />;
     if (page === "thesis") return <ThesisPageView lang={lang} t={t} />;
@@ -548,15 +601,25 @@ export function SitePage({ page, initialLang }: { page: Page; initialLang: Lang 
 
   return (
     <>
-      <Topbar active={page} lang={lang} setLang={setLang} t={t} />
+      <Topbar active={page} lang={lang} setLang={setLang} t={t} langLinks={langLinks} />
       {content}
       <Footer lang={lang} t={t} />
     </>
   );
 }
 
-export function ProductDetailPage({ slug, initialLang }: { slug: string; initialLang: Lang }) {
-  const { lang, setLang, t } = useLang(initialLang);
+export function ProductDetailPage({
+  slug,
+  initialLang,
+  locked,
+  langLinks
+}: {
+  slug: string;
+  initialLang: Lang;
+  locked?: boolean;
+  langLinks?: LangLinks;
+}) {
+  const { lang, setLang, t } = useLang(initialLang, locked);
   const detail = productDetails[slug];
   const index = PRODUCT_ORDER.indexOf(slug);
   const prevSlug = PRODUCT_ORDER[(index - 1 + PRODUCT_ORDER.length) % PRODUCT_ORDER.length];
@@ -573,7 +636,7 @@ export function ProductDetailPage({ slug, initialLang }: { slug: string; initial
 
   return (
     <>
-      <Topbar active="products" lang={lang} setLang={setLang} t={t} />
+      <Topbar active="products" lang={lang} setLang={setLang} t={t} langLinks={langLinks} />
       <main>
         <section className="detail-hero">
           <div className="shell">

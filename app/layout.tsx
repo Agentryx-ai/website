@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
 import { Analytics } from "./analytics";
 import { getInitialLang } from "./lang";
 import "./globals.css";
 
 const siteUrl = "https://agentryx-ai.com";
 const siteDescription =
-  "Agentryx AI is a one-person, operator-led studio in Seoul building AI products — Agentryx, Itineva, ModuBoza, and ReTalk — by running almost every workflow on agents.";
+  "Agentryx AI is an operator-led AI studio building products — Agentryx, Itineva, ModuBoza, and ReTalk — by running almost every workflow on agents.";
 const ogImage = "/og-image.svg";
 
 export const metadata: Metadata = {
@@ -16,7 +17,12 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    languages: {
+      en: "/",
+      ko: "/ko",
+      "x-default": "/"
+    }
   },
   openGraph: {
     title: "Agentryx AI",
@@ -49,12 +55,26 @@ export const viewport: Viewport = {
   initialScale: 1
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Agentryx AI",
+  alternateName: ["에이전트릭스 에이아이", "에이전트릭스"],
+  url: siteUrl,
+  logo: `${siteUrl}/favicon.svg`
+};
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const lang = await getInitialLang();
+  const pathname = (await headers()).get("x-pathname") ?? "";
+  const lang = pathname === "/ko" || pathname.startsWith("/ko/") ? "ko" : await getInitialLang();
 
   return (
     <html lang={lang} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Analytics />
         {children}
       </body>
