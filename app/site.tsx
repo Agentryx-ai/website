@@ -221,7 +221,7 @@ function Footer({ lang, t }: { lang: Lang; t: typeof i18n.en }) {
             <span>Agentryx AI</span>
           </div>
           <p className="foot-tagline">{t.footerTagline}</p>
-          <p className="foot-altname">에이전트릭스 에이아이 (Agentryx AI) · Seoul</p>
+          <p className="foot-altname">에이전트릭스 에이아이 (Agentryx AI)</p>
         </div>
         <div>
           <h4>Studio</h4>

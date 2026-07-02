@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SitePage } from "../../site";
 
 const description =
-  "에이전트릭스 에이아이(Agentryx AI)는 서울의 운영자 주도 스튜디오입니다. 에이전트, 좁은 작업 범위, 검증된 제품 작업을 중심으로 운영합니다.";
+  "에이전트릭스 에이아이(Agentryx AI)는 운영자 주도의 AI 스튜디오입니다. 에이전트, 좁은 작업 범위, 꼼꼼한 리뷰를 중심으로 운영합니다.";
 
 export const metadata: Metadata = {
   title: {

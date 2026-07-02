@@ -19,18 +19,18 @@ export const i18n = {
     contact: "Get in touch",
     visitSite: "Visit site",
     open: "Open",
-    footerTagline: "Built in Seoul · Run from anywhere",
+    footerTagline: "Operator-led · Run by agents",
     footerRights: "Agentryx AI. A small operator-led studio.",
     statusCore: "Core product",
     statusCandidate: "Core candidate",
     statusPoc: "Internal PoC",
     statusDirection: "Direction",
-    homeLabel: "Operator-led · Agent-first · Seoul, 2026",
-    homeH1A: "One person.",
-    homeH1B: "Four products.",
-    homeH1C: "The work runs on agents.",
+    homeLabel: "Operator-led · Agent-first · 2026",
+    homeH1A: "Four products.",
+    homeH1B: "Built and run by agents.",
+    homeH1C: "An operator decides what ships.",
     homeLede:
-      "Agentryx AI is a one-person studio in Seoul. Two of the four — Itineva and ReTalk — are live right now. Agents do the building, reviewing, shipping, and operating; one operator decides what ships.",
+      "Agentryx AI is an operator-led AI studio. It runs four products — a development environment it builds on, and three built with that discipline. Agents do the building, reviewing, shipping, and operating; an operator decides what ships.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
@@ -41,14 +41,14 @@ export const i18n = {
     notesNum: "03 — Why now",
     notesHeading: "Three observations we are building against.",
     ctaEyebrow: "See for yourself",
-    ctaHeading: "Don't take our word for it — use the products.",
+    ctaHeading: "Judge us by what ships.",
     ctaBody:
-      "Two are open to anyone today: Itineva, a travel planner, and ReTalk, a KakaoTalk chat restorer in beta. Go open one. If it's useful, or you just want to compare notes on running a company with agents, the operator reads every email.",
+      "Four products, built and run by agents — they're how we test the thesis in the open. Try each as it launches, and hold us to it. Or if you just want to compare notes on running a company with agents, the operator reads every email.",
     aboutLabel: "About · The studio",
     aboutH1A: "A small studio,",
     aboutH1B: "proving an AI company can run on agents.",
     aboutLede:
-      "Agentryx AI is an operator-led studio in Seoul. One person sets priorities; agents execute against narrow, well-specified surfaces. We design the studio with the same discipline we ask of the products inside it. We're not claiming we've cracked it — the shipped products are how we test the idea in the open.",
+      "Agentryx AI is an operator-led AI studio. An operator sets priorities; agents execute against narrow, well-specified surfaces. We design the studio with the same discipline we ask of the products inside it. We're not claiming we've cracked it — the shipped products are how we test the idea in the open.",
     thesisLabel: "Operating thesis",
     thesisH1A: "Four principles.",
     thesisH1B: "Every product, every PR, every standup.",
@@ -72,18 +72,18 @@ export const i18n = {
     contact: "문의하기",
     visitSite: "사이트 방문",
     open: "열기",
-    footerTagline: "서울에서 만들고, 어디서나 일합니다",
-    footerRights: "Agentryx AI. 운영자가 직접 운영하는 작은 스튜디오.",
+    footerTagline: "운영자가 정하고, 에이전트가 만듭니다",
+    footerRights: "Agentryx AI. 운영자 주도의 작은 스튜디오.",
     statusCore: "코어 제품",
     statusCandidate: "코어 후보",
     statusPoc: "내부 PoC",
     statusDirection: "방향성",
-    homeLabel: "운영자 주도 · 에이전트 우선 · 서울, 2026",
-    homeH1A: "한 사람.",
-    homeH1B: "네 개의 제품.",
-    homeH1C: "일은 에이전트가 합니다.",
+    homeLabel: "운영자 주도 · 에이전트 우선 · 2026",
+    homeH1A: "네 개의 제품.",
+    homeH1B: "만들고 운영하는 건 에이전트.",
+    homeH1C: "무엇을 낼지는 운영자가 정합니다.",
     homeLede:
-      "Agentryx AI는 서울의 1인 스튜디오입니다. 네 제품 중 Itineva와 리톡은 지금 바로 쓸 수 있습니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 하고, 무엇을 낼지는 운영자 한 사람이 정합니다.",
+      "Agentryx AI는 운영자 주도의 AI 스튜디오입니다. 네 개의 제품을 운영합니다. 스튜디오를 굴리는 개발 환경 하나와, 그 규율 위에서 만든 세 제품입니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 하고, 무엇을 낼지는 운영자가 정합니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
@@ -94,13 +94,13 @@ export const i18n = {
     notesNum: "03 — 왜 지금인가",
     notesHeading: "우리가 딛고 서 있는 세 가지 관찰.",
     ctaEyebrow: "직접 확인하세요",
-    ctaHeading: "말로 믿지 말고, 직접 써 보세요.",
-    ctaBody: "지금 누구나 써 볼 수 있는 건 둘입니다. 여행 기획 Itineva, 그리고 베타로 공개한 카톡 대화 복원 리톡. 하나 열어 보세요. 써 보고 쓸 만했거나 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
+    ctaHeading: "출시한 것으로 판단해 주세요.",
+    ctaBody: "네 개의 제품, 만들고 운영하는 일은 에이전트가 합니다. 이 제품들이 우리 가설을 공개적으로 시험하는 방식입니다. 출시되는 대로 직접 써 보고 따져 보세요. 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
     aboutLabel: "회사 · 스튜디오",
     aboutH1A: "작은 스튜디오,",
     aboutH1B: "AI 회사가 에이전트로 굴러갈 수 있는지 증명하는 중.",
     aboutLede:
-      "Agentryx AI는 서울에 있는 운영자 주도 스튜디오입니다. 한 사람이 우선순위를 정하고, 에이전트는 잘 정의된 좁은 작업 범위에서 일을 처리합니다. 제품에 요구하는 것과 똑같은 원칙으로 스튜디오를 설계합니다. 다 됐다고 말하지 않습니다. 출시한 제품이 이 생각을 공개적으로 시험하는 방식입니다.",
+      "Agentryx AI는 운영자 주도의 AI 스튜디오입니다. 운영자가 우선순위를 정하고, 에이전트는 잘 정의된 좁은 작업 범위에서 일을 처리합니다. 제품에 요구하는 것과 똑같은 원칙으로 스튜디오를 설계합니다. 다 됐다고 말하지 않습니다. 출시한 제품이 이 생각을 공개적으로 시험하는 방식입니다.",
     thesisLabel: "운영 원칙",
     thesisH1A: "네 가지 원칙.",
     thesisH1B: "모든 제품, 모든 PR, 모든 스탠드업.",
@@ -109,7 +109,7 @@ export const i18n = {
     pressLabel: "프레스 · 연락",
     pressH1: "프레스와 연락, 그리고 우리가 말할 것과 말하지 않을 것.",
     pressLede:
-      "Agentryx AI는 작은 회사이고, 운영자가 직접 운영합니다. 프레스 팀은 따로 없으며 문의에는 운영자가 직접 답합니다.",
+      "Agentryx AI는 작은 회사입니다. 프레스 팀은 따로 없으며 문의에는 운영자가 직접 답합니다.",
     next: "다음",
     whereNext: "여기서 어디로 갈까요."
   }
@@ -136,20 +136,18 @@ export const products = [
     deck: {
       en: "A travel planner that turns destination, dates, travelers, and taste into a shareable trip page with versions, gallery, and route checks.",
       ko: "여행지·일정·동행·취향만 입력하면 버전 관리·갤러리·동선 점검까지 되는 여행 페이지가 만들어집니다."
-    },
-    siteUrl: "https://itineva.com/"
+    }
   },
   {
     id: "moduboza",
     num: "03",
     accent: "violet",
-    status: "poc",
+    status: "direction",
     name: { en: "ModuBoza", ko: "모두보자" },
     deck: {
-      en: "A private operations PoC for shared OTT subscriptions: pooled providers, isolated credentials, one-person sessions.",
-      ko: "공유 OTT 구독을 위한 사내 운영 PoC. 공급자 풀, 격리된 자격 증명, 1인 세션."
-    },
-    siteUrl: "https://moduboza.com/"
+      en: "Find something to watch and pay less for it — streaming discovery with one simple checkout. In development.",
+      ko: "볼 것을 찾고, 더 저렴하게. 간단한 결제 하나로 즐기는 스트리밍 디스커버리. 개발 중."
+    }
   },
   {
     id: "retalk",
@@ -158,8 +156,8 @@ export const products = [
     status: "candidate",
     name: { en: "ReTalk", ko: "리톡" },
     deck: {
-      en: "A local-first desktop app that restores the KakaoTalk conversations already on your PC — read, search, and export — and backs up expiring photos for free. Now in beta.",
-      ko: "PC에 이미 남아 있는 카카오톡 대화를 복원해 열람·검색·내보내고, 사라질 사진은 무료로 자동 보관하는 로컬 우선 데스크톱 앱. 베타 운영 중."
+      en: "A local-first desktop app that restores the KakaoTalk conversations already on your PC — read, search, and export — and backs up expiring photos for free. Launching soon.",
+      ko: "PC에 이미 남아 있는 카카오톡 대화를 복원해 열람·검색·내보내고, 사라질 사진은 무료로 자동 보관하는 로컬 우선 데스크톱 앱. 곧 출시합니다."
     },
     siteUrl: "https://retalk.agentryx-ai.com/"
   }
@@ -189,8 +187,8 @@ export const principles = [
     //     a Lead plus workers plus verification, not a consensus vote).
     //     https://www.anthropic.com/engineering/built-multi-agent-research-system
     long: {
-      en: "When agents just debate in a chat log until they agree, the evidence says most of the gain comes from the vote, not the debate — and a confident, wrong consensus is a real failure mode. So we bet the other way: one operator owns the roadmap, the design, and the merge button; agents work in parallel against a small, well-specified surface; and nothing ships because everyone agreed — only because it was verified.",
-      ko: "에이전트들을 채팅 로그에서 합의할 때까지 토론하게 두면, 이득은 대개 토론이 아니라 다수결에서 나온다는 게 지금까지의 근거입니다. 게다가 자신만만하게 틀린 합의로 수렴하기도 합니다. 그래서 우리는 반대로 겁니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 잘 정의된 좁은 범위에서 병렬로 일하며, 합의했기 때문이 아니라 검증을 통과했기 때문에 출시합니다."
+      en: "When agents just debate in a chat log until they agree, the evidence says most of the gain comes from the vote, not the debate — and a confident, wrong consensus is a real failure mode. So we bet the other way: an operator owns the roadmap, the design, and the merge button; agents work in parallel against a small, well-specified surface; and nothing ships on agreement alone — the bar is whether it holds up, not whether everyone agreed.",
+      ko: "에이전트들을 채팅 로그에서 합의할 때까지 토론하게 두면, 이득은 대개 토론이 아니라 다수결에서 나온다는 게 지금까지의 근거입니다. 게다가 자신만만하게 틀린 합의로 수렴하기도 합니다. 그래서 우리는 반대로 겁니다. 운영자가 로드맵·디자인·머지 버튼을 쥐고, 에이전트는 잘 정의된 좁은 범위에서 병렬로 일하며, 합의만으로는 내지 않습니다. 기준은 모두의 동의가 아니라 실제로 버티느냐입니다."
     }
   },
   {
@@ -201,20 +199,20 @@ export const principles = [
       ko: "AI 에이전트가 스튜디오에서 가장 큰 레버리지를 내도록 스펙·레포·리뷰·일일 운영을 설계합니다."
     },
     long: {
-      en: "AI agents are the highest-leverage tool we have, and we treat them that way. Specs are written so an agent can act on them; repos are structured so agents can navigate them; reviews are scheduled so agent work is never the long pole.",
+      en: "AI agents are the highest-leverage tool we have, and we treat them that way. Specs are written so an agent can act on them; repos are structured so agents can navigate them; reviews are scheduled so agent work rarely becomes the long pole.",
       ko: "AI 에이전트는 우리가 가진 가장 레버리지 높은 도구이고, 실제로 그렇게 대우합니다. 스펙은 에이전트가 바로 작업할 수 있게 쓰고, 레포는 에이전트가 탐색하기 좋게 구조화하며, 리뷰는 에이전트 작업이 병목이 되지 않도록 운영합니다."
     }
   },
   {
-    key: { en: "III — Verification before velocity", ko: "III — 속도 전에 검증" },
-    h: { en: "Two layers of review, every time.", ko: "두 단계 리뷰, 매번." },
+    key: { en: "III — Verification over velocity", ko: "III — 속도보다 검증" },
+    h: { en: "We'd rather verify than rush.", ko: "빠름보다 검증을 택합니다." },
     p: {
-      en: "Every change goes through static checks and a senior judgment layer before it merges.",
-      ko: "모든 변경은 정적 검증과 시니어 판단 레이어를 모두 통과한 뒤 머지됩니다."
+      en: "We build static checks and human judgment into how work ships, and we don't treat a green check as finished.",
+      ko: "정적 검증과 사람의 판단을 출시 흐름에 넣고, 초록불이 곧 완료라고 보지 않습니다."
     },
     long: {
-      en: "Every change goes through two layers: a static layer such as lint, types, tests, and screenshot regressions; and a senior layer that reviews copy, taste, edge cases, and what the user will actually feel.",
-      ko: "모든 변경은 린트·타입·테스트·스크린샷 회귀 같은 정적 레이어와, 카피·취향·엣지 케이스·사용자 감각을 살피는 시니어 레이어를 통과합니다."
+      en: "We treat verification as the point, not a hoop to clear on the way to shipping. Static checks — lint, types, tests, screenshot diffs — catch the mechanical failures; a human read catches copy, taste, and the edge cases a check won't. We'd rather ship less and trust it more.",
+      ko: "검증을 통과 의례가 아니라 목적으로 봅니다. 린트·타입·테스트·스크린샷 회귀 같은 정적 검증이 기계적 실패를 잡고, 사람이 읽어 카피·취향·엣지 케이스를 잡습니다. 적게 내더라도 더 믿을 수 있는 쪽을 택합니다."
     }
   },
   {
@@ -266,10 +264,10 @@ export const notes = [
 
 export const aboutStories = [
   {
-    h: { en: "One operator, many agents.", ko: "한 명의 운영자, 여러 에이전트." },
+    h: { en: "The operator decides; agents build.", ko: "결정은 운영자, 구현은 에이전트." },
     p: {
-      en: "Headcount stays small on purpose. Agents take implementation work; the operator owns priorities, design, and the merge button.",
-      ko: "인원은 의도적으로 작게 유지합니다. 에이전트가 구현을 맡고, 운영자는 우선순위·디자인·머지 버튼을 쥡니다."
+      en: "Agents take the implementation work; the operator owns priorities, design, and the merge button.",
+      ko: "구현은 에이전트가 맡고, 운영자는 우선순위·디자인·머지 버튼을 쥡니다."
     }
   },
   {
@@ -292,8 +290,8 @@ export const pressRows = [
   {
     k: { en: "We'll talk about", ko: "이야기할 것" },
     v: {
-      en: "How a single operator runs four products with agents, the operating thesis, verification systems, and what has not worked.",
-      ko: "한 사람이 에이전트와 함께 네 제품을 운영하는 방식, 운영 원칙, 검증 시스템, 그리고 잘 안 된 것."
+      en: "How a small studio runs four products with agents, the operating thesis, verification systems, and what has not worked.",
+      ko: "작은 스튜디오가 에이전트와 함께 네 제품을 운영하는 방식, 운영 원칙, 검증 시스템, 그리고 잘 안 된 것."
     }
   },
   {
@@ -342,7 +340,7 @@ export const productDetails: Record<string, {
       { k: { en: "Pattern", ko: "패턴" }, v: { en: "Recursive orchestrator-workers", ko: "재귀적 오케스트레이터-워커" } },
       { k: { en: "Runner", ko: "러너" }, v: "Claude · Codex CLI" },
       { k: { en: "Isolation", ko: "격리" }, v: { en: "Per-task git worktree", ko: "태스크별 git worktree" } },
-      { k: { en: "Stage", ko: "단계" }, v: { en: "Stages 00–02 · in build", ko: "Stage 00–02 · 개발 중" } }
+      { k: { en: "Stage", ko: "단계" }, v: { en: "Stages 00–28 shipped · 29 in design", ko: "Stage 00–28 완료 · 29 설계 중" } }
     ],
     sections: [
       {
@@ -365,8 +363,8 @@ export const productDetails: Record<string, {
         k: { en: "03 — Built in small stages", ko: "03 — 작은 단계로 구현" },
         h: { en: "A recursive generalization of orchestrator-workers.", ko: "오케스트레이터-워커의 재귀적 일반화." },
         body: {
-          en: "The closest validated peer is Anthropic's orchestrator-workers; Agentryx is its recursive generalization. It is built one stage at a time — Stages 00–02 are done (single agent, web frontend, task decomposition); agent-to-agent delegation, automatic verification, and parallel execution come later.",
-          ko: "가장 가까운 검증된 선례는 Anthropic의 오케스트레이터-워커이고, Agentryx는 그것의 재귀적 일반화입니다. 한 번에 한 단계씩 만듭니다. Stage 00–02 완료(단일 에이전트, 웹 프런트엔드, 태스크 분해)이고, 에이전트 간 위임·자동 검증·병렬 실행은 다음 단계입니다."
+          en: "The closest validated peer is Anthropic's orchestrator-workers; Agentryx is its recursive generalization, built one small stage at a time. Through Stage 28 it runs the DAG in parallel, replans on failure, coordinates through a single conversation, and checks whether a goal was actually met — not just whether a task ran. Stage 29, benchmark-gated completion, is in design.",
+          ko: "가장 가까운 검증된 선례는 Anthropic의 오케스트레이터-워커이고, Agentryx는 그것의 재귀적 일반화입니다. 작고 검증 가능한 단계로 하나씩 만들어, Stage 28까지 DAG를 병렬로 실행하고 실패 시 다시 계획하며, 하나의 대화로 조율하고, 태스크가 돌았는지가 아니라 목표가 실제로 달성됐는지를 확인합니다. Stage 29(벤치마크 게이트 완료)는 설계 중입니다."
         }
       }
     ],
@@ -375,8 +373,8 @@ export const productDetails: Record<string, {
         k: { en: "Implementation evidence", ko: "구현 근거" },
         h: { en: "The task model is built, not promised.", ko: "태스크 모델은 약속이 아니라 구현입니다." },
         body: {
-          en: "The README states it plainly: \"Stages 00–02 are built — the task model is implemented as of Stage 02.\" Stage 00 is a single agent finishing one task; Stage 02 decomposes a task into a sub-task DAG, runs it, and synthesizes the result.",
-          ko: "README가 그대로 적습니다. 'Stage 00–02 구현 완료 — 태스크 모델은 Stage 02 기준으로 구현됨.' Stage 00은 단일 에이전트가 한 태스크를 끝내고, Stage 02는 태스크를 하위 작업 DAG로 쪼개 실행하고 합성합니다."
+          en: "The task model — run-or-split, run, synthesize — has been implemented since Stage 02, and the system has grown through Stage 28: parallel DAG execution, failure replanning, and goal-achievement verification all run today.",
+          ko: "태스크 모델(실행-또는-분할, 실행, 합성)은 Stage 02부터 구현됐고, 시스템은 Stage 28까지 자랐습니다. 병렬 DAG 실행, 실패 시 재계획, 목표 달성 검증이 지금 모두 동작합니다."
         }
       },
       {
@@ -389,16 +387,16 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "Scope evidence", ko: "범위 근거" },
-        h: { en: "What it can't do yet is stated out loud.", ko: "아직 못 하는 것은 분명히 밝혀 둡니다." },
+        h: { en: "What's done and what's next, stated plainly.", ko: "된 것과 다음이 분명합니다." },
         body: {
-          en: "The README is explicit about scope: at these stages there is no agent-to-agent delegation, no automatic verification, no parallel execution, and no multi-tenancy — those are later stages, and the public copy doesn't claim them.",
-          ko: "README는 범위를 분명히 합니다. 지금 단계에는 에이전트 간 위임, 자동 검증, 병렬 실행, 멀티테넌시가 없습니다. 다음 단계의 일이고, 공개 카피도 그것을 주장하지 않습니다."
+          en: "Stages 00–28 are done — through parallel execution, goal verification, and a single-conversation coordinator. Stage 29 hard-gates completion behind an independent benchmark, so a goal can't be self-certified as done. What isn't built yet is stated, not implied.",
+          ko: "Stage 00–28 완료 — 병렬 실행, 목표 검증, 단일 대화 코디네이터까지. Stage 29는 독립 벤치마크로 완료를 하드 게이트해서, 목표를 스스로 '완료'라 단정하지 못하게 합니다. 아직 안 된 것은 암시하지 않고 분명히 밝힙니다."
         }
       }
     ],
     quote: {
-      en: "An AI company should be a small operator and a lot of leverage.",
-      ko: "AI 회사는 작은 운영자 한 명과 큰 레버리지로 굴러가야 합니다."
+      en: "An AI company should run on leverage, not headcount.",
+      ko: "AI 회사는 인원이 아니라 레버리지로 굴러가야 합니다."
     }
   },
   itineva: {
@@ -406,20 +404,19 @@ export const productDetails: Record<string, {
     status: "candidate",
     num: "02",
     name: { en: "Itineva", ko: "Itineva" },
-    siteUrl: "https://itineva.com/",
     tagline: {
       en: "Travel plans built like websites: versioned, shared, alive.",
       ko: "웹사이트처럼 만드는 여행 계획. 버전이 관리되고, 공유되고, 계속 살아 있습니다."
     },
     lede: {
-      en: "Itineva turns destination, dates, travelers, and taste into a shareable trip page. A staged generator drafts a skeleton, fills day-by-day events, enriches places, and checks routes before publish.",
-      ko: "Itineva는 여행지, 일정, 동행, 취향을 공유 가능한 여행 페이지로 바꿉니다. 단계별 생성기가 골격을 만들고 일자별 이벤트를 채우며 장소를 보강하고 동선을 점검합니다."
+      en: "Itineva turns destination, dates, travelers, and taste into a shareable trip page — a full day-by-day plan, filled with real places and checked so each day is actually doable before you share it. In development.",
+      ko: "Itineva는 여행지·일정·동행·취향을 공유 가능한 여행 페이지로 바꿉니다. 실제 장소로 채운 일자별 계획을 만들고, 공유하기 전에 각 날이 실제로 가능한지 점검합니다. 개발 중입니다."
     },
     metrics: [
       { k: { en: "Inputs", ko: "입력" }, v: { en: "Destination · dates · travelers · taste", ko: "여행지·일정·동행·취향" } },
       { k: { en: "Output", ko: "출력" }, v: { en: "Versioned trip page", ko: "버전 관리 여행 페이지" } },
-      { k: { en: "Generation", ko: "생성" }, v: { en: "Streamed · 4-stage", ko: "스트리밍 · 4단계" } },
-      { k: { en: "Stage", ko: "단계" }, v: { en: "Core candidate", ko: "코어 후보" } }
+      { k: { en: "Sharing", ko: "공유" }, v: { en: "One link, always current", ko: "링크 하나, 항상 최신" } },
+      { k: { en: "Stage", ko: "단계" }, v: { en: "In development", ko: "개발 중" } }
     ],
     sections: [
       {
@@ -431,11 +428,11 @@ export const productDetails: Record<string, {
         }
       },
       {
-        k: { en: "02 — A four-stage generator", ko: "02 — 4단계 생성기" },
-        h: { en: "Skeleton, day plans, enrichment, autofix.", ko: "골격, 일자별 일정, 보강, 자동 보정." },
+        k: { en: "02 — Built for you, then checked", ko: "02 — 만들고, 다듬어서" },
+        h: { en: "A full plan, filled with real places.", ko: "실제 장소로 채운 완성된 계획." },
         body: {
-          en: "The generator streams a skeleton, creates day plans in parallel, enriches places with real-world data, and runs an autofix pass before publish.",
-          ko: "생성기는 골격을 스트리밍하고, 일자별 계획을 병렬로 만들고, 실제 장소 데이터로 보강한 뒤, 게시 전에 자동 보정을 한 번 돌립니다."
+          en: "Itineva drafts the whole trip day by day, fills it with real places, and cleans it up before you ever see it — so you start from a plan worth editing, not a blank page.",
+          ko: "여행 전체를 일자별로 짜고, 실제 장소로 채운 뒤 다듬어서 보여줍니다. 빈 페이지가 아니라 손볼 만한 계획에서 시작합니다."
         }
       },
       {
@@ -450,26 +447,26 @@ export const productDetails: Record<string, {
     proofs: [
       {
         k: { en: "Generator evidence", ko: "생성 근거" },
-        h: { en: "Generation is staged, not one-shot.", ko: "생성은 단발 호출이 아니라 단계형입니다." },
+        h: { en: "The plan is built in passes, not one shot.", ko: "계획은 단발이 아니라 여러 단계로." },
         body: {
-          en: "Repo research identifies Stage A skeleton streaming, Stage B parallel day-event generation, Stage C Google Places enrichment, and Stage D autofix/watchdog before publish.",
-          ko: "레포 리서치는 게시 전 Stage A 골격 스트리밍, Stage B 일자별 일정 병렬 생성, Stage C Google Places 보강, Stage D 자동 보정·watchdog를 확인합니다."
+          en: "Itineva drafts the trip, fills each day, enriches it with real place data, and runs a cleanup pass before publish — so what you get is coherent, not a single raw generation.",
+          ko: "여행의 골격을 잡고, 하루하루를 채우고, 실제 장소 데이터로 보강한 뒤, 게시 전에 정리 단계를 거칩니다. 그래서 단발 생성이 아니라 앞뒤가 맞는 결과가 나옵니다."
         }
       },
       {
         k: { en: "Share evidence", ko: "공유 근거" },
-        h: { en: "The shared artifact is versioned.", ko: "공유 결과물은 버전으로 관리됩니다." },
+        h: { en: "The shared plan stays versioned and current.", ko: "공유한 계획은 버전으로 관리되고 최신입니다." },
         body: {
-          en: "The implementation uses Project, Run, and Version models, a featured_version_id, publish/feature/share/import flows, public gallery behavior, and shared itinerary attribution.",
-          ko: "구현은 Project, Run, Version 모델과 featured_version_id, publish/feature/share/import 흐름, public gallery 동작, 공유 일정 attribution을 사용합니다."
+          en: "Every trip has versions and a stable share link, so the whole group always sees the current plan — not a stale copy pasted into a chat.",
+          ko: "여행마다 버전과 변하지 않는 공유 링크가 있어, 동행 모두가 낡은 사본이 아니라 최신 계획을 봅니다."
         }
       },
       {
         k: { en: "Reality evidence", ko: "현실 검증 근거" },
-        h: { en: "Routes and places are part of the product surface.", ko: "장소와 동선 검증도 제품의 일부입니다." },
+        h: { en: "Days are checked against reality.", ko: "일정은 현실에 맞춰 점검합니다." },
         body: {
-          en: "The product facts identify Google Places-based place enrichment and Google Routes-based route validation, with public copy limited to checks that the repo actually supports.",
-          ko: "제품 근거는 Google Places 기반 장소 보강과 Google Routes 기반 동선 검증을 확인하며, 공개 카피는 레포가 실제로 뒷받침하는 점검 범위로 제한합니다."
+          en: "Places are enriched with real-world data, and each day is checked against travel time and opening hours — if a day is too tight, the page flags it before you share.",
+          ko: "장소는 실제 데이터로 보강하고, 각 날은 이동 시간과 운영 시간에 비춰 점검합니다. 너무 빡빡한 날은 공유 전에 표시합니다."
         }
       }
     ],
@@ -480,79 +477,78 @@ export const productDetails: Record<string, {
   },
   moduboza: {
     accent: "violet",
-    status: "poc",
+    status: "direction",
     num: "03",
     name: { en: "ModuBoza", ko: "모두보자" },
-    siteUrl: "https://moduboza.com/",
     tagline: {
-      en: "An operations PoC for shared OTT, designed to be honest about scarcity.",
-      ko: "희소성을 정직하게 다루도록 설계한 공유 OTT 운영 PoC."
+      en: "Find something to watch — and pay less for it.",
+      ko: "볼 것을 찾고, 더 저렴하게."
     },
     lede: {
-      en: "ModuBoza is a private proof-of-concept exploring subscription pooling at the operations layer: provider pools, isolated credentials, queueing, session rules, and an audit-oriented operator surface.",
-      ko: "모두보자는 구독 풀링을 운영 계층에서 실험하는 비공개 PoC입니다. 공급자 풀, 분리된 자격 증명, 대기열, 세션 규칙, 그리고 감사 중심의 운영자 화면을 다룹니다."
+      en: "ModuBoza helps you find something worth watching and enjoy it for less, through one simple checkout. It's an independent service, still in development.",
+      ko: "모두보자는 볼 만한 것을 찾아, 간단한 결제 하나로 더 저렴하게 즐기도록 돕습니다. 아직 개발 중인 독립 서비스입니다."
     },
     metrics: [
-      { k: { en: "Mode", ko: "모드" }, v: { en: "Internal PoC", ko: "내부 PoC" } },
-      { k: { en: "Phase 1", ko: "Phase 1" }, v: { en: "Single provider · single region", ko: "단일 공급자 · 단일 지역" } },
-      { k: { en: "Sessions", ko: "세션" }, v: { en: "1 per pool, enforced", ko: "풀당 1, 강제" } },
-      { k: { en: "Status", ko: "상태" }, v: { en: "Legal review required", ko: "법무 검토 필요" } }
+      { k: { en: "Focus", ko: "초점" }, v: { en: "Streaming discovery", ko: "스트리밍 디스커버리" } },
+      { k: { en: "Payment", ko: "결제" }, v: { en: "One simple checkout", ko: "간단한 결제 하나" } },
+      { k: { en: "Privacy", ko: "프라이버시" }, v: { en: "No content stored", ko: "콘텐츠 저장 안 함" } },
+      { k: { en: "Status", ko: "상태" }, v: { en: "In development", ko: "개발 중" } }
     ],
     sections: [
       {
-        k: { en: "01 — Pool, not share", ko: "01 — 공유가 아니라 풀링" },
-        h: { en: "Credentials stay in the operator layer.", ko: "자격 증명은 운영자 계층 안에 머뭅니다." },
+        k: { en: "01 — Start from what to watch", ko: "01 — '무엇을 볼까'에서 시작" },
+        h: { en: "Content first, not accounts.", ko: "계정이 아니라 콘텐츠부터." },
         body: {
-          en: "Users are matched to managed provider accounts without seeing credentials. The system models scarcity through queues rather than overbooking.",
-          ko: "사용자는 자격 증명을 보지 않고 관리되는 공급자 계정에 매칭됩니다. 시스템은 오버부킹 대신 대기열로 희소성을 모델링합니다."
+          en: "ModuBoza starts from the thing you actually want — something to watch — and helps you get to it without the usual friction.",
+          ko: "모두보자는 정말 원하는 것, 즉 '볼 것'에서 시작해, 번거로움 없이 거기에 닿도록 돕습니다."
         }
       },
       {
-        k: { en: "02 — Bots, jobs, and audit", ko: "02 — 봇, 작업, 감사 로그" },
-        h: { en: "Every state change leaves a trace.", ko: "모든 상태 변경이 흔적을 남깁니다." },
+        k: { en: "02 — One simple payment", ko: "02 — 간단한 결제 하나" },
+        h: { en: "Clear price, easy to leave.", ko: "명확한 가격, 쉬운 해지." },
         body: {
-          en: "Verification, health checks, and auto-login are modeled as queued BotJobs. Operators can inspect what ran, when it ran, and how it failed.",
-          ko: "검증, 헬스체크, 자동 로그인은 대기열에 쌓이는 BotJob으로 처리합니다. 운영자는 무엇이 언제 실행됐고 어떻게 실패했는지 확인할 수 있습니다."
+          en: "The price is shown up front, and leaving is as easy as joining — no dark patterns, no traps.",
+          ko: "가격은 미리 보여주고, 해지는 가입만큼 쉽습니다. 다크 패턴도, 함정도 없습니다."
         }
       },
       {
-        k: { en: "03 — Conservative public posture", ko: "03 — 보수적인 공개 포지션" },
-        h: { en: "PoC first, launch claims later.", ko: "먼저 PoC, 출시 주장은 나중에." },
+        k: { en: "03 — Built carefully, in the open", ko: "03 — 조심스럽게, 공개적으로" },
+        h: { en: "Still in development.", ko: "아직 개발 중입니다." },
         body: {
-          en: "The product remains private until legal, payment, platform, and operational review are complete. Public copy avoids partnership or legality claims.",
-          ko: "법무, 결제, 플랫폼, 운영 검토가 끝나기 전까지 제품은 비공개 PoC로 유지됩니다. 공개 카피는 제휴나 법적 결론을 단정하지 않습니다."
+          en: "ModuBoza is an independent service, not affiliated with the streaming providers it helps you discover. It's still in development, and we won't overstate what it does before it launches.",
+          ko: "모두보자는 안내하는 스트리밍 사업자와 제휴하지 않은 독립 서비스입니다. 아직 개발 중이며, 출시 전에 기능을 부풀려 말하지 않습니다."
         }
       }
     ],
     proofs: [
       {
-        k: { en: "Credential evidence", ko: "자격 증명 근거" },
-        h: { en: "Credentials are isolated from subscribers.", ko: "자격 증명은 구독자와 분리됩니다." },
+        k: { en: "Value", ko: "가치" },
+        h: { en: "Less friction, lower cost.", ko: "덜 번거롭게, 더 저렴하게." },
         body: {
-          en: "Research confirms provider account registration, AES-256-GCM passwordCipher storage, managed account matching, and a product rule that OTT credentials are not shown to users.",
-          ko: "리서치는 공급자 계정 등록, AES-256-GCM passwordCipher 저장, 관리 계정 매칭, OTT 자격 증명을 사용자에게 노출하지 않는 제품 원칙을 확인합니다."
+          en: "The idea is simple: make watching what you want easier and cheaper than piecing it together yourself.",
+          ko: "생각은 단순합니다. 원하는 걸 보는 일을, 직접 하나하나 챙기는 것보다 더 쉽고 더 저렴하게 만드는 것."
         }
       },
       {
-        k: { en: "Operations evidence", ko: "운영 근거" },
-        h: { en: "Scarcity is modeled in queues and sessions.", ko: "희소성은 대기열과 세션으로 모델링합니다." },
+        k: { en: "Trust", ko: "신뢰" },
+        h: { en: "We don't store your content.", ko: "콘텐츠를 저장하지 않습니다." },
         body: {
-          en: "The PoC describes one-person sessions, provider pools, BotJob queues for verify/health/auto-login work, admin inspection, and audit logs for state changes.",
-          ko: "PoC는 1인 세션, 공급자 풀, 검증·헬스체크·자동 로그인 작업용 BotJob 대기열, 관리자 점검, 상태 변경 감사 로그를 설명합니다."
+          en: "ModuBoza doesn't keep what you watch, and it's built to respect the providers it works alongside.",
+          ko: "모두보자는 무엇을 보는지 저장하지 않고, 함께 일하는 사업자를 존중하도록 설계합니다."
         }
       },
       {
-        k: { en: "Risk evidence", ko: "리스크 근거" },
-        h: { en: "The public posture stays deliberately conservative.", ko: "공개 포지션은 의도적으로 보수적입니다." },
+        k: { en: "Posture", ko: "태도" },
+        h: { en: "In development, stated honestly.", ko: "개발 중임을 정직하게 밝힙니다." },
         body: {
-          en: "The research flags legal, tax, payment, copyright, platform ToS, and partnership-misread risks, so the page presents ModuBoza as an internal PoC rather than a launched service.",
-          ko: "리서치는 법무·세무·결제·저작권·플랫폼 약관·제휴 오인 리스크를 짚어내므로, 이 페이지는 모두보자를 출시된 서비스가 아니라 내부 PoC로 다룹니다."
+          en: "It isn't launched yet. This page says only what's true today, and nothing about how it works under the hood.",
+          ko: "아직 출시하지 않았습니다. 이 페이지는 오늘 사실인 것만 말하고, 내부 동작은 다루지 않습니다."
         }
       }
     ],
     quote: {
-      en: "A solo streaming subscription should be built for one viewer, not priced like a household.",
-      ko: "혼자 보는 OTT 구독은 가구 단위 가격이 아니라, 한 사람에게 맞춘 선택지여야 합니다."
+      en: "Watching by yourself shouldn't be priced like a household.",
+      ko: "혼자 보는데 가구 요금을 낼 이유는 없습니다."
     }
   },
   retalk: {
@@ -572,8 +568,8 @@ export const productDetails: Record<string, {
     metrics: [
       { k: { en: "Stance", ko: "포지셔닝" }, v: { en: "Local-first by design", ko: "설계부터 로컬 우선" } },
       { k: { en: "Network", ko: "네트워크" }, v: { en: "Account · license · updates", ko: "계정·라이선스·업데이트" } },
-      { k: { en: "Platform", ko: "플랫폼" }, v: { en: "Windows (beta) · macOS soon", ko: "Windows(베타) · macOS 예정" } },
-      { k: { en: "Stage", ko: "단계" }, v: { en: "Beta · live", ko: "베타 · 운영 중" } }
+      { k: { en: "Platform", ko: "플랫폼" }, v: { en: "Windows 10/11 · macOS 13+", ko: "Windows 10/11 · macOS 13+" } },
+      { k: { en: "Stage", ko: "단계" }, v: { en: "Launching soon", ko: "출시 준비 중" } }
     ],
     sections: [
       {
@@ -596,8 +592,8 @@ export const productDetails: Record<string, {
         k: { en: "03 — Preview before paywall", ko: "03 — 결제 전 미리 보기" },
         h: { en: "See what is recoverable before you pay.", ko: "결제 전에 무엇이 복원되는지 봅니다." },
         body: {
-          en: "Download, preview counts, latest-message preview, and free media auto-backup need no payment. A one-time, 31-day, per-profile pass unlocks full reading, cross-room search, and export. Chat content, names, and media never leave the device.",
-          ko: "다운로드, 복원 가능 분량 확인, 최신 대화 미리보기, 무료 미디어 자동 보관은 결제가 필요 없습니다. 프로필 1개·31일짜리 1회 결제 이용권으로 전체 열람·통합 검색·내보내기가 열립니다. 대화 내용·이름·미디어는 기기를 떠나지 않습니다."
+          en: "Download, preview counts, latest-message preview, and free media auto-backup need no payment. A one-time ₩49,000 pass — permanent, for one KakaoTalk profile — unlocks full reading, cross-room and semantic search, and export. Chat content, names, and media never leave the device.",
+          ko: "다운로드, 복원 가능 분량 확인, 최신 대화 미리보기, 무료 미디어 자동 보관은 결제가 필요 없습니다. ₩49,000 1회 결제 이용권(영구·카카오톡 프로필 1개)으로 전체 열람, 통합·의미 검색, 내보내기가 열립니다. 대화 내용·이름·미디어는 기기를 떠나지 않습니다."
         }
       }
     ],
@@ -622,8 +618,8 @@ export const productDetails: Record<string, {
         k: { en: "Scope evidence", ko: "범위 근거" },
         h: { en: "The product avoids unsupported claims.", ko: "근거 없는 보장은 하지 않습니다." },
         body: {
-          en: "ReTalk requires the target KakaoTalk account to be logged in on the same PC, restores only the segments the PC holds, and does not guarantee recovery of deleted or expired content. It is an independent tool, not affiliated with KakaoTalk.",
-          ko: "리톡은 대상 카카오톡 계정이 같은 PC에 로그인돼 있어야 동작하고, PC에 남아 있는 구간만 복원하며, 삭제·만료된 내용의 복구를 보장하지 않습니다. 카카오와 제휴하지 않은 독립 도구입니다."
+          en: "ReTalk needs no KakaoTalk login and no Kakao ID or password — it only needs that KakaoTalk to have been used on this PC, so local records exist. It restores only the segments the PC holds and does not guarantee recovery of deleted or expired content. It is an independent tool, not affiliated with KakaoTalk.",
+          ko: "리톡은 카카오톡 로그인도, 카카오 아이디·비밀번호도 필요 없습니다. 그 PC에서 카카오톡을 써 온 기록만 있으면 됩니다. PC에 남아 있는 구간만 복원하고, 삭제·만료된 내용의 복구는 보장하지 않습니다. 카카오와 제휴하지 않은 독립 도구입니다."
         }
       }
     ],

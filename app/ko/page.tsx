@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SitePage } from "../site";
 
 const description =
-  "에이전트릭스 에이아이(Agentryx AI)는 서울의 1인 운영 스튜디오입니다. Agentryx, Itineva, ModuBoza, 리톡을 만들고 있고, 이 중 Itineva와 리톡은 지금 바로 써볼 수 있습니다. 거의 모든 워크플로를 에이전트가 실행합니다.";
+  "에이전트릭스 에이아이(Agentryx AI)는 운영자 주도의 AI 스튜디오입니다. Agentryx, Itineva, ModuBoza, 리톡 네 제품을 만들고, 거의 모든 워크플로를 에이전트가 실행합니다.";
 
 export const metadata: Metadata = {
   title: {
