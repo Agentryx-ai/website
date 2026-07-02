@@ -30,11 +30,11 @@ export const i18n = {
     homeH1B: "Built and run by agents.",
     homeH1C: "An operator decides what ships.",
     homeLede:
-      "Agentryx AI is an operator-led AI studio. It runs four products — a development environment it builds on, and three built with that discipline. Agents do the building, reviewing, shipping, and operating; an operator decides what ships.",
+      "Agentryx AI is an operator-led AI studio. It runs four products — a development environment it builds on, and three built with that same discipline. Agents handle the building, reviewing, shipping, and operating end to end.",
     productsNum: "01 — Products",
     productsHeading: "Four bets, one operating system.",
     productsMeta:
-      "Each product is a thesis strong enough to ship. Agentryx is the development environment we run the studio on; the other three are products built with that operating discipline.",
+      "Each product is a thesis strong enough to ship.",
     thesisNum: "02 — Operating thesis",
     thesisHeading: "How a small studio runs many products.",
     thesisMeta: "Four operating principles that shape every product, every PR, every standup.",
@@ -43,12 +43,12 @@ export const i18n = {
     ctaEyebrow: "See for yourself",
     ctaHeading: "Judge us by what ships.",
     ctaBody:
-      "Four products, built and run by agents — they're how we test the thesis in the open. Try each as it launches, and hold us to it. Or if you just want to compare notes on running a company with agents, the operator reads every email.",
+      "Try each product as it launches, and hold us to the thesis. Or if you want to compare notes on running a company with agents, the operator reads every email.",
     aboutLabel: "About · The studio",
     aboutH1A: "A small studio,",
     aboutH1B: "proving an AI company can run on agents.",
     aboutLede:
-      "Agentryx AI is an operator-led AI studio. An operator sets priorities; agents execute against narrow, well-specified surfaces. We design the studio with the same discipline we ask of the products inside it. We're not claiming we've cracked it — the shipped products are how we test the idea in the open.",
+      "Agentryx AI is an operator-led AI studio. An operator sets priorities; agents execute against narrow, well-specified surfaces. We design the studio with the same discipline we ask of the products inside it. The shipped products are how we test the idea in the open.",
     thesisLabel: "Operating thesis",
     thesisH1A: "Four principles.",
     thesisH1B: "Every product, every PR, every standup.",
@@ -83,11 +83,11 @@ export const i18n = {
     homeH1B: "만들고 운영하는 건 에이전트.",
     homeH1C: "무엇을 낼지는 운영자가 정합니다.",
     homeLede:
-      "Agentryx AI는 운영자 주도의 AI 스튜디오입니다. 네 개의 제품을 운영합니다. 스튜디오를 굴리는 개발 환경 하나와, 그 규율 위에서 만든 세 제품입니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 하고, 무엇을 낼지는 운영자가 정합니다.",
+      "Agentryx AI는 운영자 주도의 AI 스튜디오입니다. 네 개의 제품을 운영합니다. 스튜디오를 굴리는 개발 환경 하나와, 그 규율 위에서 만든 세 제품입니다. 만들고, 리뷰하고, 출시하고, 운영하는 일은 에이전트가 맡습니다.",
     productsNum: "01 — 제품",
     productsHeading: "네 개의 베팅, 하나의 운영 체계.",
     productsMeta:
-      "각 제품은 출시할 만큼 확신이 선 가설입니다. Agentryx는 스튜디오를 굴리는 개발 환경이고, 나머지 세 제품은 그 운영 규율 위에서 만든 결과물입니다.",
+      "각 제품은 출시할 만큼 확신이 선 가설입니다. Agentryx는 스튜디오를 굴리는 개발 환경이고, 나머지 세 제품은 그 위에서 나온 결과물입니다.",
     thesisNum: "02 — 운영 원칙",
     thesisHeading: "작은 스튜디오가 여러 제품을 운영하는 방식.",
     thesisMeta: "모든 제품, 모든 PR, 모든 스탠드업을 관통하는 네 가지 원칙입니다.",
@@ -95,7 +95,7 @@ export const i18n = {
     notesHeading: "우리가 딛고 서 있는 세 가지 관찰.",
     ctaEyebrow: "직접 확인하세요",
     ctaHeading: "출시한 것으로 판단해 주세요.",
-    ctaBody: "네 개의 제품, 만들고 운영하는 일은 에이전트가 합니다. 이 제품들이 우리 가설을 공개적으로 시험하는 방식입니다. 출시되는 대로 직접 써 보고 따져 보세요. 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
+    ctaBody: "출시되는 대로 직접 써 보고 따져 보세요. 에이전트로 회사를 굴리는 이야기가 궁금하다면 메일을 보내 주세요. 운영자가 직접 읽습니다.",
     aboutLabel: "회사 · 스튜디오",
     aboutH1A: "작은 스튜디오,",
     aboutH1B: "AI 회사가 에이전트로 굴러갈 수 있는지 증명하는 중.",
@@ -123,7 +123,7 @@ export const products = [
     status: "core",
     name: { en: "Agentryx", ko: "Agentryx" },
     deck: {
-      en: "A program that turns a goal into finished work on its own — splitting it into a sub-task DAG, running it, and replanning from the error when a step fails.",
+      en: "A program that turns a goal into finished work on its own. It splits the goal into a sub-task DAG, runs it, and replans from the error when a step fails.",
       ko: "목표 하나를 스스로 완성된 결과로 바꾸는 프로그램. 하위 작업 DAG로 쪼개 실행하고, 한 단계가 실패하면 에러를 읽고 다시 계획합니다."
     }
   },
@@ -134,8 +134,8 @@ export const products = [
     status: "candidate",
     name: { en: "Itineva", ko: "Itineva" },
     deck: {
-      en: "A travel planner that turns destination, dates, travelers, and taste into a shareable trip page with versions, gallery, and route checks.",
-      ko: "여행지·일정·동행·취향만 입력하면 버전 관리·갤러리·동선 점검까지 되는 여행 페이지가 만들어집니다."
+      en: "A travel planner that turns destination, dates, travelers, and taste into a shareable trip page — versioned, with route checks built in.",
+      ko: "여행지·일정·동행·취향을 입력하면 여행 페이지가 만들어집니다. 버전 관리, 갤러리, 동선 점검까지 됩니다."
     }
   },
   {
@@ -156,8 +156,8 @@ export const products = [
     status: "candidate",
     name: { en: "ReTalk", ko: "리톡" },
     deck: {
-      en: "A local-first desktop app that restores the KakaoTalk conversations already on your PC — read, search, and export — and backs up expiring photos for free. Launching soon.",
-      ko: "PC에 이미 남아 있는 카카오톡 대화를 복원해 열람·검색·내보내고, 사라질 사진은 무료로 자동 보관하는 로컬 우선 데스크톱 앱. 곧 출시합니다."
+      en: "A local-first desktop app that restores the KakaoTalk conversations already on your PC — read, search, and export. It also backs up expiring photos for free. Launching soon.",
+      ko: "PC에 남은 카카오톡 대화를 복원해 열람·검색·내보내는 로컬 우선 데스크톱 앱. 사라질 사진은 무료로 자동 보관합니다. 곧 출시합니다."
     },
     siteUrl: "https://retalk.agentryx-ai.com/"
   }
@@ -237,8 +237,8 @@ export const notes = [
       ko: "대부분의 AI 회사는 도구를 팝니다. 우리는 우리가 쓰는 도구를 만듭니다."
     },
     p: {
-      en: "The interesting question is whether a small operator inside a purpose-built development environment can run an entire company.",
-      ko: "흥미로운 질문은, 한 명의 운영자가 목적에 맞게 만든 개발 환경 안에서 회사 하나를 통째로 굴릴 수 있느냐입니다."
+      en: "We're testing whether a small operator inside a purpose-built development environment can run an entire company.",
+      ko: "흥미로운 질문은, 운영자가 목적에 맞게 만든 개발 환경 안에서 회사 하나를 통째로 굴릴 수 있느냐입니다."
     }
   },
   {
@@ -256,7 +256,7 @@ export const notes = [
       ko: "자기 도구를 만드는 스튜디오가 앞서 나갑니다."
     },
     p: {
-      en: "A studio that builds and uses its own development environment outpaces studios that stitch together generic tools.",
+      en: "Generic tools force every studio into the same workflow. One built in-house can be shaped exactly to how the work gets done.",
       ko: "자체 개발 환경을 만들고 직접 쓰는 스튜디오는 일반 도구를 짜깁기하는 스튜디오를 앞섭니다."
     }
   }
@@ -333,8 +333,8 @@ export const productDetails: Record<string, {
       ko: "목표를 스스로 완성된 결과로."
     },
     lede: {
-      en: "Agentryx turns a goal into finished work on its own. Give it a goal; it decides whether to run the task directly or split it into a sub-task DAG, runs each piece in its own git worktree, and synthesizes the result — replanning with the actual error in hand when a step fails. It drives the Claude or Codex CLI, and it is built one small, verifiable stage at a time.",
-      ko: "Agentryx는 목표 하나를 스스로 완성된 결과로 바꿉니다. 목표를 주면 그 일을 바로 할지 하위 작업 DAG로 쪼갤지 직접 정하고, 각 조각을 별도 git worktree에서 실행한 뒤 결과를 합칩니다. 한 단계가 실패하면 실제 에러를 손에 쥐고 다시 계획합니다. Claude나 Codex CLI를 구동하며, 작고 검증 가능한 단계로 하나씩 만들어 갑니다."
+      en: "Agentryx decides whether to run a task directly or split it into a sub-task DAG, runs each piece in its own git worktree, and synthesizes the result. When a step fails, it replans with the actual error in hand. It drives the Claude or Codex CLI, and it's built one small, verifiable stage at a time.",
+      ko: "Agentryx는 목표 하나를 스스로 완성된 결과로 바꿉니다. 목표를 주면 바로 실행할지 하위 작업 DAG로 쪼갤지 직접 정하고, 각 조각을 별도 git worktree에서 실행해 결과를 합칩니다. 한 단계가 실패하면 실제 에러를 손에 쥐고 다시 계획합니다."
     },
     metrics: [
       { k: { en: "Pattern", ko: "패턴" }, v: { en: "Recursive orchestrator-workers", ko: "재귀적 오케스트레이터-워커" } },
@@ -364,7 +364,7 @@ export const productDetails: Record<string, {
         h: { en: "A recursive generalization of orchestrator-workers.", ko: "오케스트레이터-워커의 재귀적 일반화." },
         body: {
           en: "The closest validated peer is Anthropic's orchestrator-workers; Agentryx is its recursive generalization, built one small stage at a time. Through Stage 28 it runs the DAG in parallel, replans on failure, coordinates through a single conversation, and checks whether a goal was actually met — not just whether a task ran. Stage 29, benchmark-gated completion, is in design.",
-          ko: "가장 가까운 검증된 선례는 Anthropic의 오케스트레이터-워커이고, Agentryx는 그것의 재귀적 일반화입니다. 작고 검증 가능한 단계로 하나씩 만들어, Stage 28까지 DAG를 병렬로 실행하고 실패 시 다시 계획하며, 하나의 대화로 조율하고, 태스크가 돌았는지가 아니라 목표가 실제로 달성됐는지를 확인합니다. Stage 29(벤치마크 게이트 완료)는 설계 중입니다."
+          ko: "가장 가까운 검증된 선례는 Anthropic의 오케스트레이터-워커이고, Agentryx는 그것의 재귀적 일반화입니다. 작고 검증 가능한 단계로 하나씩 만들었습니다. 그 결과 Stage 28까지 DAG를 병렬로 실행하고 실패 시 다시 계획하며, 하나의 대화로 조율하고, 태스크가 돌았는지가 아니라 목표가 실제로 달성됐는지를 확인합니다. Stage 29(벤치마크 게이트 완료)는 설계 중입니다."
         }
       }
     ],
@@ -387,10 +387,10 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "Scope evidence", ko: "범위 근거" },
-        h: { en: "What's done and what's next, stated plainly.", ko: "된 것과 다음이 분명합니다." },
+        h: { en: "What's done, and what's next.", ko: "된 것과 다음이 분명합니다." },
         body: {
-          en: "Stages 00–28 are done — through parallel execution, goal verification, and a single-conversation coordinator. Stage 29 hard-gates completion behind an independent benchmark, so a goal can't be self-certified as done. What isn't built yet is stated, not implied.",
-          ko: "Stage 00–28 완료 — 병렬 실행, 목표 검증, 단일 대화 코디네이터까지. Stage 29는 독립 벤치마크로 완료를 하드 게이트해서, 목표를 스스로 '완료'라 단정하지 못하게 합니다. 아직 안 된 것은 암시하지 않고 분명히 밝힙니다."
+          en: "Stages 00–28 are done — through parallel execution, goal verification, and a single-conversation coordinator. Stage 29 hard-gates completion behind an independent benchmark, so a goal can't be self-certified as done.",
+          ko: "Stage 00–28 완료 — 병렬 실행, 목표 검증, 단일 대화 코디네이터까지. Stage 29는 독립 벤치마크로 완료를 하드 게이트해서, 목표를 스스로 '완료'라 단정하지 못하게 합니다."
         }
       }
     ],
@@ -409,7 +409,7 @@ export const productDetails: Record<string, {
       ko: "웹사이트처럼 만드는 여행 계획. 버전이 관리되고, 공유되고, 계속 살아 있습니다."
     },
     lede: {
-      en: "Itineva turns destination, dates, travelers, and taste into a shareable trip page — a full day-by-day plan, filled with real places and checked so each day is actually doable before you share it. In development.",
+      en: "Itineva turns destination, dates, travelers, and taste into a shareable trip page — a full day-by-day plan filled with real places. Each day is checked so it's doable before you share it. In development.",
       ko: "Itineva는 여행지·일정·동행·취향을 공유 가능한 여행 페이지로 바꿉니다. 실제 장소로 채운 일자별 계획을 만들고, 공유하기 전에 각 날이 실제로 가능한지 점검합니다. 개발 중입니다."
     },
     metrics: [
@@ -429,7 +429,7 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "02 — Built for you, then checked", ko: "02 — 만들고, 다듬어서" },
-        h: { en: "A full plan, filled with real places.", ko: "실제 장소로 채운 완성된 계획." },
+        h: { en: "A draft worth editing, not a blank page.", ko: "실제 장소로 채운 완성된 계획." },
         body: {
           en: "Itineva drafts the whole trip day by day, fills it with real places, and cleans it up before you ever see it — so you start from a plan worth editing, not a blank page.",
           ko: "여행 전체를 일자별로 짜고, 실제 장소로 채운 뒤 다듬어서 보여줍니다. 빈 페이지가 아니라 손볼 만한 계획에서 시작합니다."
@@ -449,7 +449,7 @@ export const productDetails: Record<string, {
         k: { en: "Generator evidence", ko: "생성 근거" },
         h: { en: "The plan is built in passes, not one shot.", ko: "계획은 단발이 아니라 여러 단계로." },
         body: {
-          en: "Itineva drafts the trip, fills each day, enriches it with real place data, and runs a cleanup pass before publish — so what you get is coherent, not a single raw generation.",
+          en: "Itineva drafts the trip, then fills and cleans up each day before publish — separate passes, not a single raw generation.",
           ko: "여행의 골격을 잡고, 하루하루를 채우고, 실제 장소 데이터로 보강한 뒤, 게시 전에 정리 단계를 거칩니다. 그래서 단발 생성이 아니라 앞뒤가 맞는 결과가 나옵니다."
         }
       },
@@ -457,16 +457,16 @@ export const productDetails: Record<string, {
         k: { en: "Share evidence", ko: "공유 근거" },
         h: { en: "The shared plan stays versioned and current.", ko: "공유한 계획은 버전으로 관리되고 최신입니다." },
         body: {
-          en: "Every trip has versions and a stable share link, so the whole group always sees the current plan — not a stale copy pasted into a chat.",
-          ko: "여행마다 버전과 변하지 않는 공유 링크가 있어, 동행 모두가 낡은 사본이 아니라 최신 계획을 봅니다."
+          en: "Every trip keeps a version history and one stable share link, so nobody ends up passing around a stale copy in a chat.",
+          ko: "여행마다 버전과 변하지 않는 공유 링크가 있습니다. 링크는 그대로, 그 안에서 보이는 버전만 최신으로 바뀝니다."
         }
       },
       {
         k: { en: "Reality evidence", ko: "현실 검증 근거" },
         h: { en: "Days are checked against reality.", ko: "일정은 현실에 맞춰 점검합니다." },
         body: {
-          en: "Places are enriched with real-world data, and each day is checked against travel time and opening hours — if a day is too tight, the page flags it before you share.",
-          ko: "장소는 실제 데이터로 보강하고, 각 날은 이동 시간과 운영 시간에 비춰 점검합니다. 너무 빡빡한 날은 공유 전에 표시합니다."
+          en: "Each day is checked against real transit-time and opening-hours data, not a guess.",
+          ko: "장소는 실제 데이터로 보강하고, 각 날은 그 데이터를 기준으로 이동 시간과 운영 시간을 확인합니다."
         }
       }
     ],
@@ -485,7 +485,7 @@ export const productDetails: Record<string, {
       ko: "볼 것을 찾고, 더 저렴하게."
     },
     lede: {
-      en: "ModuBoza helps you find something worth watching and enjoy it for less, through one simple checkout. It's an independent service, still in development.",
+      en: "ModuBoza pairs streaming discovery with one simple checkout, so you spend less time hunting and less money watching. It's an independent service, still in development.",
       ko: "모두보자는 볼 만한 것을 찾아, 간단한 결제 하나로 더 저렴하게 즐기도록 돕습니다. 아직 개발 중인 독립 서비스입니다."
     },
     metrics: [
@@ -499,7 +499,7 @@ export const productDetails: Record<string, {
         k: { en: "01 — Start from what to watch", ko: "01 — '무엇을 볼까'에서 시작" },
         h: { en: "Content first, not accounts.", ko: "계정이 아니라 콘텐츠부터." },
         body: {
-          en: "ModuBoza starts from the thing you actually want — something to watch — and helps you get to it without the usual friction.",
+          en: "ModuBoza starts from what you want — something to watch — and gets you there without the usual friction.",
           ko: "모두보자는 정말 원하는 것, 즉 '볼 것'에서 시작해, 번거로움 없이 거기에 닿도록 돕습니다."
         }
       },
@@ -515,8 +515,8 @@ export const productDetails: Record<string, {
         k: { en: "03 — Built carefully, in the open", ko: "03 — 조심스럽게, 공개적으로" },
         h: { en: "Still in development.", ko: "아직 개발 중입니다." },
         body: {
-          en: "ModuBoza is an independent service, not affiliated with the streaming providers it helps you discover. It's still in development, and we won't overstate what it does before it launches.",
-          ko: "모두보자는 안내하는 스트리밍 사업자와 제휴하지 않은 독립 서비스입니다. 아직 개발 중이며, 출시 전에 기능을 부풀려 말하지 않습니다."
+          en: "ModuBoza is an independent service, not affiliated with the streaming providers it helps you discover.",
+          ko: "모두보자는 안내하는 스트리밍 사업자와 제휴하지 않은 독립 서비스입니다. 아직 개발 중입니다."
         }
       }
     ],
@@ -525,7 +525,7 @@ export const productDetails: Record<string, {
         k: { en: "Value", ko: "가치" },
         h: { en: "Less friction, lower cost.", ko: "덜 번거롭게, 더 저렴하게." },
         body: {
-          en: "The idea is simple: make watching what you want easier and cheaper than piecing it together yourself.",
+          en: "Make watching what you want easier and cheaper than piecing it together yourself.",
           ko: "생각은 단순합니다. 원하는 걸 보는 일을, 직접 하나하나 챙기는 것보다 더 쉽고 더 저렴하게 만드는 것."
         }
       },
@@ -539,10 +539,10 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "Posture", ko: "태도" },
-        h: { en: "In development, stated honestly.", ko: "개발 중임을 정직하게 밝힙니다." },
+        h: { en: "Still in development.", ko: "아직 출시하지 않았습니다." },
         body: {
-          en: "It isn't launched yet. This page says only what's true today, and nothing about how it works under the hood.",
-          ko: "아직 출시하지 않았습니다. 이 페이지는 오늘 사실인 것만 말하고, 내부 동작은 다루지 않습니다."
+          en: "It isn't launched yet.",
+          ko: "모두보자는 지금 개발 중입니다."
         }
       }
     ],
@@ -562,8 +562,8 @@ export const productDetails: Record<string, {
       ko: "내 PC에 이미 있는 대화를 되살립니다."
     },
     lede: {
-      en: "ReTalk is a local-first desktop app that restores the KakaoTalk conversations already on your PC: find and preview what is recoverable, read and search the full history, export a clean archive, and auto-save expiring photos and videos for free. Chat content stays on the device by default.",
-      ko: "리톡은 PC에 이미 남아 있는 카카오톡 대화를 복원하는 로컬 우선 데스크톱 앱입니다. 복원 가능한 분량을 찾아 미리 보고, 전체 기록을 열람·검색하고, 깔끔한 아카이브로 내보내며, 사라질 사진·동영상은 무료로 자동 보관합니다. 대화 내용은 기본적으로 기기 안에 머뭅니다."
+      en: "ReTalk is a local-first desktop app that restores the KakaoTalk conversations already on your PC. Find and preview what's recoverable, then read, search, and export a clean archive. It also auto-saves expiring photos and videos for free, and chat content stays on the device by default.",
+      ko: "리톡은 PC에 이미 남아 있는 카카오톡 대화를 복원하는 로컬 우선 데스크톱 앱입니다. 전체 기록을 열람·검색하고 깔끔한 아카이브로 내보내며, 사라질 사진·동영상은 무료로 자동 보관합니다. 대화 내용은 기기 안에 머뭅니다."
     },
     metrics: [
       { k: { en: "Stance", ko: "포지셔닝" }, v: { en: "Local-first by design", ko: "설계부터 로컬 우선" } },
@@ -577,7 +577,7 @@ export const productDetails: Record<string, {
         h: { en: "Restore, read, search, export.", ko: "복원하고, 읽고, 검색하고, 내보냅니다." },
         body: {
           en: "ReTalk reads the KakaoTalk data already on the PC and rebuilds it into rooms you can read again, a history you can search across rooms, and an archive you can export as CSV, HTML, JSON, ZIP, or PDF. No AI summary, no cloud sync.",
-          ko: "리톡은 PC에 이미 있는 카카오톡 데이터를 읽어, 다시 읽을 수 있는 방별 대화와 여러 방을 가로지르는 검색, 그리고 CSV·HTML·JSON·ZIP·PDF로 내보낼 수 있는 아카이브로 되살립니다. AI 요약도, 클라우드 동기화도 없습니다."
+          ko: "리톡은 PC에 이미 있는 카카오톡 데이터를 읽습니다. 다시 읽을 수 있는 방별 대화, 여러 방을 가로지르는 검색, CSV·HTML·JSON·ZIP·PDF로 내보낼 수 있는 아카이브로 되살립니다. AI 요약도, 클라우드 동기화도 없습니다."
         }
       },
       {
@@ -600,7 +600,7 @@ export const productDetails: Record<string, {
     proofs: [
       {
         k: { en: "Local evidence", ko: "로컬 근거" },
-        h: { en: "Personal content stays on-device by default.", ko: "개인 콘텐츠는 기본적으로 기기에 남습니다." },
+        h: { en: "Personal content stays on-device by default.", ko: "개인 콘텐츠는 기기를 떠나지 않습니다." },
         body: {
           en: "Restore, read, search, and export all run on the user's PC. The service server is limited to account, payment and license, update checks, and non-personal stats; chat bodies, room names, contacts, and media stay off it. The one stored personal field is the user's own profile name, kept to bind a license to a profile.",
           ko: "복원·열람·검색·내보내기는 모두 사용자 PC에서 실행됩니다. 서비스 서버는 계정, 결제·라이선스, 업데이트 확인, 개인정보가 아닌 통계로 역할이 제한되며, 대화 본문·방 이름·연락처·미디어는 저장하지 않습니다. 저장하는 유일한 개인정보는 라이선스를 프로필에 연결하기 위한 본인 프로필 이름입니다."
@@ -616,7 +616,7 @@ export const productDetails: Record<string, {
       },
       {
         k: { en: "Scope evidence", ko: "범위 근거" },
-        h: { en: "The product avoids unsupported claims.", ko: "근거 없는 보장은 하지 않습니다." },
+        h: { en: "No login. No guaranteed recovery.", ko: "근거 없는 보장은 하지 않습니다." },
         body: {
           en: "ReTalk needs no KakaoTalk login and no Kakao ID or password — it only needs that KakaoTalk to have been used on this PC, so local records exist. It restores only the segments the PC holds and does not guarantee recovery of deleted or expired content. It is an independent tool, not affiliated with KakaoTalk.",
           ko: "리톡은 카카오톡 로그인도, 카카오 아이디·비밀번호도 필요 없습니다. 그 PC에서 카카오톡을 써 온 기록만 있으면 됩니다. PC에 남아 있는 구간만 복원하고, 삭제·만료된 내용의 복구는 보장하지 않습니다. 카카오와 제휴하지 않은 독립 도구입니다."
