@@ -38,7 +38,7 @@ test.describe("language negotiation", () => {
 
     await expect(page.locator("html")).toHaveAttribute("lang", "ko");
     await expect(page.getByRole("button", { name: "KO" })).toHaveAttribute("aria-pressed", "true");
-    await expect(page.locator("main")).toContainText("AI 제품을");
+    await expect(page.locator("main")).toContainText("제품을 운영합니다");
     await expect(page.locator("main")).toContainText("제품 보기");
 
     await context.close();
@@ -57,7 +57,7 @@ test.describe("language negotiation", () => {
 
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await expect(page.getByRole("button", { name: "EN" })).toHaveAttribute("aria-pressed", "true");
-    await expect(page.locator("main")).toContainText("We run");
+    await expect(page.locator("main")).toContainText("operator-led AI studio");
     await expect(page.locator("main")).toContainText("See products");
 
     await context.close();

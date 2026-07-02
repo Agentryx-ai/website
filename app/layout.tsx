@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       "x-default": "/"
     }
   },
+  verification: {
+    other: {
+      "naver-site-verification": "c72c35fd79684c48a8164fbb0f444f55a011f2e1"
+    }
+  },
   openGraph: {
     title: "Agentryx AI",
     description: siteDescription,
